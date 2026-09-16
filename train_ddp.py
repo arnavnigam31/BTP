@@ -143,9 +143,11 @@ def main_worker(rank, world_size):
             logger.info(f'\nValidation stats:\n{metrics_rec_table}')
             logger.info(f'\nValidation stats:\n{metrics_seg_table}')
 
-            test_iou = metrics_seg_table.at["total(-bg)", "IoU"]
-            test_psnr = metrics_rec_table.at[0, "PSNR"]
-            if test_iou > max_iou or test_psnr > max_psnr:
+            val_iou = metrics_seg_table.at["total(-bg)", "IoU"]
+            val_psnr = metrics_rec_table.at[0, "PSNR"]
+            if val_iou > max_iou or val_psnr > max_psnr:
+                max_iou = max(max_iou, val_iou)
+                max_psnr = max(max_psnr, val_psnr)
                 checkpoint(model, epoch+1, model_path, logger)
             
     if rank == 0:

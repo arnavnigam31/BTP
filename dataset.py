@@ -213,15 +213,15 @@ def prep_loaders(root_dir, batch_size=1, workers=1):
         datafile='train_data.csv', 
         transform=transforms.Compose([RandomCropHoriz(),SegIdentityTransform(), RandomHorizontalFlip()])
     )
-    test_dataset = HySpecSegmentation(
+    valid_dataset = HySpecSegmentation(
         root_dir=root_dir, 
-        datafile='test_data.csv', 
+        datafile='val_data.csv',
         transform=transforms.Compose([SegIdentityTransform()])
     )
 
     # Prepare data loaders
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=workers)
-    valid_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, num_workers=workers)
+    valid_loader = DataLoader(valid_dataset, batch_size=1, shuffle=False, num_workers=workers)
     print('Dataset size (num. batches)', len(train_loader), len(valid_loader))
     return train_loader, valid_loader
 
@@ -232,15 +232,15 @@ def prep_loaders_ddp(root_dir, batch_size=1, workers=1, rank=0, world_size=1):
         datafile='train_data.csv', 
         transform=transforms.Compose([RandomCropHoriz(),SegIdentityTransform(), RandomHorizontalFlip()])
     )
-    test_dataset = HySpecSegmentation(
+    valid_dataset = HySpecSegmentation(
         root_dir=root_dir,
-        datafile='test_data.csv',
+        datafile='val_data.csv',
         transform=transforms.Compose([SegIdentityTransform()])
     )
 
     # Prepare data loaders
     sampler = DistributedSampler(train_dataset, num_replicas=world_size, rank=rank, shuffle=True)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, num_workers=workers, sampler=sampler)
-    valid_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, num_workers=workers)
+    valid_loader = DataLoader(valid_dataset, batch_size=1, shuffle=False, num_workers=workers)
     print('Dataset size (num. batches)', len(train_loader), len(valid_loader))
     return train_loader, valid_loader

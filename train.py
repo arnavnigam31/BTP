@@ -5,6 +5,7 @@ os.environ["CUDA_DEVICE_ORDER"] = 'PCI_BUS_ID'
 os.environ["CUDA_VISIBLE_DEVICES"] = opt.gpu_id
 import math
 import gc
+import time
 import torch
 from torch import nn
 from utils import *
@@ -68,6 +69,8 @@ def main():
         losses_rec = AverageMeter()
         losses_seg = AverageMeter()
 
+        epoch_start = time.time()
+
         for i, (sample) in enumerate(train_loader):
 
             # Load a batch and send it to GPU
@@ -100,6 +103,21 @@ def main():
             scaler.scale(loss).backward()
             scaler.step(optimizer)
             scaler.update()
+
+            if (i + 1) % 10 == 0 or (i + 1) == len(train_loader):
+                elapsed = time.time() - epoch_start
+                avg_time = elapsed / (i + 1)
+                remaining = avg_time * (len(train_loader) - i - 1)
+
+                print(
+                    f"Epoch {epoch+1}/{opt.max_epoch} | "
+                    f"Batch {i+1}/{len(train_loader)} | "
+                    f"Rec {losses_rec.avg:.6f} | "
+                    f"Seg {losses_seg.avg:.6f} | "
+                    f"Elapsed {elapsed/60:.1f}m | "
+                    f"ETA {remaining/60:.1f}m",
+                    flush=True
+                )
 
         logger.info(f"Rec loss: {losses_rec.avg}")
         logger.info(f"Seg loss: {losses_seg.avg}")
@@ -134,9 +152,11 @@ def main():
         logger.info(f'\nValidation stats:\n{metrics_rec_table}')
         logger.info(f'\nValidation stats:\n{metrics_seg_table}')
         # Save model
-        test_iou = metrics_seg_table.at["total(-bg)", "IoU"]
-        test_psnr = metrics_rec_table.at[0, "PSNR"]
-        if test_iou > max_iou or test_psnr > max_psnr:
+        val_iou = metrics_seg_table.at["total(-bg)", "IoU"]
+        val_psnr = metrics_rec_table.at[0, "PSNR"]
+        if val_iou > max_iou or val_psnr > max_psnr:
+            max_iou = max(max_iou, val_iou)
+            max_psnr = max(max_psnr, val_psnr)
             checkpoint(model, epoch+1, model_path, logger)
 
     print("Done")

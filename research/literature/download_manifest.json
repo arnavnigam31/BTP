@@ -1,0 +1,57 @@
+[
+  {
+    "id": "SSR2024",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Improving_Spectral_Snapshot_Reconstruction_with_Spectral-Spatial_Rectification_CVPR_2024_paper.pdf",
+    "status": "downloaded; not automatically reviewed",
+    "pages": 10,
+    "sha256": "5818845a22fe420bc41b933d67eaa1dcd911b8e1002c815afada473b8e1266b2",
+    "accessed": "2026-09-16"
+  },
+  {
+    "id": "GST2022",
+    "url": "https://arxiv.org/pdf/2112.15362v4",
+    "status": "downloaded; not automatically reviewed",
+    "pages": 21,
+    "sha256": "6c9577b3de1f950dd5fa3fa937bec1582c50fd7cdcfbf0014de90b31dac423c9",
+    "accessed": "2026-09-16"
+  },
+  {
+    "id": "RDLUF2023",
+    "url": "https://arxiv.org/pdf/2211.06891v3",
+    "status": "failed",
+    "error": "HTTP Error 406: Not Acceptable",
+    "accessed": "2026-09-16"
+  },
+  {
+    "id": "GRADNORM2018",
+    "url": "https://proceedings.mlr.press/v80/chen18a/chen18a.pdf",
+    "status": "downloaded; not automatically reviewed",
+    "pages": 10,
+    "sha256": "c298d1027a1dfcb845bc7867d64a2ec831f184a1cdc0e270124619aed9b506c1",
+    "accessed": "2026-09-16"
+  },
+  {
+    "id": "FVgNET2022",
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Makarenko_Real-Time_Hyperspectral_Imaging_in_Hardware_via_Trained_Metasurface_Encoders_CVPR_2022_paper.pdf",
+    "status": "downloaded; not automatically reviewed",
+    "pages": 11,
+    "sha256": "b0218842336bd59aca882f0ebb781d4b6acfd2dfc6e7d105e2fc62d3ee71e03f",
+    "accessed": "2026-09-16"
+  },
+  {
+    "id": "CRSDUN2026_SUPP",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/He_Joint_Spectral_Image_CVPR_2026_supplemental.pdf",
+    "status": "downloaded; not automatically reviewed",
+    "pages": 5,
+    "sha256": "427ef153fda2a76921143e8ef3533ce0ebcbd565cf93dd94c1726ad0569da130",
+    "accessed": "2026-09-16"
+  },
+  {
+    "id": "CRSDUN2026",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/He_Joint_Spectral_Image_Reconstruction_and_Semantic_Segmentation_with_Cooperative_Unfolding_CVPR_2026_paper.pdf",
+    "status": "previously downloaded; main paper reviewed",
+    "pages": 10,
+    "sha256": "64cb7eb84c8b8387db32a610060079d3e8644b1f698dd98d59b9ce647aeeb42c",
+    "accessed": "2026-09-16"
+  }
+]

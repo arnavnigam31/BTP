@@ -16,12 +16,12 @@ Download  ([FVgNET dataset](https://pan.baidu.com/s/1Z69PEVDEx-rxd4-YVByzmw?pwd=
 	|--labels
 		|--2021-11-03_006.png
 		|--2021-11-03_007.png
-		： 
+		：
 		|--2021-11-10_050.png
 	|--visible_28
 		|--2021-11-03_006.npy
 		|--2021-11-03_007.npy
-		： 
+		：
 		|--2021-11-10_050.npy
 	|--test_data.csv
 	|--train_data.csv
@@ -78,3 +78,10 @@ If this code helps you, please consider citing our work:
     pages={6910-6919}
 }
 ```
+
+
+## BTP public252 development
+
+See [SERVER_SETUP.md](SERVER_SETUP.md) for environment setup, dataset transfer, verification, resumable training and explicit validation/test evaluation. Our public252-v1 dataset differs from the paper protocol; see [preprocessing decisions](research/preprocessing_resolution/RESOLUTION.md).
+
+For Kaggle, see [KAGGLE_SETUP.md](KAGGLE_SETUP.md).

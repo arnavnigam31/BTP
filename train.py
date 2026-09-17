@@ -11,18 +11,20 @@ from torch import nn
 from utils import *
 from dataset import *
 from models import *
+from training_state import identity, record_run, save_state, load_state, atomic_save, carry_best_weights
 scaler = torch.GradScaler(device="cuda")
 
 import warnings
 warnings.filterwarnings("ignore")
 
-set_seed(3407)
+set_seed(opt.seed)
 
 # dataset
 train_loader, valid_loader = prep_loaders(
-    root_dir=opt.data_root, 
-    batch_size=opt.batch_size, 
-    workers=4
+    root_dir=opt.data_root,
+    transpose_image=opt.transpose_image,
+    batch_size=opt.batch_size,
+    workers=opt.workers
 )
 
 # mask
@@ -55,14 +57,22 @@ if not os.path.exists(result_path):
 if not os.path.exists(model_path):
     os.makedirs(model_path)
 
+if os.path.exists(os.path.join(model_path, 'last.pt')) and not opt.resume:
+    raise FileExistsError('Existing run: use --resume or choose a new name')
 logger = gen_log(model_path)
+data_id = identity(opt)
+record_run(model_path, opt, data_id)
 
 def main():
-    max_iou = 0
-    max_psnr = 0
+    best = {'iou': float('-inf'), 'psnr': float('-inf')}
+    start_epoch = 0
+    if opt.resume:
+        start_epoch, best = load_state(opt.resume, model, optimizer, scheduler, scaler, opt, data_id)
+        carry_best_weights(opt.resume, model_path)
+        logger.info(f'Resuming after epoch {start_epoch}')
     lam_rec = 1
     lam_seg = 1e-4
-    for epoch in range(opt.max_epoch):
+    for epoch in range(start_epoch, opt.max_epoch):
         model.train()
 
         # Progress reporting
@@ -71,7 +81,7 @@ def main():
 
         epoch_start = time.time()
 
-        for i, (sample) in enumerate(train_loader):
+        for batch_idx, sample in enumerate(train_loader):
 
             # Load a batch and send it to GPU
             x = sample['image'].float().cuda()
@@ -89,9 +99,9 @@ def main():
                 loss_seg = 0
                 stage_list = list(range(len(x_pred_list)))
                 stage_list.reverse()
-                for i, stage in enumerate(stage_list):
-                    loss_rec = loss_rec + loss_fn_rec(x_pred_list[stage], x) * math.pow(0.7, i)
-                    loss_seg = loss_seg + loss_fn_seg(y_pred_list[stage], y) * math.pow(0.7, i)
+                for stage_idx, stage in enumerate(stage_list):
+                    loss_rec = loss_rec + loss_fn_rec(x_pred_list[stage], x) * math.pow(0.7, stage_idx)
+                    loss_seg = loss_seg + loss_fn_seg(y_pred_list[stage], y) * math.pow(0.7, stage_idx)
 
                 loss = lam_rec * loss_rec + lam_seg * loss_seg
 
@@ -104,14 +114,14 @@ def main():
             scaler.step(optimizer)
             scaler.update()
 
-            if (i + 1) % 10 == 0 or (i + 1) == len(train_loader):
+            if (batch_idx + 1) % 10 == 0 or (batch_idx + 1) == len(train_loader):
                 elapsed = time.time() - epoch_start
-                avg_time = elapsed / (i + 1)
-                remaining = avg_time * (len(train_loader) - i - 1)
+                avg_time = elapsed / (batch_idx + 1)
+                remaining = avg_time * (len(train_loader) - batch_idx - 1)
 
                 print(
                     f"Epoch {epoch+1}/{opt.max_epoch} | "
-                    f"Batch {i+1}/{len(train_loader)} | "
+                    f"Batch {batch_idx+1}/{len(train_loader)} | "
                     f"Rec {losses_rec.avg:.6f} | "
                     f"Seg {losses_seg.avg:.6f} | "
                     f"Elapsed {elapsed/60:.1f}m | "
@@ -131,8 +141,6 @@ def main():
         model.eval()
         metrics_rec.reset()
         metrics_seg.reset()
-        name_list = []
-        seg_map_list = []
         for i, (sample) in enumerate(valid_loader):
             x, y = sample['image'].float().cuda(), sample['label'].numpy()
             mea = init_meas(x, Phi_batch_test, opt.input_setting)
@@ -141,8 +149,6 @@ def main():
                 x_pred = x_pred_list[-1]
                 y_pred = y_pred_list[-1]
                 y_pred = torch.argmax(y_pred, dim=1) # get the most likely prediction
-                seg_map_list.append(decode_segmap(y_pred.cpu()).astype(np.uint8))
-                name_list.append(valid_loader.dataset.names[i])
 
             metrics_rec.add_batch(x.cpu(), x_pred.detach().cpu())
             metrics_seg.add_batch(y, y_pred.detach().cpu().numpy())
@@ -154,14 +160,19 @@ def main():
         # Save model
         val_iou = metrics_seg_table.at["total(-bg)", "IoU"]
         val_psnr = metrics_rec_table.at[0, "PSNR"]
-        if val_iou > max_iou or val_psnr > max_psnr:
-            max_iou = max(max_iou, val_iou)
-            max_psnr = max(max_psnr, val_psnr)
-            checkpoint(model, epoch+1, model_path, logger)
+        if val_iou > best['iou']:
+            best['iou'] = float(val_iou)
+            atomic_save(model.state_dict(), os.path.join(model_path, 'best_iou.pth'))
+        if val_psnr > best['psnr']:
+            best['psnr'] = float(val_psnr)
+            atomic_save(model.state_dict(), os.path.join(model_path, 'best_psnr.pth'))
+        metrics_rec_table.to_csv(os.path.join(result_path, f'epoch_{epoch+1:04d}_reconstruction.csv'), index=False)
+        metrics_seg_table.to_csv(os.path.join(result_path, f'epoch_{epoch+1:04d}_segmentation.csv'))
+        save_state(os.path.join(model_path, 'last.pt'), model, optimizer, scheduler, scaler,
+                   epoch+1, best, opt, data_id)
 
     print("Done")
 
 if __name__ == "__main__":
     "------------------start training-------------------------"
     main()
-

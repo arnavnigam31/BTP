@@ -1,86 +1,92 @@
-import os
-from opt import opt
-print(opt)
-os.environ["CUDA_DEVICE_ORDER"] = 'PCI_BUS_ID'
-os.environ["CUDA_VISIBLE_DEVICES"] = opt.gpu_id
+"""Explicit, recorded validation/test evaluation for public252-v1."""
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import numpy as np
 import torch
-from torch import nn
-import torch.nn.functional as F
-from matplotlib import pyplot as plt
-from utils import *
-from dataset import *
-from models import *
-scaler = torch.GradScaler(device="cuda")
-from tqdm import tqdm
+from PIL import Image
+from dataset import evaluation_loader, decode_segmap
+from utils import Metrics_Rec, Metrics_Seg, init_mask, init_meas, set_seed
 
-import warnings
-warnings.filterwarnings("ignore")
+def sha256(path):
+    digest=hashlib.sha256()
+    with Path(path).open('rb') as f:
+        for chunk in iter(lambda:f.read(1024*1024),b''):digest.update(chunk)
+    return digest.hexdigest()
 
-set_seed(42)
-
-# dataset
-_, valid_loader = prep_loaders(
-    root_dir=opt.data_root,
-    batch_size=opt.batch_size, 
-    workers=4
-)
-
-# mask
-ch = 28
-
-Phi_batch_test, input_mask_test = init_mask(opt.mask_path, opt.input_mask, 1, ch)
-
-# model
-n_classes = valid_loader.dataset.num_classes
-
-model = model_generator(opt.method, ch, n_classes, opt.pretrained_model_path).cuda()
-
-# metrics
-metrics_rec = Metrics_Rec()
-metrics_seg = Metrics_Seg(valid_loader.dataset.num_classes, valid_loader.dataset.class_names)
-
-# path
-result_path = opt.outf + opt.name + '/result/'
-if not os.path.exists(result_path):
-    os.makedirs(result_path)
-
-logger = gen_log(result_path)
+def evaluate_batches(model,loader,measurement,mask,device,out,limit=None,save_predictions=False):
+    """One scene per batch; measurement callback allows CPU integration fixtures."""
+    rec=Metrics_Rec();seg=Metrics_Seg(loader.dataset.num_classes,loader.dataset.class_names)
+    records=[];model.eval()
+    with torch.inference_mode():
+        for i,sample in enumerate(loader):
+            if limit is not None and i>=limit:break
+            target=sample['image'].to(device=device,dtype=torch.float32)
+            truth=sample['label'].numpy()
+            reconstructed,logits=model(measurement(target),mask)
+            reconstructed=reconstructed[-1].float().cpu()
+            predicted=logits[-1].argmax(dim=1).cpu()
+            if reconstructed.shape!=target.shape or predicted.shape!=sample['label'].shape:
+                raise ValueError('Model output shape differs from target')
+            if not torch.isfinite(reconstructed).all() or not torch.isfinite(logits[-1]).all():
+                raise ValueError('Nonfinite model output; evaluation aborted')
+            scene=str(loader.dataset.names[i])
+            one=Metrics_Rec();one.add_batch(target.cpu(),reconstructed)
+            rec.add_batch(target.cpu(),reconstructed);seg.add_batch(truth,predicted.numpy())
+            records.append({'scene':scene,**one.get_table().iloc[0].to_dict()})
+            if save_predictions:
+                np.save(out/(scene+'_hsi.npy'),reconstructed[0].permute(1,2,0).numpy())
+                Image.fromarray(decode_segmap(predicted).astype(np.uint8)).save(out/(scene+'.png'))
+            print(f'Evaluated {len(records)}/{min(len(loader),limit or len(loader))}',flush=True)
+    if not records:raise ValueError('No evaluation scenes')
+    import pandas as pd
+    rec.get_table().to_csv(out/'reconstruction.csv',index=False)
+    seg.get_table().to_csv(out/'segmentation.csv')
+    pd.DataFrame(records).to_csv(out/'per_scene_reconstruction.csv',index=False)
+    np.save(out/'confusion_matrix.npy',seg.confusion_matrix)
+    return [r['scene'] for r in records]
 
 def main():
-    # Validation after each epoch
-    model.eval()
-    metrics_seg.reset()
-    for i, (sample) in tqdm(enumerate(valid_loader)):
-        x = sample['image'].float().cuda()
-        label = sample['label'].numpy()
-        mea = init_meas(x, Phi_batch_test, opt.input_setting)
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--data_root',type=Path,required=True)
+    parser.add_argument('--pretrained_model_path',type=Path,required=True)
+    parser.add_argument('--eval_split',choices=['val','test'],default='val')
+    parser.add_argument('--transpose_image',action='store_true')
+    parser.add_argument('--outf',type=Path,default=Path('exp/evaluation'))
+    parser.add_argument('--name',default='public252_v1')
+    parser.add_argument('--workers',type=int,default=0)
+    parser.add_argument('--mask_path',type=Path,default=Path(__file__).resolve().parent/'mask/mask512x512.mat')
+    parser.add_argument('--limit',type=int,help='Validation-only infrastructure smoke check; never a benchmark')
+    parser.add_argument('--save_predictions',action='store_true')
+    parser.add_argument('--batch_size',type=int,default=1,help='Evaluation requires one scene per batch')
+    args=parser.parse_args()
+    if args.batch_size!=1 or args.workers<0:parser.error('Use batch_size=1 and nonnegative workers')
+    if Path(args.name).name!=args.name or args.name in ('.','..'):parser.error('name must be a single folder name')
+    if args.limit is not None and (args.limit<1 or args.eval_split!='val'):
+        parser.error('--limit is positive and permitted only for validation smoke checks')
+    if not args.transpose_image:parser.error('public252-v1 requires --transpose_image')
+    from run_public252 import validate
+    spec_path=Path(__file__).with_name('public252-v1.json')
+    validate(args.data_root,json.loads(spec_path.read_text()))
+    if not args.pretrained_model_path.is_file():parser.error('Checkpoint file does not exist')
+    if not torch.cuda.is_available():raise RuntimeError('CUDA GPU required for the CRSDUN measurement operator')
+    out=args.outf/args.name/('smoke_val' if args.limit else 'evaluation_'+args.eval_split)
+    out.mkdir(parents=True,exist_ok=False)
+    set_seed(3407)
+    from models import model_generator
+    loader=evaluation_loader(args.data_root,args.eval_split,args.workers,True)
+    model=model_generator('CRSDUN',28,loader.dataset.num_classes,str(args.pretrained_model_path))
+    phi,mask=init_mask(str(args.mask_path),'SSR',1,28)
+    record={'status':'running','split':args.eval_split,'scope':'validation smoke' if args.limit else 'full split',
+            'checkpoint_sha256':sha256(args.pretrained_model_path),'mask_sha256':sha256(args.mask_path),
+            'protocol_sha256':sha256(spec_path),'reference_amplitude':1.0,'seed':3407,
+            'torch':str(torch.__version__),'gpu':torch.cuda.get_device_name(0),
+            'config':{k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()}}
+    (out/'evaluation.json').write_text(json.dumps(record,indent=2))
+    scenes=evaluate_batches(model,loader,lambda x:init_meas(x,phi,'Y'),mask,'cuda',out,args.limit,args.save_predictions)
+    record.update(status='completed',scene_count=len(scenes),scenes=scenes)
+    (out/'evaluation.json').write_text(json.dumps(record,indent=2))
+    print(f'Completed {args.eval_split}: {len(scenes)} scenes. Results: {out}')
 
-        with torch.no_grad():
-            rec_pred, seg_pred = model(mea, input_mask_test)
-            rec_pred = rec_pred[-1]
-            seg_pred = seg_pred[-1]
-            seg_pred = torch.argmax(seg_pred, dim=1) # get the most likely prediction
-            
-            # add metrics batch
-            rec_pred = rec_pred.cpu()
-            metrics_rec.add_batch(x.cpu(), rec_pred)
-            metrics_seg.add_batch(label, seg_pred.cpu().numpy())
-            
-            # save_hsi
-            np.save(os.path.join(result_path, f"scene{i+1:02d}_hsi.npy"), rec_pred.squeeze(0).permute(1,2,0).numpy())
-
-            # save_seg_map
-            seg_map_rgb = decode_segmap(seg_pred.cpu()).astype(np.uint8)
-            plt.imsave(os.path.join(result_path, f"scene{i+1:02d}.png"), seg_map_rgb)
-
-    metrics_rec_table = metrics_rec.get_table()
-    metrics_seg_table = metrics_seg.get_table()
-    logger.info(f'\nTest stats:\n{metrics_rec_table}')
-    logger.info(f'\nTest stats:\n{metrics_seg_table}')
-
-    print("Done")
-
-if __name__ == "__main__":
-    "------------------start testing-------------------------"
-    main()
-
+if __name__=='__main__':main()

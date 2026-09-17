@@ -1,0 +1,5828 @@
+[
+  {
+    "scene": "2021-11-03_007",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.022029204492090133,
+    "max": 2.2388329757214365,
+    "fraction_above_one": 0.0600848879132952,
+    "foreground_fraction": 0.046634674072265625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "54e34560f95b3695b780711e84febe29947280fd3de474b97e6a55a076d75d47"
+  },
+  {
+    "scene": "2021-11-03_008",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.021533446901029075,
+    "max": 2.2693096495931546,
+    "fraction_above_one": 0.06797667912074498,
+    "foreground_fraction": 0.038665771484375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "307c470c6ba335db778d1d4d03b0f208ea1ada2a40d6746ce43232b11dbb1da9"
+  },
+  {
+    "scene": "2021-11-03_010",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03752974441069388,
+    "max": 2.1320381439676366,
+    "fraction_above_one": 0.06192847660609654,
+    "foreground_fraction": 0.04587554931640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "e04601927bf7dace66010f1891b90067d045e53bcc55e03cf8eaffd33be96572"
+  },
+  {
+    "scene": "2021-11-03_015",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.044990271402878014,
+    "max": 2.6043584885460533,
+    "fraction_above_one": 0.05910628182547433,
+    "foreground_fraction": 0.05231475830078125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "a1a62645428d2ed05fa613e5d87ab2ff0cf2948b22e49cd89515d7e798a084b7"
+  },
+  {
+    "scene": "2021-11-03_017",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 4.101114922282728,
+    "fraction_above_one": 0.021300997052873884,
+    "foreground_fraction": 0.037334442138671875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "19389d5d97427286dbacdb2f0f3cfeac67a160ea485c08da70d62317d57bcf69"
+  },
+  {
+    "scene": "2021-11-03_018",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03422273582853678,
+    "max": 1.2830130663652073,
+    "fraction_above_one": 0.02388708932059152,
+    "foreground_fraction": 0.035984039306640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "7d8876aa61170cfc0f22c0469c02d1c184668d3fa2e225d0ecc46290aa2267bb"
+  },
+  {
+    "scene": "2021-11-03_020",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.016771197202442863,
+    "max": 2.4046039056530986,
+    "fraction_above_one": 0.023525919233049666,
+    "foreground_fraction": 0.0357818603515625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "68aab14a9c154d0aa4e99a6ed9259797d0f418ddb9ae1c5f24b1681d327f88fa"
+  },
+  {
+    "scene": "2021-11-03_021",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04964645420828358,
+    "max": 2.8558274478460577,
+    "fraction_above_one": 0.020709446498325894,
+    "foreground_fraction": 0.024280548095703125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "5f3558cc239bc1518a2a67e9dad7c50bec56cd80907c2e65f064a6b3fbbec714"
+  },
+  {
+    "scene": "2021-11-03_022",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.023033951876325717,
+    "max": 1.7155520612584036,
+    "fraction_above_one": 0.022256170000348772,
+    "foreground_fraction": 0.0347442626953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5,
+      6,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "d67551bf0cc25900053d27491c796dc5922d9ef4d80f7f68bf93174b4e24054a"
+  },
+  {
+    "scene": "2021-11-03_023",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.017694730042716694,
+    "max": 2.853038494059896,
+    "fraction_above_one": 0.022459030151367188,
+    "foreground_fraction": 0.054286956787109375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6,
+      7,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "7528918a7c56e0e67bdb5d361d1d5091f3ae5358f78d3f9d858e55abb80fde79"
+  },
+  {
+    "scene": "2021-11-03_024",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.018986918600953646,
+    "max": 2.9405522188877464,
+    "fraction_above_one": 0.023276873997279575,
+    "foreground_fraction": 0.048633575439453125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6,
+      7,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "957caa91c2f076006afdbbf560bac3ca288bcd0f981fe92278001cc8881f5a0c"
+  },
+  {
+    "scene": "2021-11-03_025",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01710112752179722,
+    "max": 1.9943390070804135,
+    "fraction_above_one": 0.02208423614501953,
+    "foreground_fraction": 0.039825439453125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5,
+      6,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "a435a30c420cd41d97e0186454e593a27b6f2499181631ae5d051f3d4983b146"
+  },
+  {
+    "scene": "2021-11-03_032",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0121951132503934,
+    "max": 1.6399543695620034,
+    "fraction_above_one": 0.025504248482840403,
+    "foreground_fraction": 0.0402679443359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "36d52676a6a250d753f84e940aa9d4255f6b9e8418babf785ab94c73f9988fab"
+  },
+  {
+    "scene": "2021-11-03_033",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.019826106009512436,
+    "max": 3.1391502611986253,
+    "fraction_above_one": 0.021535600934709822,
+    "foreground_fraction": 0.033519744873046875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "0e31fe9bf5ac7bfb57177cc29a2af833514e6c45f4319457c39c5f56b89a907b"
+  },
+  {
+    "scene": "2021-11-03_034",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.013999419422846396,
+    "max": 2.5552514516874303,
+    "fraction_above_one": 0.02233478001185826,
+    "foreground_fraction": 0.037975311279296875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "a090ad92f1e2299c9e45b7a9ee605bb34dd661b40b94cf9e84470227662c75bf"
+  },
+  {
+    "scene": "2021-11-03_035",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012580365292791471,
+    "max": 1.1601493030906886,
+    "fraction_above_one": 0.023690359933035716,
+    "foreground_fraction": 0.037342071533203125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "5a73a3d3b354ce12de3e61b180da1ed999d22a25dbd732ebdf713be315602067"
+  },
+  {
+    "scene": "2021-11-03_036",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.014101786677759874,
+    "max": 1.162134081647509,
+    "fraction_above_one": 0.027127947126116072,
+    "foreground_fraction": 0.0353546142578125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "451c96326fbd25b465b6418ac45031c255758aa41b863d3b07802d130f7213e8"
+  },
+  {
+    "scene": "2021-11-03_037",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.014123430675284657,
+    "max": 1.1882818028749034,
+    "fraction_above_one": 0.033317702157156806,
+    "foreground_fraction": 0.02837371826171875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "b586ced2efc6f3eec6e05f00276654634d3461f4c547818c9c132e8c0afc5d2a"
+  },
+  {
+    "scene": "2021-11-03_038",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012431286803599948,
+    "max": 1.3234185126960933,
+    "fraction_above_one": 0.04176439557756696,
+    "foreground_fraction": 0.022319793701171875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "6b474ad129fb9908a182ae0661a75a4c9deef568de93027964612d5e75b49b8c"
+  },
+  {
+    "scene": "2021-11-03_040",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.013188176484086654,
+    "max": 1.1918358931037911,
+    "fraction_above_one": 0.05863121577671596,
+    "foreground_fraction": 0.017475128173828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "1d5697f046239597dbfa462c2e8f267674a205477ecba5586964dc2e92369703"
+  },
+  {
+    "scene": "2021-11-03_041",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.011555345674781496,
+    "max": 1.1862165833258824,
+    "fraction_above_one": 0.04079178401402065,
+    "foreground_fraction": 0.025135040283203125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "37c6d5e4fa7cf8a8181f521391ab778601503976ad9cfaee8f7e5679751e8c8d"
+  },
+  {
+    "scene": "2021-11-03_042",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.011336845141223883,
+    "max": 1.3222439656635003,
+    "fraction_above_one": 0.0383580071585519,
+    "foreground_fraction": 0.0396728515625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "a282140038eadf4df89049709e36d322b2c27c8844ce4e38863a566f3457aae2"
+  },
+  {
+    "scene": "2021-11-03_043",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.011572561018484983,
+    "max": 1.7766525868089362,
+    "fraction_above_one": 0.024044173104422435,
+    "foreground_fraction": 0.037151336669921875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "03432e5cc9260bf825c405c24d79e797f1181f020b31b51ea397ffe7a43b2672"
+  },
+  {
+    "scene": "2021-11-03_045",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.010032140169613462,
+    "max": 1.6283728722568331,
+    "fraction_above_one": 0.028898647853306363,
+    "foreground_fraction": 0.03484344482421875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "418f6a072dc9677ccb8b8b0296099fd26b605cefafcf35364cf4b3ced9975db9"
+  },
+  {
+    "scene": "2021-11-03_046",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012041885762547319,
+    "max": 1.2643034887719689,
+    "fraction_above_one": 0.03524930136544364,
+    "foreground_fraction": 0.026729583740234375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "1cbb7e0ffe9c126411db5118e2ddd0f9e8786bdf8e2a9f9c15186865825d2a84"
+  },
+  {
+    "scene": "2021-11-03_047",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.014167188491074408,
+    "max": 1.664426995330233,
+    "fraction_above_one": 0.0455406733921596,
+    "foreground_fraction": 0.03542327880859375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "81769009f3461bc82bac3a1e5728792567c890c02197f9c8cb1ecfd493aa7ad5"
+  },
+  {
+    "scene": "2021-11-03_048",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.010310281499977975,
+    "max": 1.5562709723342252,
+    "fraction_above_one": 0.039428302219935825,
+    "foreground_fraction": 0.046085357666015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "c8c38b32bfbb5d72cea222298cdef0e38951f4919e26c227d969643df485fd79"
+  },
+  {
+    "scene": "2021-11-03_049",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01154066057587761,
+    "max": 1.2257761188008487,
+    "fraction_above_one": 0.025280135018484935,
+    "foreground_fraction": 0.041553497314453125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "e2ebae6f49c909a4afb7db7828469456ca8f7299890893aedf9d30618e9d5015"
+  },
+  {
+    "scene": "2021-11-03_051",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.010047542670122759,
+    "max": 1.9688263511530297,
+    "fraction_above_one": 0.028899056570870534,
+    "foreground_fraction": 0.036815643310546875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "6b747d8718434e70b2fde67b7cd8742eb2ac41d7a5c98264697b3c07dd5dbabe"
+  },
+  {
+    "scene": "2021-11-03_052",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.011094631831185198,
+    "max": 1.5959444975535912,
+    "fraction_above_one": 0.018514496939522878,
+    "foreground_fraction": 0.04189300537109375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "3b8e86e733afdd17c80e8268ce74c41bfcf4b6be1c529b0d69f3600572ed47d7"
+  },
+  {
+    "scene": "2021-11-03_053",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.011586764957938991,
+    "max": 1.1394218146184407,
+    "fraction_above_one": 0.02206366402762277,
+    "foreground_fraction": 0.036098480224609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "e26bb543f539c1d0f67eddfbe43ed6ca14b4edccfb643ad28ad70e7b11d607be"
+  },
+  {
+    "scene": "2021-11-03_054",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.009609866860086143,
+    "max": 1.3159306265208037,
+    "fraction_above_one": 0.024609157017299106,
+    "foreground_fraction": 0.047748565673828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "586c5c1e7d7b54db772c5dedd7c4ee82cd7babcde3df07d3ed0ca4f6c99fb8ec"
+  },
+  {
+    "scene": "2021-11-03_055",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.009781416538787984,
+    "max": 2.8392261443086055,
+    "fraction_above_one": 0.01999936785016741,
+    "foreground_fraction": 0.051788330078125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "42bc5938b27d7bb5c83a9bf9690e57adfca1abf47d6205fb4170583ff51e5a35"
+  },
+  {
+    "scene": "2021-11-03_056",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.026231008826881126,
+    "max": 1.6109230145608031,
+    "fraction_above_one": 0.03989832741873605,
+    "foreground_fraction": 0.03659820556640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "068049314f2dfe7aa94b56736f71bec88f768d3ee803b3cf2ff8da6aee25ecc1"
+  },
+  {
+    "scene": "2021-11-03_057",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04507019380500495,
+    "max": 1.2056951597722738,
+    "fraction_above_one": 0.03070531572614397,
+    "foreground_fraction": 0.04674530029296875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "0bb475f548221c7f149e2b3f1382990fa8d810db091bffdfcf361d81540e25f7"
+  },
+  {
+    "scene": "2021-11-03_058",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012899076014910197,
+    "max": 1.7793765484360582,
+    "fraction_above_one": 0.021989822387695312,
+    "foreground_fraction": 0.0445404052734375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "0405810c245a2eb905a7fc05eb202368957f28f81b00d638dbc0afc4beaf6010"
+  },
+  {
+    "scene": "2021-11-03_080",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.044512182640575854,
+    "max": 1.3820518871985419,
+    "fraction_above_one": 0.03101294381277902,
+    "foreground_fraction": 0.02053070068359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "49d20b795487bb2d2e3c8fdc555d1dc7e3d276e4d021642fa63da53a3fb17676"
+  },
+  {
+    "scene": "2021-11-03_081",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04403248307083137,
+    "max": 1.4135243390828969,
+    "fraction_above_one": 0.0256847654070173,
+    "foreground_fraction": 0.027355194091796875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "d88d61ff3d272ff4750f7eba899bd44be325f8eb7c96dc7e59ebcd47b61aec82"
+  },
+  {
+    "scene": "2021-11-03_082",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.045702036787850835,
+    "max": 1.6117300989681873,
+    "fraction_above_one": 0.032764434814453125,
+    "foreground_fraction": 0.028591156005859375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "cfabefc08bd5698c3b90194cf075845980e7bd1f338afd99b75b52fe8b857727"
+  },
+  {
+    "scene": "2021-11-03_083",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04520730271688905,
+    "max": 1.3961713903791,
+    "fraction_above_one": 0.022837911333356584,
+    "foreground_fraction": 0.02791595458984375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "55223d3c809c1906a20e0ee4a7ef688ed0c7a225cbce0ffb4d7cfa78a2edc7ae"
+  },
+  {
+    "scene": "2021-11-03_084",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04082449076116159,
+    "max": 1.6294199071611453,
+    "fraction_above_one": 0.02913665771484375,
+    "foreground_fraction": 0.02657318115234375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "cafbb7ba90c44cea2989d1f3807fe7f1431dad355a22a4885bc6df3ac5225c8e"
+  },
+  {
+    "scene": "2021-11-03_085",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04517975860110647,
+    "max": 1.512453605281372,
+    "fraction_above_one": 0.02457359858921596,
+    "foreground_fraction": 0.025104522705078125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "6f28cf0341cfee58393686c0495db996e2d265813ec51e02fcb477106e2733ed"
+  },
+  {
+    "scene": "2021-11-03_086",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04594295210312044,
+    "max": 1.3426321762812212,
+    "fraction_above_one": 0.02868175506591797,
+    "foreground_fraction": 0.025905609130859375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "1080499dce4044cbe8e1cf49a85d9f196ba8a005e2b33592f81476d87797cfc5"
+  },
+  {
+    "scene": "2021-11-03_087",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0440730724136395,
+    "max": 1.3593355156222817,
+    "fraction_above_one": 0.02435793195452009,
+    "foreground_fraction": 0.02728271484375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "a5270dc3cc6ff6acb77bb8db48b93c7994a102fcb7f23302e93105bb3db1e5a3"
+  },
+  {
+    "scene": "2021-11-03_088",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04576322885928597,
+    "max": 1.6510281217010538,
+    "fraction_above_one": 0.029119082859584262,
+    "foreground_fraction": 0.02417755126953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "e64a5e691f8554138c821f44e3f3510be02a91276f925d729a4c14173f0994f8"
+  },
+  {
+    "scene": "2021-11-03_089",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04556512342931734,
+    "max": 1.4859712868230255,
+    "fraction_above_one": 0.028875078473772322,
+    "foreground_fraction": 0.024990081787109375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "82a08ab96116aaab1d122f19e3b956fc362bb9d4478e7a4117fc2d7a2bbd48b3"
+  },
+  {
+    "scene": "2021-11-03_090",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04335283409900469,
+    "max": 1.6618343951720758,
+    "fraction_above_one": 0.029002462114606584,
+    "foreground_fraction": 0.028942108154296875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "6473bc10703689a8e87f3241fdeeac0f321f5ac0f89b7fb4a62efd22b8d92136"
+  },
+  {
+    "scene": "2021-11-03_091",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.045268100523408746,
+    "max": 1.3645204805051294,
+    "fraction_above_one": 0.02449744088309152,
+    "foreground_fraction": 0.028797149658203125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "679d9146a9a426139e13c5f7101b1eb72bc7887d726d517ea010ea319c1ad990"
+  },
+  {
+    "scene": "2021-11-03_092",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.020851889273936327,
+    "max": 1.1672564575729014,
+    "fraction_above_one": 0.026916095188685825,
+    "foreground_fraction": 0.019073486328125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "7fa1458c99957b2f40ab92858059449426da0471cd5e3cd1f0561c7ca6d2a1db"
+  },
+  {
+    "scene": "2021-11-03_093",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.024409421696154714,
+    "max": 1.1519867056130977,
+    "fraction_above_one": 0.02633680616106306,
+    "foreground_fraction": 0.019527435302734375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "7195c06853c8007189ddbbd1298af47f0bd4ec92e892b0f4468223d067a1b3ca"
+  },
+  {
+    "scene": "2021-11-03_094",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02137583649497035,
+    "max": 1.1993106136152762,
+    "fraction_above_one": 0.03426619938441685,
+    "foreground_fraction": 0.045833587646484375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "e0912299d7c5b497424780a40e811aeae9fa95755f992b49b22f09e7c24be33a"
+  },
+  {
+    "scene": "2021-11-03_099",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.024862304462359607,
+    "max": 1.1488352630097136,
+    "fraction_above_one": 0.023331642150878906,
+    "foreground_fraction": 0.02945709228515625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "7d72ecad6aae0c65d772fe8ae427085f17b0348b6d76270ce1727a03b9c1a374"
+  },
+  {
+    "scene": "2021-11-03_100",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.026063192807435007,
+    "max": 1.163836742208016,
+    "fraction_above_one": 0.02380234854561942,
+    "foreground_fraction": 0.044647216796875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "3097021fa1b0d8fc4038060438ab705384670c66dd60e546966b8950b7c0ba68"
+  },
+  {
+    "scene": "2021-11-03_101",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.029048217636057964,
+    "max": 1.13597490267772,
+    "fraction_above_one": 0.02386542728969029,
+    "foreground_fraction": 0.017650604248046875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "2100db06d74ecb0038de545a3899c974ce4ad1426dccd4708a0c8d07a82ac1aa"
+  },
+  {
+    "scene": "2021-11-03_102",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.022605411003979652,
+    "max": 1.176188537818742,
+    "fraction_above_one": 0.025201388767787387,
+    "foreground_fraction": 0.047298431396484375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "e73a80a7739daf4a14708a4146368821cbfe5ccb68064c7df552a5cad3297d1d"
+  },
+  {
+    "scene": "2021-11-03_103",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.017193018825159938,
+    "max": 1.1991403796941575,
+    "fraction_above_one": 0.024285452706473216,
+    "foreground_fraction": 0.15670013427734375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "9f5af7ef2eca73c833f275ce905789ea4fe7855d5ed32776fffe768aaaca3511"
+  },
+  {
+    "scene": "2021-11-03_104",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.013958068088933077,
+    "max": 1.1969642655401846,
+    "fraction_above_one": 0.02623285566057478,
+    "foreground_fraction": 0.08721923828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "52ec688c85fea75c3537a84aa6d9be824c5ba97a5d871107179d7f770b1cafc6"
+  },
+  {
+    "scene": "2021-11-03_110",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.025190328533046515,
+    "max": 1.1651290054154537,
+    "fraction_above_one": 0.040054185049874444,
+    "foreground_fraction": 0.0084381103515625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "3d40889e425306c2d4a5d0385ebea2c2b304326cd85b4a81403deea2ddb641c2"
+  },
+  {
+    "scene": "2021-11-04_001",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.025309501390486034,
+    "max": 1.2061181438833202,
+    "fraction_above_one": 0.07431520734514509,
+    "foreground_fraction": 0.005474090576171875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "04fff11167ea7629dc501d27642ee4e9d86181ff844e13779d32b35dcac0a5bb"
+  },
+  {
+    "scene": "2021-11-04_006",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.016533879616399443,
+    "max": 1.1528422672852414,
+    "fraction_above_one": 0.025499071393694197,
+    "foreground_fraction": 0.0512542724609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "47a8f4965aad80eef40163f229a8b4bd85a2165500f15477b9fe7816fb96f05c"
+  },
+  {
+    "scene": "2021-11-04_007",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02302324333425467,
+    "max": 1.1741536394948042,
+    "fraction_above_one": 0.033783912658691406,
+    "foreground_fraction": 0.024448394775390625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "4d6ee78fc3238d57c5d420831f613bf0242efca29eae42db58bfe0b8cb4fc5c6"
+  },
+  {
+    "scene": "2021-11-04_008",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.021210031968945667,
+    "max": 1.1710697931316176,
+    "fraction_above_one": 0.041032654898507256,
+    "foreground_fraction": 0.032413482666015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "466f6354aec07d14e0fbfa7d7151f5dfc7467f92545e7e456380f92de17a680e"
+  },
+  {
+    "scene": "2021-11-04_009",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.019455248909811075,
+    "max": 1.1617469821407411,
+    "fraction_above_one": 0.024793761117117747,
+    "foreground_fraction": 0.048206329345703125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "bdbf43b7c76122114a115b330e25cf1b0131bfbd7cc5fea75ff670f4a0e29f4a"
+  },
+  {
+    "scene": "2021-11-04_010",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.013439589914219695,
+    "max": 1.163983817546955,
+    "fraction_above_one": 0.021844863891601562,
+    "foreground_fraction": 0.09617233276367188,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "598f96df078ee86bdec6323ba90d1c4d28555df4bc36a2d0a53710d1275c4f6e"
+  },
+  {
+    "scene": "2021-11-04_011",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01351420231440619,
+    "max": 1.1517596477347403,
+    "fraction_above_one": 0.01803098406110491,
+    "foreground_fraction": 0.09047698974609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "c5ce84a7bab246a1b09f4082d6a0e4059aff8fb2534945c25e92463b05b404a5"
+  },
+  {
+    "scene": "2021-11-04_015",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.019365483263186076,
+    "max": 1.1502322160504945,
+    "fraction_above_one": 0.02420507158551897,
+    "foreground_fraction": 0.049243927001953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "63085ed4c60e72be0941ef8da0784eadab489b0248a88f433df8fdeeab6a76f0"
+  },
+  {
+    "scene": "2021-11-04_016",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.021487957743469004,
+    "max": 1.1699493986811653,
+    "fraction_above_one": 0.029184068952287947,
+    "foreground_fraction": 0.02648162841796875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "38bf907da902644a8621b909536c3413842f47c80998b934e2714a560ee84209"
+  },
+  {
+    "scene": "2021-11-04_017",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.017511121345714833,
+    "max": 1.1604129342484288,
+    "fraction_above_one": 0.02266407012939453,
+    "foreground_fraction": 0.05324554443359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "48c303580ecb0e88dfde938b8d34de85421bb292049dbdd027f52112eb92ef3e"
+  },
+  {
+    "scene": "2021-11-04_018",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.017757123133790076,
+    "max": 1.181607509836787,
+    "fraction_above_one": 0.04217747279575893,
+    "foreground_fraction": 0.02658843994140625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "d7522f4f314e2cb14c30554ef53a05ad895920a9c5d0ab9f2778ff2d026e8d87"
+  },
+  {
+    "scene": "2021-11-04_019",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0270778696325595,
+    "max": 1.2092950793827197,
+    "fraction_above_one": 0.03269822256905692,
+    "foreground_fraction": 0.028980255126953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "ad8d208d9d6790027cd75f675d516e16e64122a875ece6109d09c7089365ecc4"
+  },
+  {
+    "scene": "2021-11-04_020",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03829016810526528,
+    "max": 1.2489115348987128,
+    "fraction_above_one": 0.03436006818498884,
+    "foreground_fraction": 0.029636383056640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "d08454f2c3b3367209ca13907dace66437ab0c64106cc05c0edc4ed72908e817"
+  },
+  {
+    "scene": "2021-11-04_021",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.022476107678842915,
+    "max": 1.275065125090788,
+    "fraction_above_one": 0.03318704877580915,
+    "foreground_fraction": 0.028057098388671875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "1887d21a742739705ad721261ad81cadebed0e541f3ad6ea12e44cc46d69ebd6"
+  },
+  {
+    "scene": "2021-11-04_022",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.026039888599556797,
+    "max": 1.245421482786786,
+    "fraction_above_one": 0.02546964372907366,
+    "foreground_fraction": 0.04421234130859375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "7d00d743a87ad73f3a188c010b1893da836dd070b9a225158e2de291f1bee21a"
+  },
+  {
+    "scene": "2021-11-04_023",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02460000963218344,
+    "max": 1.3109473746474067,
+    "fraction_above_one": 0.02698993682861328,
+    "foreground_fraction": 0.038055419921875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "cbb387c4cedc6e6c3e563d6b2c26723f0d0f116c7d159c7bc1a4bcd20e2320fd"
+  },
+  {
+    "scene": "2021-11-04_024",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.9835020949399125,
+    "fraction_above_one": 0.01908247811453683,
+    "foreground_fraction": 0.040752410888671875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "6cf51ea6b18245b174538bef04f06bb4ce8269228e3b5760a42f90f6ec65aba9"
+  },
+  {
+    "scene": "2021-11-04_025",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 4.578469335109835,
+    "fraction_above_one": 0.017238071986607144,
+    "foreground_fraction": 0.06203460693359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "4dfacc5e07c2c472b513496518518dc58f621f91265f447181da9f6f0251e697"
+  },
+  {
+    "scene": "2021-11-04_026",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 5.555036422410265,
+    "fraction_above_one": 0.015646798270089284,
+    "foreground_fraction": 0.046539306640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "db12865d385c1f302122be04808c3cd12c4db0ea2dd2afbe2651aa1ff491270a"
+  },
+  {
+    "scene": "2021-11-04_027",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 4.171784201399172,
+    "fraction_above_one": 0.020927020481654575,
+    "foreground_fraction": 0.059322357177734375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "d970be34ed51af9777340f80eddd819bc5963aaf3d50873e45377668e2602b13"
+  },
+  {
+    "scene": "2021-11-04_028",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 7.842789440199159,
+    "fraction_above_one": 0.016885621207101003,
+    "foreground_fraction": 0.03618621826171875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "3c4d887ab5995784d8a8f3085a478e1fdf3d6397722a3d59667559de57afa69b"
+  },
+  {
+    "scene": "2021-11-04_029",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 4.593203396586833,
+    "fraction_above_one": 0.01694352286202567,
+    "foreground_fraction": 0.033447265625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "8ab6467a8c567ec4585b4fc435107820a51457cb94669e2665017b60e51eca5d"
+  },
+  {
+    "scene": "2021-11-04_030",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 4.8476222407651495,
+    "fraction_above_one": 0.016737120492117747,
+    "foreground_fraction": 0.068603515625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "188d5867330074368dc4395d05b1a61b991729f9038e55ccb74a5f0d968cb978"
+  },
+  {
+    "scene": "2021-11-04_031",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 5.273627677121245,
+    "fraction_above_one": 0.017699377877371653,
+    "foreground_fraction": 0.07402420043945312,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "7e8122eed167bfc7808370ed9c1fca4fa0dfb56f49df09e1a053125f26a32565"
+  },
+  {
+    "scene": "2021-11-04_032",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 4.190967413568451,
+    "fraction_above_one": 0.016379083905901228,
+    "foreground_fraction": 0.07136917114257812,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "3d0b2c7cea688899567a607932e6566892875305813e425df2e12a2e3196e9a7"
+  },
+  {
+    "scene": "2021-11-04_033",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.4416392841558707,
+    "fraction_above_one": 0.01738452911376953,
+    "foreground_fraction": 0.06578445434570312,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "53da27d6f5c7c9ceb2c9a74ef5514511f35b21919da02a7291625f403c607aa5"
+  },
+  {
+    "scene": "2021-11-04_034",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 4.067025732931945,
+    "fraction_above_one": 0.018778256007603238,
+    "foreground_fraction": 0.070037841796875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "d49e65905c8f8e1b0caad1f9607431af134a01780af1efc40809e37bb25b90b3"
+  },
+  {
+    "scene": "2021-11-04_035",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.046925678143684355,
+    "max": 1.4055261454515988,
+    "fraction_above_one": 0.029266629900251116,
+    "foreground_fraction": 0.016925811767578125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "79b3b79aa0286b7bc561974d5b14e6712e939b67683bb1818d94db34d2586cb8"
+  },
+  {
+    "scene": "2021-11-04_036",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.035345695548480535,
+    "max": 1.2126212283692168,
+    "fraction_above_one": 0.02808734348842076,
+    "foreground_fraction": 0.031589508056640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "d4a16f2283cd652a1fc9647718f94cede3f81c65730971bcf6d76f1b6c40543f"
+  },
+  {
+    "scene": "2021-11-04_037",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03851436862247573,
+    "max": 1.4763768330082208,
+    "fraction_above_one": 0.02957916259765625,
+    "foreground_fraction": 0.02356719970703125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "d7c9d89a4c7c7f4446791683a6ec0c0433619bf4712d702deb86a97f9384f84b"
+  },
+  {
+    "scene": "2021-11-04_038",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04002703192545132,
+    "max": 1.673718589442245,
+    "fraction_above_one": 0.023786272321428572,
+    "foreground_fraction": 0.03269195556640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "ebd74e53db43792a94b4bb3b8483331a73206789e32fc1168acebf4223ca0cde"
+  },
+  {
+    "scene": "2021-11-04_039",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.038960029572796644,
+    "max": 1.3823937515941427,
+    "fraction_above_one": 0.039073399135044644,
+    "foreground_fraction": 0.031368255615234375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "1012bf53e15bd9f6b4cd0d0e48eaa2205c5b65e312b6492a7089a22342719d32"
+  },
+  {
+    "scene": "2021-11-04_040",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.045477429523104164,
+    "max": 1.3163466897504896,
+    "fraction_above_one": 0.032041004725864956,
+    "foreground_fraction": 0.035732269287109375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "28df393b31398918d56b3aa8aa19e41930c57e2921d38b7b1759ca0c5f7cc1d9"
+  },
+  {
+    "scene": "2021-11-04_041",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.032357168312733685,
+    "max": 1.841253685101002,
+    "fraction_above_one": 0.028935977390834262,
+    "foreground_fraction": 0.031970977783203125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "9ebb92860eee037dca6a0a9450a3ca5eb175019c5e412c0ee7b8f7481b25decf"
+  },
+  {
+    "scene": "2021-11-04_042",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03214268777139008,
+    "max": 1.8432004454858473,
+    "fraction_above_one": 0.028601101466587613,
+    "foreground_fraction": 0.029590606689453125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "d7fa818af455017299a56d329a5dd13b4a6fc128553699a9c4f661517dc770bf"
+  },
+  {
+    "scene": "2021-11-04_043",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03750861427048207,
+    "max": 2.191668140189389,
+    "fraction_above_one": 0.028457914079938616,
+    "foreground_fraction": 0.03426361083984375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "60d4e21914b1f2ed1da1a736272c6ded83fe1f302c5616f532cd03790a3290b9"
+  },
+  {
+    "scene": "2021-11-04_044",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0334851065976097,
+    "max": 2.191567003685667,
+    "fraction_above_one": 0.03206825256347656,
+    "foreground_fraction": 0.032352447509765625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "7ce1cc36625bcfa1a8d605494e1f56c7a2196ada4e10722755fe8e56cfb54aa4"
+  },
+  {
+    "scene": "2021-11-04_045",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0368974072962915,
+    "max": 1.8615086355696366,
+    "fraction_above_one": 0.030145236424037387,
+    "foreground_fraction": 0.032932281494140625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "df5fc500f4b23271654f55cf7bde82b2d869d2984a4f1a3eeb47a982f69137ed"
+  },
+  {
+    "scene": "2021-11-04_046",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.3345714395411887,
+    "fraction_above_one": 0.023476873125348772,
+    "foreground_fraction": 0.031459808349609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "eff49930ba49678c195bbbb1e5ff0737d207df450c76aa2e667e05d27946c448"
+  },
+  {
+    "scene": "2021-11-04_047",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03737210733304867,
+    "max": 1.801190912285055,
+    "fraction_above_one": 0.03661768777029855,
+    "foreground_fraction": 0.0298919677734375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "ffbfb0edc7c46f3747350a857c16abfad88059e84a406047bdcc3983078a2a9c"
+  },
+  {
+    "scene": "2021-11-04_048",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0415348893500174,
+    "max": 1.509689110612081,
+    "fraction_above_one": 0.03837312970842634,
+    "foreground_fraction": 0.033397674560546875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "a7306b651069309801e236da8445157f5cbeb54b75a978ea6943d352e644ae74"
+  },
+  {
+    "scene": "2021-11-04_049",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.035068418033851675,
+    "max": 1.5037523907507373,
+    "fraction_above_one": 0.034054619925362725,
+    "foreground_fraction": 0.03656768798828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "264517741e87bc2d32acc7f365ce5c1f549f10d4d1fb2cdc8501ba80ec338d6a"
+  },
+  {
+    "scene": "2021-11-04_050",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04344707619612041,
+    "max": 1.328628608293489,
+    "fraction_above_one": 0.03902639661516462,
+    "foreground_fraction": 0.028263092041015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "1fb0ece040dc8a43327327fdddd07d50612b1b3a5f1c35ca0861c5f9e25300c0"
+  },
+  {
+    "scene": "2021-11-04_051",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04478160400004475,
+    "max": 1.1595368073929426,
+    "fraction_above_one": 0.046263694763183594,
+    "foreground_fraction": 0.010051727294921875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "735227fad158d35a96ded32eb38877834efdb4c1d3180b4c2eecfcaa08e5be43"
+  },
+  {
+    "scene": "2021-11-04_052",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04048747976454873,
+    "max": 1.1495015866423033,
+    "fraction_above_one": 0.03262015751429966,
+    "foreground_fraction": 0.02017974853515625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "de210a9af0f63613d8cb626052e5e4de4da879c3188d3edc29e0b8916c3316bc"
+  },
+  {
+    "scene": "2021-11-04_053",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03723543443232683,
+    "max": 1.166562644028718,
+    "fraction_above_one": 0.052203859601702006,
+    "foreground_fraction": 0.01441192626953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "2c8cf62b5e75306b9244956b71e5555f44a0c3e3c0928895bb233ea43c70790c"
+  },
+  {
+    "scene": "2021-11-04_054",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04339320012662586,
+    "max": 1.189702683982746,
+    "fraction_above_one": 0.04029955182756696,
+    "foreground_fraction": 0.020298004150390625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "524788141fd6262c798a6e9ea1e4114e9cf05d6a78a9b8e77eb447be010c7a84"
+  },
+  {
+    "scene": "2021-11-04_055",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04170023737198464,
+    "max": 1.20370807608143,
+    "fraction_above_one": 0.041656902858189175,
+    "foreground_fraction": 0.014102935791015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "06aaa3cdebefb2d1fa00a0d7f9debcf9996a594a565494129a4ae5c8dab0bc14"
+  },
+  {
+    "scene": "2021-11-04_056",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04018330506592477,
+    "max": 1.178626065429134,
+    "fraction_above_one": 0.046440260750906806,
+    "foreground_fraction": 0.008045196533203125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "714c1f1a8cb570b44498c10174aba9400095ca6c3c5ef570cf0128a4ac2dc3b1"
+  },
+  {
+    "scene": "2021-11-04_057",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03382828728442491,
+    "max": 1.180912509351665,
+    "fraction_above_one": 0.037299701145717075,
+    "foreground_fraction": 0.014492034912109375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "4554f9da1f91fb5ae870617e55b12a835ffe999ca72a1d01c57db7dbbf0fd60f"
+  },
+  {
+    "scene": "2021-11-04_058",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02447193992928458,
+    "max": 1.1771011745203601,
+    "fraction_above_one": 0.030998502458844866,
+    "foreground_fraction": 0.02333831787109375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "0783295d212bdd2ebc956feee8afd18ece85d255bcbb855fa973009951a18d53"
+  },
+  {
+    "scene": "2021-11-04_059",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.026250496689212605,
+    "max": 1.4115828623048223,
+    "fraction_above_one": 0.032663209097726006,
+    "foreground_fraction": 0.02347564697265625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "ec069887424f4528fea3721b3eb66e711c2a926722f4d2e4e105a7fd2ecf1c9d"
+  },
+  {
+    "scene": "2021-11-04_060",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02860502352740452,
+    "max": 1.1719764400109745,
+    "fraction_above_one": 0.030020032610212053,
+    "foreground_fraction": 0.0215911865234375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "3ed6b4c020de49ee06f2dee2f2560bdd636d838ed7cf0183139ac72b71691b3c"
+  },
+  {
+    "scene": "2021-11-04_061",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.027603420188737033,
+    "max": 1.1734828489645444,
+    "fraction_above_one": 0.03129346030099051,
+    "foreground_fraction": 0.0245361328125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "5ce2439ba598bca9dd9e708acc228fbd0186876d24d09020575896c0e8b449a7"
+  },
+  {
+    "scene": "2021-11-04_062",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.026714042525493142,
+    "max": 1.1689731571213784,
+    "fraction_above_one": 0.026778902326311384,
+    "foreground_fraction": 0.031589508056640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "2517ce36121cdf2f962dc20cd01765163dd996ea4e51c0b854a7195fa9dff100"
+  },
+  {
+    "scene": "2021-11-04_063",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.027937696117571666,
+    "max": 1.168385224541651,
+    "fraction_above_one": 0.025976862226213728,
+    "foreground_fraction": 0.03624725341796875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "6fe70e5e7ca9cd76109aec9d4e7220ae9ce4fa77e36815cccc329a6c6aef4fc4"
+  },
+  {
+    "scene": "2021-11-04_064",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.025877868714416566,
+    "max": 1.1765494674205292,
+    "fraction_above_one": 0.030717168535505022,
+    "foreground_fraction": 0.030414581298828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "c8ebaa035a224c1182a02cbf3257e0a76be522dd2043ade93528e83c7a72b8f0"
+  },
+  {
+    "scene": "2021-11-04_065",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03200224618109298,
+    "max": 1.167858228968822,
+    "fraction_above_one": 0.0273242677961077,
+    "foreground_fraction": 0.039447784423828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "4488e124cc51168cb04d0106264ff925dcc76f379558310dc5d6ebc02921a835"
+  },
+  {
+    "scene": "2021-11-04_066",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.021502377416261303,
+    "max": 1.1692066213115515,
+    "fraction_above_one": 0.02738966260637556,
+    "foreground_fraction": 0.036502838134765625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "5a2813ff7f1644d7e57f78708f6efa2c8f8a8cb581f173e11e05a11c5bd57b1c"
+  },
+  {
+    "scene": "2021-11-04_067",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.021158738329893626,
+    "max": 2.1634568570255035,
+    "fraction_above_one": 0.031162806919642856,
+    "foreground_fraction": 0.022430419921875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "bb0d8540c2310d20fb98c36eb58f2b7d3e8294a861ee42d024f1e4b3e51a3642"
+  },
+  {
+    "scene": "2021-11-04_068",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02322996574871175,
+    "max": 3.4582718261980125,
+    "fraction_above_one": 0.026436260768345425,
+    "foreground_fraction": 0.030185699462890625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "f7c4306d8bc3e072d9a76ad3c8ae6a03d844cf8ead7950e196fe77c2df03e7b2"
+  },
+  {
+    "scene": "2021-11-04_069",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.022860707315818057,
+    "max": 2.392379177118863,
+    "fraction_above_one": 0.02088110787527902,
+    "foreground_fraction": 0.03012847900390625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "cd33b00d0c95118753a066edf3f337dd76de3937b27e04e3744f0d05ff989a15"
+  },
+  {
+    "scene": "2021-11-04_070",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03610039337547501,
+    "max": 2.568121775403229,
+    "fraction_above_one": 0.026254653930664062,
+    "foreground_fraction": 0.030567169189453125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "bf78f6520de9e71e90d56ad1614584f69c0b1ecf3e47388df6ec3d2ca1a157f2"
+  },
+  {
+    "scene": "2021-11-04_071",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.029360599990757692,
+    "max": 2.1938687979681477,
+    "fraction_above_one": 0.018446649823869978,
+    "foreground_fraction": 0.03240966796875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "b01064031880e52728aaa447c3a082822f38448162d4176d73828c1a16af1a28"
+  },
+  {
+    "scene": "2021-11-04_072",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03146472033563191,
+    "max": 1.994822595665559,
+    "fraction_above_one": 0.01893969944545201,
+    "foreground_fraction": 0.033916473388671875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "4d72550951462485d43c5256e3aac4f9163558f487450036e59b046467e2b82d"
+  },
+  {
+    "scene": "2021-11-04_073",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0381847442746979,
+    "max": 1.8457565137571013,
+    "fraction_above_one": 0.02134772709437779,
+    "foreground_fraction": 0.03270721435546875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "2ef70474cbb50be48a82072f08bfa06950e85e3b3f1941ef3f54d36dc2f99287"
+  },
+  {
+    "scene": "2021-11-04_074",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.023127425959580197,
+    "max": 2.224022113938288,
+    "fraction_above_one": 0.021014622279575894,
+    "foreground_fraction": 0.032558441162109375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "2d39c30bfc13c8af14a200e5e3b40291c7236e50dfd1a2342973e3da502dcb60"
+  },
+  {
+    "scene": "2021-11-04_075",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.021791654626507086,
+    "max": 2.1940553028581244,
+    "fraction_above_one": 0.023555619376046315,
+    "foreground_fraction": 0.0318145751953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "370a6a5d7fd85951b4e7fa68b98c784b948ac8c249c561f681a8dfbf25832fbd"
+  },
+  {
+    "scene": "2021-11-04_076",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.021246454866592678,
+    "max": 2.3924846914385323,
+    "fraction_above_one": 0.022645541599818637,
+    "foreground_fraction": 0.032962799072265625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "130cdbbbe9d135a35edc191b44e263df6ee4c6493f12b3e1d613ad6b4db29c39"
+  },
+  {
+    "scene": "2021-11-04_077",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04115996758983787,
+    "max": 2.706322577558646,
+    "fraction_above_one": 0.021781512669154575,
+    "foreground_fraction": 0.03357696533203125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "e082d5751f42a66755a5c9aa5936f86a4c971fa4a3dd581dc068b04a3e730b78"
+  },
+  {
+    "scene": "2021-11-04_078",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.039906641928897035,
+    "max": 2.228581779765205,
+    "fraction_above_one": 0.019465173993791853,
+    "foreground_fraction": 0.0342559814453125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "d6d7698212597b3d4150e8451c76b8430be10051fb526a31634a317e193222fc"
+  },
+  {
+    "scene": "2021-11-04_079",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.030366318041688448,
+    "max": 2.1700042680579843,
+    "fraction_above_one": 0.01860346112932478,
+    "foreground_fraction": 0.034809112548828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "63e3f25dc7db508d3c74f85c71f39cd4a7e44777b5a56283a82f07a1fe130e44"
+  },
+  {
+    "scene": "2021-11-04_080",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.022359026280645698,
+    "max": 3.2352154878468404,
+    "fraction_above_one": 0.01862348828996931,
+    "foreground_fraction": 0.03281402587890625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "265f67ebe2be228e0c047967daf141c2b7d4fc2d4d608e928cb5793d1b110584"
+  },
+  {
+    "scene": "2021-11-04_081",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.019704286123168803,
+    "max": 2.7509290254706342,
+    "fraction_above_one": 0.01966094970703125,
+    "foreground_fraction": 0.03409576416015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "6f917259a09e1c0c1a91b25186cbc2d78f0202b96a508e8c0bf49279c4d2e1d4"
+  },
+  {
+    "scene": "2021-11-04_082",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.022000002637391877,
+    "max": 3.061139172189164,
+    "fraction_above_one": 0.019208635602678572,
+    "foreground_fraction": 0.039562225341796875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "5285d7be4613821e1718bf8c343e324a1daf76fbf79b4ab4a3e963d80168bbac"
+  },
+  {
+    "scene": "2021-11-04_083",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.018825251766285328,
+    "max": 4.8995422226015615,
+    "fraction_above_one": 0.019576208932059153,
+    "foreground_fraction": 0.04204559326171875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "d741dfbb0d89af854d08083744ff7b5d3573091944a7ea11cb646351022c7c1f"
+  },
+  {
+    "scene": "2021-11-04_084",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.022713474657675828,
+    "max": 3.114868578473364,
+    "fraction_above_one": 0.017507825578962053,
+    "foreground_fraction": 0.0407257080078125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "95572449c2e2e5287a776a6c42fb0f14ef3d5fdd6d9b4fd6606879415494c53f"
+  },
+  {
+    "scene": "2021-11-04_085",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.018119591717766597,
+    "max": 5.251756866514728,
+    "fraction_above_one": 0.0181427001953125,
+    "foreground_fraction": 0.040225982666015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "a5b66dbf5e78158d50e1e65112de7b0b0bd73ebf1b2824c18d98dbb79851600f"
+  },
+  {
+    "scene": "2021-11-04_086",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.018153275088385972,
+    "max": 2.8578610867915684,
+    "fraction_above_one": 0.01918084280831473,
+    "foreground_fraction": 0.040027618408203125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "e49212a2d9c61568a7e903b7e931d7f1308ca3c99f6503876ca60d6537ef4de3"
+  },
+  {
+    "scene": "2021-11-04_087",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01985608162004252,
+    "max": 3.355633189424696,
+    "fraction_above_one": 0.019881793430873325,
+    "foreground_fraction": 0.041046142578125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "482eca5c134c8666b8a531cace433b2c71a86af177cb85701e4b492ba7b6aa3d"
+  },
+  {
+    "scene": "2021-11-04_088",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02190077744296349,
+    "max": 2.4957880709622997,
+    "fraction_above_one": 0.022443090166364397,
+    "foreground_fraction": 0.03857421875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "a96664c179183fc0bd7cdf7c356a652d43f90293e974bbec941a34e9f595da69"
+  },
+  {
+    "scene": "2021-11-04_089",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01737340018764133,
+    "max": 3.874826377869533,
+    "fraction_above_one": 0.02029146466936384,
+    "foreground_fraction": 0.0391998291015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "424d7ade6212d6f96552ae150dab01f5e75b626939988c4defb6fc4baad18b22"
+  },
+  {
+    "scene": "2021-11-04_090",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.011698987451460415,
+    "max": 5.698188512700379,
+    "fraction_above_one": 0.018156869070870534,
+    "foreground_fraction": 0.043880462646484375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "1789e8cf6cbcb127108b838f80529b880e92aff203d56eac2a1b9da4c1eb1cea"
+  },
+  {
+    "scene": "2021-11-04_091",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.014860725909529303,
+    "max": 5.284858573333687,
+    "fraction_above_one": 0.018741062709263394,
+    "foreground_fraction": 0.042201995849609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "9bfa5c3dd502d55f7ca4dc2b0596323037a9f179f843bdf248832d96cf822782"
+  },
+  {
+    "scene": "2021-11-04_092",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.015664050756746255,
+    "max": 3.5256949658561076,
+    "fraction_above_one": 0.020361900329589844,
+    "foreground_fraction": 0.042140960693359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "556df28ef956083c096187ea8242d77e5fba0610eca2785bb8c3583cb0e57639"
+  },
+  {
+    "scene": "2021-11-04_093",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.018336416511743638,
+    "max": 2.6472382569302826,
+    "fraction_above_one": 0.02057593209402902,
+    "foreground_fraction": 0.033412933349609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "990c7f86dca94c96e7a30f2f096528f884b08a1aecd029b6dd775fc1a6ec13e0"
+  },
+  {
+    "scene": "2021-11-04_094",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04218393588119298,
+    "max": 2.8789402006153257,
+    "fraction_above_one": 0.021527017865862166,
+    "foreground_fraction": 0.036041259765625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "4ea2a9674b4bcf4e55b88b4a0777b25f6109a04cf421579799e106760cbb19d5"
+  },
+  {
+    "scene": "2021-11-04_095",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.016389947093306125,
+    "max": 2.203734901246882,
+    "fraction_above_one": 0.02120617457798549,
+    "foreground_fraction": 0.036113739013671875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "7bf65645e7094b2e0b28eea4f28d5a43e1f534ebde0bb15439db1f30fb05f4c5"
+  },
+  {
+    "scene": "2021-11-04_096",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.014120943445713388,
+    "max": 2.8864366615970436,
+    "fraction_above_one": 0.024357523236955916,
+    "foreground_fraction": 0.038295745849609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "866e891d78bc0dfde67bc6f2f9ec38f75cb670f2170818d2ac9c598d55e04539"
+  },
+  {
+    "scene": "2021-11-04_097",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.039408477855250174,
+    "max": 2.9599893925171332,
+    "fraction_above_one": 0.01786449977329799,
+    "foreground_fraction": 0.03508758544921875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "e368f3a5f7fbfd23b75c977f4fbc23d43213c4d73924dcbcdc1813005104bed9"
+  },
+  {
+    "scene": "2021-11-04_098",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.030897626145464013,
+    "max": 2.9194809789097276,
+    "fraction_above_one": 0.020470482962472097,
+    "foreground_fraction": 0.035076141357421875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "3d1cafbfb2d8572be6e1e65a0efcf9717e1d18c7b4d6a2827f8936c9b590e881"
+  },
+  {
+    "scene": "2021-11-04_099",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04149732034524358,
+    "max": 2.4562350303790974,
+    "fraction_above_one": 0.017832483564104353,
+    "foreground_fraction": 0.034656524658203125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "3019ca80f4fbb41d9d9c85feff2b0c7a4621d834dd46f59b1fe1e91d670cf60e"
+  },
+  {
+    "scene": "2021-11-04_100",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.018566746432229615,
+    "max": 3.3494523351400822,
+    "fraction_above_one": 0.021832057407924106,
+    "foreground_fraction": 0.0393218994140625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "973a09ead32e06faa2aa981555a4862adfbbb29152750574b9f50e5d5bfc2527"
+  },
+  {
+    "scene": "2021-11-04_102",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.018417076155269763,
+    "max": 3.1485152544154307,
+    "fraction_above_one": 0.02153709956577846,
+    "foreground_fraction": 0.04080963134765625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "26575e3bf23a732c6d63bb3bb88d8e7ed45f30bb57a99e3bf0c1a89c3512eb44"
+  },
+  {
+    "scene": "2021-11-04_103",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012147353268788852,
+    "max": 1.7929488662420785,
+    "fraction_above_one": 0.027398245675223216,
+    "foreground_fraction": 0.09650039672851562,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "0280ef23605d67d07ef12db65d8c8290ecf62d6454ac2ea0dc8c5f25bcaa3bdc"
+  },
+  {
+    "scene": "2021-11-04_105",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.010147158482637848,
+    "max": 2.446621925746762,
+    "fraction_above_one": 0.02868161882672991,
+    "foreground_fraction": 0.10546493530273438,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "db646b45c787f142fa1bcfd7a681380cf58269d6a60ac944a0f15ab536e39eb7"
+  },
+  {
+    "scene": "2021-11-04_106",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.009593269182730298,
+    "max": 1.409767765204138,
+    "fraction_above_one": 0.03319331577845982,
+    "foreground_fraction": 0.12812423706054688,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "caed57cad5926626ccaa02f83554c1541662936b891908e73501ca665118c750"
+  },
+  {
+    "scene": "2021-11-04_107",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.010041270251670655,
+    "max": 2.2211064312368767,
+    "fraction_above_one": 0.021582467215401784,
+    "foreground_fraction": 0.123443603515625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      5,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "be94906df079a185110ff05a7c8835dd0356367eb382c8a2be0d9b3dd71d644b"
+  },
+  {
+    "scene": "2021-11-04_108",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.017538106274368834,
+    "max": 1.7078020539982341,
+    "fraction_above_one": 0.023751531328473772,
+    "foreground_fraction": 0.09411239624023438,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      5,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "544694709c8b2dd4edc352061bdce3a7d8752413fe4df1d66a0b82daeb1bc429"
+  },
+  {
+    "scene": "2021-11-05_001",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012618961921996146,
+    "max": 3.0444604406745985,
+    "fraction_above_one": 0.02542413984026228,
+    "foreground_fraction": 0.0901336669921875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5,
+      6,
+      7,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "34d2cc6e79fc1e2e8b1631425d303b339d91de74512c76088883b9dd1d18d3ce"
+  },
+  {
+    "scene": "2021-11-05_002",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.029710515425784748,
+    "max": 2.740230569536509,
+    "fraction_above_one": 0.02547318594796317,
+    "foreground_fraction": 0.12754440307617188,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "1d96305350f2d75e6ed6bd8d2ebccaabdd97a64b71686b03ff27375eb8406d96"
+  },
+  {
+    "scene": "2021-11-05_004",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.008370617669962672,
+    "max": 1.3830258100253512,
+    "fraction_above_one": 0.02174840654645647,
+    "foreground_fraction": 0.09879684448242188,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "464c1310e2bcf129a0e94740357dddae772306b28a9a528eb763a91bdb78c2cc"
+  },
+  {
+    "scene": "2021-11-05_005",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.010948993485334879,
+    "max": 1.451278861390995,
+    "fraction_above_one": 0.021588597978864397,
+    "foreground_fraction": 0.12829971313476562,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "0fb6951f446a48fb53575cbadc3941f4a966a9fb1122a697a70f844201e0497b"
+  },
+  {
+    "scene": "2021-11-05_006",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.008712132901878656,
+    "max": 2.1333077199545643,
+    "fraction_above_one": 0.03189304896763393,
+    "foreground_fraction": 0.12598419189453125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "68d2033b237410b840188a9985cbaecb1995ff8ce48ddaa0883d4b3b5ac26d29"
+  },
+  {
+    "scene": "2021-11-05_008",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.010025078873441198,
+    "max": 4.007233709403624,
+    "fraction_above_one": 0.032008579799107144,
+    "foreground_fraction": 0.12096023559570312,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "dc0354f982cebdf0977a5101fe7dd70b18975ceb935eedcdfbbc7c81d12e20bf"
+  },
+  {
+    "scene": "2021-11-05_009",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.017262032590685636,
+    "max": 3.6283313833695456,
+    "fraction_above_one": 0.025759969438825334,
+    "foreground_fraction": 0.13286590576171875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "63a0b1938a579c11efd27ae497cec6660bde89134a140a63da5daee16bcae495"
+  },
+  {
+    "scene": "2021-11-05_010",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.015922124635057038,
+    "max": 2.9086098657041393,
+    "fraction_above_one": 0.02548994336809431,
+    "foreground_fraction": 0.14649581909179688,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "0d5e83825ebf1c78b70a79dd60d91778fb76cd807895acda045da7dc9eff3baa"
+  },
+  {
+    "scene": "2021-11-05_011",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.009678125542428117,
+    "max": 4.3924683797632,
+    "fraction_above_one": 0.02072906494140625,
+    "foreground_fraction": 0.12741470336914062,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "892a1383d91f8fe3958374869e00777334fd0fd5a008fcc92dd10d962b52faed"
+  },
+  {
+    "scene": "2021-11-05_012",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.007943780367063088,
+    "max": 2.520983136687705,
+    "fraction_above_one": 0.023091724940708706,
+    "foreground_fraction": 0.11292266845703125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "877c92e3dd25fc1831643e0bb45c2d9698f67231c36afedd75154114d128bf1a"
+  },
+  {
+    "scene": "2021-11-05_013",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.009772197762501515,
+    "max": 3.2131156461957118,
+    "fraction_above_one": 0.027459144592285156,
+    "foreground_fraction": 0.11619186401367188,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "5bbfb88ddef8ea84bd96d6c3eec91b7e7cfcf8a10e98d2857ac365de0ce8b489"
+  },
+  {
+    "scene": "2021-11-05_014",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01005536679303758,
+    "max": 2.9786262671713803,
+    "fraction_above_one": 0.030568531581333706,
+    "foreground_fraction": 0.11834335327148438,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "7d086559e9e58a8375456754d756dffa9dfa44105e86bd1571fb5ec63072492f"
+  },
+  {
+    "scene": "2021-11-05_015",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.005940786121226858,
+    "max": 8.81400919018774,
+    "fraction_above_one": 0.020993505205426897,
+    "foreground_fraction": 0.132598876953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 1.7763568394002505e-15,
+    "sha256_cube28": "63440bd57be60f9076bf79146aa5f56df1590dce5fad58523a0cea2ab7b3aa1e"
+  },
+  {
+    "scene": "2021-11-05_016",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.009388074682670023,
+    "max": 2.632631059080373,
+    "fraction_above_one": 0.021972383771623884,
+    "foreground_fraction": 0.1214599609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      5,
+      7,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "ae5895df6776b07bfc048ed826299c2121dcba0e3cc3b20bcd5f8cf78b85f89f"
+  },
+  {
+    "scene": "2021-11-05_017",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.014276790436769349,
+    "max": 1.1235745993960802,
+    "fraction_above_one": 0.019174439566476003,
+    "foreground_fraction": 0.054141998291015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "e0e49bb5997ee32767bbf189768520769583fbee471bfc52a90ce1739f2b8a32"
+  },
+  {
+    "scene": "2021-11-05_018",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01338997972411017,
+    "max": 1.19870820698343,
+    "fraction_above_one": 0.0328437260219029,
+    "foreground_fraction": 0.05826568603515625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      8,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "f091b51d8a14a2e7d0c3b000206011b09ddf6d896d14553c36fc472a8b5eeda2"
+  },
+  {
+    "scene": "2021-11-05_019",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.031829422567803106,
+    "max": 1.6124110356672756,
+    "fraction_above_one": 0.022787775312151228,
+    "foreground_fraction": 0.03106689453125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6,
+      9,
+      11,
+      12
+    ],
+    "starfruit_pixels": 2013,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "e687dae13505bd87889192b284407aabd958a9667b1ca8723f1880814dc91115"
+  },
+  {
+    "scene": "2021-11-05_020",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.027388409423573977,
+    "max": 3.150490629430362,
+    "fraction_above_one": 0.02069105420793806,
+    "foreground_fraction": 0.04151153564453125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      8,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "5519ee88476eba3c8d5cf1a7c36b2e086d0e0986e183f59543c23b70c4b360dd"
+  },
+  {
+    "scene": "2021-11-05_021",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0178785051315491,
+    "max": 2.9561446877883104,
+    "fraction_above_one": 0.02121748243059431,
+    "foreground_fraction": 0.057758331298828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7,
+      8,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "f8cdf8c86df8077192719641d8a5e8d7b36a7fb3ba9a922177f46b8fe53d4644"
+  },
+  {
+    "scene": "2021-11-05_022",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03140517688193104,
+    "max": 1.454749002655026,
+    "fraction_above_one": 0.0235748291015625,
+    "foreground_fraction": 0.04024505615234375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5,
+      6,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "cd6183ee24aab78cf501fbafe8256ccc701f2831945d52f4fe89f6be1173b492"
+  },
+  {
+    "scene": "2021-11-05_024",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02189844208472998,
+    "max": 1.5507032084094574,
+    "fraction_above_one": 0.01943561008998326,
+    "foreground_fraction": 0.0324859619140625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5,
+      7,
+      10,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "595b821b1c46fe947178af6eef99e91016b6629a60b97ec54a877e4ee660831f"
+  },
+  {
+    "scene": "2021-11-05_025",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.011161182555763057,
+    "max": 1.3461548711648499,
+    "fraction_above_one": 0.015632356916155134,
+    "foreground_fraction": 0.05738067626953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "03dfa1b82b09c4aaeac617fd6ba3a62d00d284e66360977bebbd3be47f425f4e"
+  },
+  {
+    "scene": "2021-11-05_027",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02595953381702609,
+    "max": 1.160401570703534,
+    "fraction_above_one": 0.025644574846540178,
+    "foreground_fraction": 0.03167724609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      5,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "ae1f0915f860fe40ebc49b8eb576880c782d79fe627eeeb601714a632b33c2e0"
+  },
+  {
+    "scene": "2021-11-05_028",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03512038552040454,
+    "max": 1.6579087789105955,
+    "fraction_above_one": 0.01926122392926897,
+    "foreground_fraction": 0.034336090087890625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      6,
+      9,
+      10,
+      12
+    ],
+    "starfruit_pixels": 1807,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "5f333b0afd1574867a05fa0c1081e6cfbaa8ff8e22da875f8aa4830afea2e1b6"
+  },
+  {
+    "scene": "2021-11-05_029",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01069903994199502,
+    "max": 2.501682443800933,
+    "fraction_above_one": 0.02024773188999721,
+    "foreground_fraction": 0.04425048828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      6,
+      7,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "0d09996130cdf8afbd22925c5eefac3f5829740f3cd2b0a9fd18b88354cce021"
+  },
+  {
+    "scene": "2021-11-05_030",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.009934635942652805,
+    "max": 3.1312984923852674,
+    "fraction_above_one": 0.020400728498186384,
+    "foreground_fraction": 0.046527862548828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      7,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "3e6db7eeeb5b36bb3d191ac3e60800e38954125cc6c5cfd65b4029d48ba6f1ce"
+  },
+  {
+    "scene": "2021-11-05_031",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.023889847263438742,
+    "max": 1.1751357364743211,
+    "fraction_above_one": 0.02490942818777902,
+    "foreground_fraction": 0.04842376708984375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "916e08d865d39dee0f0b1dc9f3cc6e0a5074882887d9bbe9e6868ec37693475f"
+  },
+  {
+    "scene": "2021-11-05_032",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.018525863605481505,
+    "max": 3.1771651124449276,
+    "fraction_above_one": 0.020647457667759488,
+    "foreground_fraction": 0.0538482666015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      5,
+      6,
+      7
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "a5fe952c55131ed7953d771f92eadc10ac36e0b8e51d2f031914a3c9885b9729"
+  },
+  {
+    "scene": "2021-11-05_033",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01918924175725433,
+    "max": 3.1595903649379062,
+    "fraction_above_one": 0.02374281202043806,
+    "foreground_fraction": 0.12177658081054688,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "572e36e800cd38f00620518e447feee93c5dcb8e8cc492cacb99e4cc7163e832"
+  },
+  {
+    "scene": "2021-11-05_034",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.018144434392033656,
+    "max": 2.029647759829973,
+    "fraction_above_one": 0.022015162876674106,
+    "foreground_fraction": 0.05804443359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "7bdaa8e8141028450c2a6299c4d2c95e929c4e498bac8a4b08a060260c306e2a"
+  },
+  {
+    "scene": "2021-11-05_035",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02490282805174398,
+    "max": 2.25371242160984,
+    "fraction_above_one": 0.02245821271623884,
+    "foreground_fraction": 0.035388946533203125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      6,
+      7,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "42bcdd657fbbab85141dfd7b7b8d1d574c0ac67aab2f7d77a1f4c1653204b6cb"
+  },
+  {
+    "scene": "2021-11-05_038",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.010260190621404876,
+    "max": 2.0103255812472836,
+    "fraction_above_one": 0.018512862069266185,
+    "foreground_fraction": 0.048431396484375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      6,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "13aa776c65c5e112ad4285652ffbeb7cadaec95e04b58d189dd60e40118e06d4"
+  },
+  {
+    "scene": "2021-11-05_041",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01756732403866652,
+    "max": 1.775694643574562,
+    "fraction_above_one": 0.02140399387904576,
+    "foreground_fraction": 0.05054473876953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      5,
+      7,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "abcb12493db8bfeb5ff2e3ad1f8922b1169117ae0f728e6fe0a1ce299a9ed323"
+  },
+  {
+    "scene": "2021-11-05_042",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012555735362653978,
+    "max": 2.5006314563612793,
+    "fraction_above_one": 0.01918724605015346,
+    "foreground_fraction": 0.060638427734375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      5,
+      7,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "2a942e858acbf8030b7783bb7a658045242c964d078201c83237d90b2920f906"
+  },
+  {
+    "scene": "2021-11-05_043",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012632548022045685,
+    "max": 1.6167371658712102,
+    "fraction_above_one": 0.02531896318708147,
+    "foreground_fraction": 0.038105010986328125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      11,
+      12
+    ],
+    "starfruit_pixels": 1781,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "2ee7d5e9831a73afb0efdb988c821268d6296387b4df97c543a6255530c0df5c"
+  },
+  {
+    "scene": "2021-11-05_046",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.011331669057478854,
+    "max": 1.6163640137542712,
+    "fraction_above_one": 0.022489411490304128,
+    "foreground_fraction": 0.11240768432617188,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      8,
+      12
+    ],
+    "starfruit_pixels": 1819,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "cf69ca169dc8c1b8e9b567caeae9e19442529164b105be6d30a20b5a49e80c8e"
+  },
+  {
+    "scene": "2021-11-05_047",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.513109300953999,
+    "fraction_above_one": 0.02128192356654576,
+    "foreground_fraction": 0.07900238037109375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      5,
+      6
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "3c1871d361c176b8a2286b4bdd52e4026a854a656aae62a02e4a80214eaa210a"
+  },
+  {
+    "scene": "2021-11-05_048",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0173104203542967,
+    "max": 1.3771537077193707,
+    "fraction_above_one": 0.020994595118931363,
+    "foreground_fraction": 0.03705596923828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      8,
+      11,
+      12
+    ],
+    "starfruit_pixels": 1917,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "06322f2a684253b6c5cda765f5b6e7b5d0fb969e186cb5f15ddc6145b0951585"
+  },
+  {
+    "scene": "2021-11-05_049",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012128211970732942,
+    "max": 3.1238982977203458,
+    "fraction_above_one": 0.022577149527413503,
+    "foreground_fraction": 0.054546356201171875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      7,
+      8,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "b24c35f40ef63ff120205b29db9e9ab5ee9436cd738a4bab824eb9967b70226b"
+  },
+  {
+    "scene": "2021-11-05_050",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.010778441876522705,
+    "max": 1.7639496652617432,
+    "fraction_above_one": 0.02145671844482422,
+    "foreground_fraction": 0.06148529052734375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      7,
+      9,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "579c84200d66177d62f1e1e262a53ae61b94a056fd686193057a976f90aa5a35"
+  },
+  {
+    "scene": "2021-11-05_051",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01956998764313895,
+    "max": 3.707014504054109,
+    "fraction_above_one": 0.02160290309361049,
+    "foreground_fraction": 0.040950775146484375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      4,
+      5,
+      8,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "3e1f43a57e45e5b6acf0b80477df6bd2f46ad3ea7d44925ee332acbb1855e689"
+  },
+  {
+    "scene": "2021-11-05_052",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.014944757888833031,
+    "max": 1.4992160343885523,
+    "fraction_above_one": 0.026174817766462053,
+    "foreground_fraction": 0.044689178466796875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      5,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "6d448e431b39bab366748a0f64ed9ce4271875addba34ffa5223460fa031cd36"
+  },
+  {
+    "scene": "2021-11-05_053",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.01429187891010673,
+    "max": 1.466465243526196,
+    "fraction_above_one": 0.020299502781459262,
+    "foreground_fraction": 0.05271148681640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      6,
+      7,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "2b40736c7af6c4a765b3a958fc1fa17d51b967ea5b5b326f2247cf4cec7a60d4"
+  },
+  {
+    "scene": "2021-11-05_055",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.017323373839598706,
+    "max": 4.316616558200417,
+    "fraction_above_one": 0.01919419424874442,
+    "foreground_fraction": 0.051513671875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      7,
+      8,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "7559a4cf830e4b7f2a90a837dd080a224337a2eff1a94bf22bb7c56d05589314"
+  },
+  {
+    "scene": "2021-11-05_056",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 4.065415519554786,
+    "fraction_above_one": 0.01975386483328683,
+    "foreground_fraction": 0.08277130126953125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "42b92b3fa8229b54a670fca9db4a75bafc3228efbc4911abb0336db5279b2028"
+  },
+  {
+    "scene": "2021-11-05_057",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.3541080039481828,
+    "fraction_above_one": 0.020269802638462613,
+    "foreground_fraction": 0.08226776123046875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "bd97169e4750f02bc07d464b1d8e09a021fc63ffcbbee5be5ba12f310ee4e222"
+  },
+  {
+    "scene": "2021-11-05_058",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.012082184580821827,
+    "max": 2.200738979920431,
+    "fraction_above_one": 0.029279436383928572,
+    "foreground_fraction": 0.05632781982421875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "42f7dce3262552b37f4327830f3230a7b9663fccc46057ef523e7125b58cb6a3"
+  },
+  {
+    "scene": "2021-11-05_059",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02022404527951276,
+    "max": 3.796799631747058,
+    "fraction_above_one": 0.020277295793805803,
+    "foreground_fraction": 0.08974075317382812,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      5,
+      7,
+      8,
+      10,
+      11
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "02c7b07aa40504dd3db5f21f187f6d7d1bf2c707f186d0c49b4191e671a518d3"
+  },
+  {
+    "scene": "2021-11-05_060",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.02350031696370047,
+    "max": 1.9210451746185142,
+    "fraction_above_one": 0.03767762865339007,
+    "foreground_fraction": 0.06388473510742188,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      3,
+      4,
+      5,
+      7,
+      10,
+      12
+    ],
+    "starfruit_pixels": 3428,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "76ee08f468e98f1f84ab573727dbab1643bd6a60b7355f211e59c80a35455e4c"
+  },
+  {
+    "scene": "2021-11-10_001",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03610675868884023,
+    "max": 2.1597062627315853,
+    "fraction_above_one": 0.03592654636928013,
+    "foreground_fraction": 0.06284713745117188,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "28018e4de02beebe1688d4021dbff81e352cce55fda3dfdfdc61a19c4532fd5c"
+  },
+  {
+    "scene": "2021-11-10_002",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 3.0066011803034463,
+    "fraction_above_one": 0.0395287105015346,
+    "foreground_fraction": 0.07472991943359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "2150860d1f2b294b4578add139846596fa1d90e5bb299d590b70f70f617162e7"
+  },
+  {
+    "scene": "2021-11-10_003",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.229958021396562,
+    "fraction_above_one": 0.05408205304827009,
+    "foreground_fraction": 0.08068084716796875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "5c4a8860e725942c308ed9fd74103857f52d18dd48399b92e8063acd2cd001d7"
+  },
+  {
+    "scene": "2021-11-10_004",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.035629925578053896,
+    "max": 2.723336824843661,
+    "fraction_above_one": 0.04711518968854632,
+    "foreground_fraction": 0.06319808959960938,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "57593ef528b9daed2f7e8ae38ae4d1db29fb4a3c3289d705dc6d3aa230a5c5ab"
+  },
+  {
+    "scene": "2021-11-10_005",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03584265586253203,
+    "max": 1.9534875518187114,
+    "fraction_above_one": 0.05229977199009487,
+    "foreground_fraction": 0.06375885009765625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "5415b4c2d508f8dfe122820430c0e77121c9eeb475ef7bae3b48b3f3be5a7609"
+  },
+  {
+    "scene": "2021-11-10_006",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 4.123416322088637,
+    "fraction_above_one": 0.04679039546421596,
+    "foreground_fraction": 0.054595947265625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "8d32b56881c885698e580a95b99a8b160f456be253eb36450cdde15fc77a9d9b"
+  },
+  {
+    "scene": "2021-11-10_007",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.035592422476295904,
+    "max": 2.374427228592593,
+    "fraction_above_one": 0.07120977129255023,
+    "foreground_fraction": 0.047298431396484375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "19d7737b7b65197c1dbe0ee1186bedb4146096fa634c241ca21158efd4fdc505"
+  },
+  {
+    "scene": "2021-11-10_008",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04702475566218007,
+    "max": 2.352480877303481,
+    "fraction_above_one": 0.05641310555594308,
+    "foreground_fraction": 0.0653533935546875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "9f3bcd3e602e803e868d8f368d844aac81cc118418798a6a17a9fdb2beb7de70"
+  },
+  {
+    "scene": "2021-11-10_009",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.026905559274996965,
+    "max": 2.5714043990233257,
+    "fraction_above_one": 0.04248114994594029,
+    "foreground_fraction": 0.08333587646484375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "1dc707129344084162769dc1f3a9c060e9ad43e53b43659bab2024ea3b34a2f0"
+  },
+  {
+    "scene": "2021-11-10_011",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03923923986592486,
+    "max": 2.3825333252147556,
+    "fraction_above_one": 0.06013556889125279,
+    "foreground_fraction": 0.07719039916992188,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "5d74e1c9780849f68c2e2e51350efbd43c0c07b43bbd00cea9261f3b1aa2f1b5"
+  },
+  {
+    "scene": "2021-11-10_012",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.042222246359737654,
+    "max": 2.649407304548853,
+    "fraction_above_one": 0.11589854104178292,
+    "foreground_fraction": 0.061519622802734375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "7b420b8a245c05d0e3b22627013c3a21000293b4ccf18a1f3d15a584172b3926"
+  },
+  {
+    "scene": "2021-11-10_013",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03456444188777147,
+    "max": 2.7138845063803734,
+    "fraction_above_one": 0.0647826875959124,
+    "foreground_fraction": 0.061725616455078125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "af1880308100db302fb68e3f9149c62053fe541cb912b259deecc0e112d2fb8e"
+  },
+  {
+    "scene": "2021-11-10_014",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03250923461407046,
+    "max": 3.135750612517142,
+    "fraction_above_one": 0.08902576991489955,
+    "foreground_fraction": 0.06486129760742188,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "706a44c3a825f5b26c8ad06a0715bd2c825d663613341f086bdc2dffcc889ef0"
+  },
+  {
+    "scene": "2021-11-10_015",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03278675397776317,
+    "max": 3.1088035284255726,
+    "fraction_above_one": 0.09446430206298828,
+    "foreground_fraction": 0.06768798828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "c21f479da85a9ffd5e95c85d5d5fd9d2b0ecaa6d91d501eb0a757c16108fd139"
+  },
+  {
+    "scene": "2021-11-10_016",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03247772888823103,
+    "max": 2.6877043423403952,
+    "fraction_above_one": 0.06234959193638393,
+    "foreground_fraction": 0.068450927734375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "05051353a917d503763c8dbd3d15397dfb3272686effb9ce02d53009a09aa201"
+  },
+  {
+    "scene": "2021-11-10_017",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04233333576263873,
+    "max": 2.611062923361931,
+    "fraction_above_one": 0.05309445517403739,
+    "foreground_fraction": 0.06351470947265625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "cd822e170c7ddf833c5745d2948a808736ee071eab923b11444a30035b9d1517"
+  },
+  {
+    "scene": "2021-11-10_018",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04792379766993113,
+    "max": 2.697292296954793,
+    "fraction_above_one": 0.09972667694091797,
+    "foreground_fraction": 0.0690460205078125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "29f9b264064ac5953e0639cd47b2b022410efe34d33a066f19f160f8b9631f97"
+  },
+  {
+    "scene": "2021-11-10_019",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.026314516987029066,
+    "max": 6.141229673609056,
+    "fraction_above_one": 0.03457859584263393,
+    "foreground_fraction": 0.07595443725585938,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 8.881784197001252e-16,
+    "sha256_cube28": "0203efd9bc271a74f992d52705d139b8cfb7a7308e88f264046a51b45b854ab5"
+  },
+  {
+    "scene": "2021-11-10_020",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03714914035682784,
+    "max": 3.3901217357000113,
+    "fraction_above_one": 0.0621159417288644,
+    "foreground_fraction": 0.054534912109375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "6303781a8cfb9717a9dc2cb913c9ed4ed26b19b9cfd33fa86e56650032ff5f8f"
+  },
+  {
+    "scene": "2021-11-10_021",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0395636599205389,
+    "max": 2.1921313827615827,
+    "fraction_above_one": 0.046055657523018975,
+    "foreground_fraction": 0.058933258056640625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      2,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "1b042b9667270cf980579997e2654b0be6c3f4ddac9ce92b4b704020b5e5df76"
+  },
+  {
+    "scene": "2021-11-10_022",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04384629050037127,
+    "max": 2.4455852318915183,
+    "fraction_above_one": 0.040442466735839844,
+    "foreground_fraction": 0.0559234619140625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "7a2615f46d626058b0ce65608cf9a9cceb0e290ab55d77b7d6167e6b331aba43"
+  },
+  {
+    "scene": "2021-11-10_023",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.034511705419265196,
+    "max": 2.603515570344831,
+    "fraction_above_one": 0.06335462842668806,
+    "foreground_fraction": 0.06658935546875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "905fcd4055adfb25830e6f17d22fbb1e1b5c07cf917a432b9a26897a3945e93b"
+  },
+  {
+    "scene": "2021-11-10_024",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04575126977606913,
+    "max": 2.0528876826924627,
+    "fraction_above_one": 0.07273129054478236,
+    "foreground_fraction": 0.058506011962890625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "f753cf1e7c57004688ff4429792e2098a9d188d72efbd515de9ddd1831a04c77"
+  },
+  {
+    "scene": "2021-11-10_025",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04052409952950559,
+    "max": 2.9602512313308695,
+    "fraction_above_one": 0.0528148923601423,
+    "foreground_fraction": 0.06982421875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "1121f9c146a0e0f472ff8a59a9fb278599cd1f1f6fdfa23a04013303eb3edb63"
+  },
+  {
+    "scene": "2021-11-10_026",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.021000925295337754,
+    "max": 3.9525917261666823,
+    "fraction_above_one": 0.05412742069789341,
+    "foreground_fraction": 0.064788818359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "b50c63ab7a9417e7ec5c0ea0c18a015d0bee8bfa09cd81244fda27f0ad508e3c"
+  },
+  {
+    "scene": "2021-11-10_027",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.030595998471849874,
+    "max": 2.0150841337088266,
+    "fraction_above_one": 0.0723282950265067,
+    "foreground_fraction": 0.07092666625976562,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "8ef75940db51b708bd6b2e74ee01d6867dcdb77d59522734f22d6842b34b09ea"
+  },
+  {
+    "scene": "2021-11-10_028",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03321735167220898,
+    "max": 2.9615540785008156,
+    "fraction_above_one": 0.05620970044817243,
+    "foreground_fraction": 0.062397003173828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "9cfc6a2888e01d6b9f137e85a4d8229f65e2bec5e9c8e4feeef2a8209987d1b4"
+  },
+  {
+    "scene": "2021-11-10_029",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.026570098468190285,
+    "max": 2.794794917975736,
+    "fraction_above_one": 0.039945738656180244,
+    "foreground_fraction": 0.061832427978515625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "0fbf3c020328fb3adb4ea13e9ef3de451943e92932e1e9c5f5edb4eadd54ea11"
+  },
+  {
+    "scene": "2021-11-10_030",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04297793404637571,
+    "max": 3.0024133965855277,
+    "fraction_above_one": 0.07940687452043806,
+    "foreground_fraction": 0.056964874267578125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "563fed226a0633be3919ab998188413684d5a51654bf605227d9ace4008e8f66"
+  },
+  {
+    "scene": "2021-11-10_031",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 3.8376755263031215,
+    "fraction_above_one": 0.05921173095703125,
+    "foreground_fraction": 0.061641693115234375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "2f52ca234b17a2cb053b7bbe99c81fe2f0bc00b16b12785222796e694139f799"
+  },
+  {
+    "scene": "2021-11-10_032",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 3.070420315410646,
+    "fraction_above_one": 0.0633129392351423,
+    "foreground_fraction": 0.07944488525390625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "544fd65b22a49d5a117fe7385cdf951348b5a06d8f8156f0091c8ef22f4f7da0"
+  },
+  {
+    "scene": "2021-11-10_033",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.030275662551725285,
+    "max": 2.325680029198365,
+    "fraction_above_one": 0.07379954201834542,
+    "foreground_fraction": 0.06154632568359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "1a25dfc17b91a141b3ca90319cc63bcb0bd8a3b214ff026c30f6dfc1c5b9f33c"
+  },
+  {
+    "scene": "2021-11-10_035",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 3.5297949527501,
+    "fraction_above_one": 0.08299527849469866,
+    "foreground_fraction": 0.060688018798828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "147312b7b1efea48c6236a664f0bb8308a3e9a729cee033c8637ba4e6ed331c1"
+  },
+  {
+    "scene": "2021-11-10_036",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04300489066989351,
+    "max": 2.9146406938725073,
+    "fraction_above_one": 0.07454586029052734,
+    "foreground_fraction": 0.06362152099609375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "6c8f569049ba1db5ddd4eed3e1fbe9a8a06f1519d14926d58da7d0f9a7100975"
+  },
+  {
+    "scene": "2021-11-10_037",
+    "split": "test",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.589646013497292,
+    "fraction_above_one": 0.06835501534598214,
+    "foreground_fraction": 0.07326507568359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "e1f2aeb01548b46ce5e7ca0fead7d0da25f600348ac95f861983d547d3552103"
+  },
+  {
+    "scene": "2021-11-10_038",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 3.13499771649287,
+    "fraction_above_one": 0.07286044529506139,
+    "foreground_fraction": 0.06598663330078125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "ce594a734fc1bf844d765e841429726e8d87f730550cfeb6d3d85edbbd577993"
+  },
+  {
+    "scene": "2021-11-10_040",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04537140153774501,
+    "max": 2.5272256933435084,
+    "fraction_above_one": 0.11091014317103795,
+    "foreground_fraction": 0.047763824462890625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "294c93296957f769542e51aa120bc2d5d648c417afacb002d09d3745b4cf879e"
+  },
+  {
+    "scene": "2021-11-10_041",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.238933904669724,
+    "fraction_above_one": 0.051276751926967075,
+    "foreground_fraction": 0.065673828125,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "8a1965c4e7aaf8bc4d164d47ac548e6f65d4928c36b3087a2aa80ef225acd364"
+  },
+  {
+    "scene": "2021-11-10_042",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.04364481978467012,
+    "max": 2.6040008000050516,
+    "fraction_above_one": 0.05867072514125279,
+    "foreground_fraction": 0.050243377685546875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      2
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "fcce995b86e6722058dd497aac913b3641b2ed458df27ff20a3eda72fd45f5dd"
+  },
+  {
+    "scene": "2021-11-10_043",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03531674621771971,
+    "max": 2.094423291707815,
+    "fraction_above_one": 0.10113852364676339,
+    "foreground_fraction": 0.05606842041015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 2.220446049250313e-16,
+    "sha256_cube28": "abb88faaef5fdf2d02cce42a8eb4ce1672271c910756a73e3b5655fc175ad3c1"
+  },
+  {
+    "scene": "2021-11-10_044",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.7156081361826945,
+    "fraction_above_one": 0.07369436536516462,
+    "foreground_fraction": 0.0670166015625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "e8f2de1bcf9d3ba6ccf6876e7e21bce0fd0d7c3a88e7b64cda7ba655423e1725"
+  },
+  {
+    "scene": "2021-11-10_045",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03320691459201115,
+    "max": 2.6992963171050866,
+    "fraction_above_one": 0.0728210721697126,
+    "foreground_fraction": 0.06563949584960938,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "25a6107a1aa67bed8118d16f4574e3c3bf6438c3053d00571f01dfa92d2f2283"
+  },
+  {
+    "scene": "2021-11-10_046",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.03288366180637739,
+    "max": 2.946324937161832,
+    "fraction_above_one": 0.06916100638253349,
+    "foreground_fraction": 0.0669403076171875,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "91b13689de77fbca1499ff1d9264decd090f65d19c02be6f68c3aba34e4449b6"
+  },
+  {
+    "scene": "2021-11-10_048",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.044564582731705576,
+    "max": 3.419686990007141,
+    "fraction_above_one": 0.05725642613002232,
+    "foreground_fraction": 0.06790924072265625,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "a303827b2ecf8dd7d3fa2c5d985e678bc39b3cc7dcfe818fe6be46d0fbb8788d"
+  },
+  {
+    "scene": "2021-11-10_049",
+    "split": "train",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.5259372922331482,
+    "fraction_above_one": 0.07373046875,
+    "foreground_fraction": 0.05804443359375,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "092cba5b25ed56baef38af8877cc140340249bdcdba2c120c003af640f485fb4"
+  },
+  {
+    "scene": "2021-11-10_050",
+    "split": "val",
+    "shape28": [
+      512,
+      512,
+      28
+    ],
+    "dtype": "float64",
+    "min": 0.0,
+    "max": 2.622883564477865,
+    "fraction_above_one": 0.05998461587088449,
+    "foreground_fraction": 0.07270431518554688,
+    "raw_fruit_ids": [
+      -1,
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "starfruit_pixels": 0,
+    "max_interpolation_abs_error": 4.440892098500626e-16,
+    "sha256_cube28": "d5073ef874529ed0bf9c77345b017ee69df3db3e62644ed0ce824ea0d2374258"
+  }
+]

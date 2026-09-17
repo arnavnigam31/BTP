@@ -38,6 +38,7 @@ def main_worker(rank, world_size):
     # -------------------- dataset --------------------
     train_loader, valid_loader = prep_loaders_ddp(
         root_dir=opt.data_root,
+        transpose_image=opt.transpose_image,
         batch_size=opt.batch_size,
         workers=4,
         rank=rank,
@@ -120,20 +121,16 @@ def main_worker(rank, world_size):
             model.eval()
             metrics_rec.reset()
             metrics_seg.reset()
-            name_list = []
-            seg_map_list = []
 
             for i, (sample) in enumerate(valid_loader):
                 x = sample['image'].float().cuda(rank)
                 y = sample['label'].numpy()
                 mea = init_meas(x, Phi_batch_test, opt.input_setting)
                 with torch.no_grad():
-                    x_pred_list, y_pred_list = model(mea, input_mask_test)
+                    x_pred_list, y_pred_list = model.module(mea, input_mask_test)
                     x_pred = x_pred_list[-1]
                     y_pred = y_pred_list[-1]
                     y_pred = torch.argmax(y_pred, dim=1)
-                    seg_map_list.append(decode_segmap(y_pred.cpu()).astype(np.uint8))
-                    name_list.append(valid_loader.dataset.names[i])
                 metrics_rec.add_batch(x.cpu(), x_pred.detach().cpu())
                 metrics_seg.add_batch(y, y_pred.detach().cpu().numpy())
 
@@ -148,8 +145,9 @@ def main_worker(rank, world_size):
             if val_iou > max_iou or val_psnr > max_psnr:
                 max_iou = max(max_iou, val_iou)
                 max_psnr = max(max_psnr, val_psnr)
-                checkpoint(model, epoch+1, model_path, logger)
-            
+                checkpoint(model.module, epoch+1, model_path, logger)
+        dist.barrier()
+
     if rank == 0:
         print("Done")
     dist.destroy_process_group()

@@ -6,12 +6,13 @@ def model_generator(method, ch, n_classes, pretrained_model_path=None):
         model = CRSDUN(stage=5, bands=ch, n_class=n_classes).cuda()
 
     else:
-        print(f'Method {method} is not defined !!!!')
+        raise ValueError(f'Unsupported model: {method}')
     if pretrained_model_path is not None:
         print(f'load model from {pretrained_model_path}')
-        checkpoint = torch.load(pretrained_model_path, weights_only=True)
-        try:
-            model.load_state_dict({k.replace('module.', ''): v for k, v in checkpoint.items()}, strict=True)
-        except:
-            model.load_state_dict(checkpoint, strict=True)
+        load_weights(model, pretrained_model_path)
     return model
+
+def load_weights(model, path):
+    checkpoint = torch.load(path, map_location='cpu', weights_only=True)
+    weights = checkpoint['model'] if isinstance(checkpoint, dict) and 'model' in checkpoint else checkpoint
+    model.load_state_dict({k.removeprefix('module.'): v for k, v in weights.items()}, strict=True)

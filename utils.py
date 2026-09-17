@@ -210,7 +210,6 @@ class Metrics_Seg(MetricsBase):
         df = pd.DataFrame(data=np.column_stack([IOU, F1, P, R, A]),
                           columns=['IoU', 'F1', 'Prec', 'recall', 'Acc'])
 
-        df = df.round(4)
         df.index = self.names
         total = df.iloc[:, :].mean()
         total_bg = df.iloc[1:, :].mean()
@@ -233,16 +232,16 @@ class Metrics_Rec:
         self.psnr = 0
         self.ssim = 0
         self.count = 0
+        self.mse = 0
 
     def get_table(self):
-        df = pd.DataFrame(data=np.column_stack([self.psnr/self.count, self.ssim/self.count]),
-                          columns=['PSNR', 'SSIM'])
-
-        df = df.round(4)
-        return df
+        if self.count == 0: raise ValueError('No reconstruction samples')
+        return pd.DataFrame([[self.psnr/self.count, self.ssim/self.count, self.mse/self.count]],
+                            columns=['PSNR', 'SSIM', 'MSE'])
 
     def add_batch(self, gt_image, pred_image):
         assert gt_image.shape == pred_image.shape
+        self.mse += torch.mean((pred_image - gt_image)**2).item()
         self.psnr += psnr(pred_image, gt_image, data_range=1.0).item()
         self.ssim += ssim(pred_image, gt_image, data_range=1.0).item()
         self.count += 1
@@ -251,6 +250,7 @@ class Metrics_Rec:
         self.psnr = 0
         self.ssim = 0
         self.count = 0
+        self.mse = 0
 
 
 def gen_log(model_path):

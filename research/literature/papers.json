@@ -1,0 +1,288 @@
+[
+  {
+    "id": "CRSDUN2026",
+    "title": "Joint Spectral Image Reconstruction and Semantic Segmentation with Cooperative Unfolding",
+    "authors": "He, Zijun and Wang, Ping and Wang, Xiaodong and Chen, Chang and Yuan, Xin",
+    "year": 2026,
+    "venue": "CVPR",
+    "pages": "6910--6919",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/He_Joint_Spectral_Image_Reconstruction_and_Semantic_Segmentation_with_Cooperative_Unfolding_CVPR_2026_paper.pdf",
+    "group": "Core joint method",
+    "review": "Main paper methods/experiments plus full supplement text reviewed; supplement Tables 3–7 visually checked",
+    "facts": [
+      [
+        "Alternating reconstruction/segmentation unfolding and CASTA provide cross-task interactions.",
+        "Sections 4.2–4.3"
+      ],
+      [
+        "Task balancing and segmentation sensitivity to noise/mask errors are identified as open issues.",
+        "Section 6"
+      ],
+      [
+        "Stage-specific degradation estimators and shot-noise training are already included.",
+        "Eq. 23; Section 5.4"
+      ]
+    ],
+    "relevance": "Principal control. Our method must differ from existing cooperation and degradation handling.",
+    "next": "Audit paper-to-code equivalence and resolve processed-data provenance. See supplement facts in ledger."
+  },
+  {
+    "id": "SSR2024",
+    "title": "Improving Spectral Snapshot Reconstruction with Spectral-Spatial Rectification",
+    "authors": "Zhang, Jiancheng and Zeng, Haijin and Chen, Yongyong and Yu, Dengxiu and Zhao, Yin-Ping",
+    "year": 2024,
+    "venue": "CVPR",
+    "pages": "25817--25826",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Improving_Spectral_Snapshot_Reconstruction_with_Spectral-Spatial_Rectification_CVPR_2024_paper.html",
+    "group": "Reconstruction backbone",
+    "review": "Official abstract reviewed; full-text inspection pending",
+    "facts": [
+      [
+        "WSSA captures spectral information; ARB addresses spatial degradation through alignment.",
+        "Official abstract"
+      ]
+    ],
+    "relevance": "CRSDUN builds on these reconstruction components. Distinguish ARB's imaging degradation from our loader orientation bug.",
+    "next": "Inspect forward model, ARB, training protocol and code before implementing a matched two-stage baseline."
+  },
+  {
+    "id": "DPU2024",
+    "title": "Dual Prior Unfolding for Snapshot Compressive Imaging",
+    "authors": "Zhang, Jiancheng and Zeng, Haijin and Cao, Jiezhang and Chen, Yongyong and Yu, Dengxiu and Zhao, Yin-Ping",
+    "year": 2024,
+    "venue": "CVPR",
+    "pages": "25742--25752",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Dual_Prior_Unfolding_for_Snapshot_Compressive_Imaging_CVPR_2024_paper.pdf",
+    "group": "Unfolding foundations",
+    "review": "Targeted indexed full-text excerpt reviewed; metadata cross-checked against CRSDUN reference 45",
+    "facts": [
+      [
+        "Uses CAVE for training and ten KAIST scenes for simulated evaluation.",
+        "Section 4.1"
+      ],
+      [
+        "Sparse attention uses learned threshold filtering.",
+        "Eqs. 14–16"
+      ]
+    ],
+    "relevance": "Prior-module and attention-thresholding precedent; generic filtering is not enough to distinguish our proposal.",
+    "next": "Read full objective/derivation; its reconstruction scores are not FVgNET joint-task scores."
+  },
+  {
+    "id": "GST2022",
+    "title": "Modeling Mask Uncertainty in Hyperspectral Image Reconstruction",
+    "authors": "Wang, Jiamian and Zhang, Yulun and Yuan, Xin and Meng, Ziyi and Tao, Zhiqiang",
+    "year": 2022,
+    "venue": "ECCV (verified via author arXiv record)",
+    "arxiv": "2112.15362",
+    "url": "https://arxiv.org/abs/2112.15362v4",
+    "group": "Measurement uncertainty",
+    "review": "Author abstract plus targeted full-text Section 4.1, Tables 1–3 and mask-set appendix passages reviewed; derivation not fully checked",
+    "facts": [
+      [
+        "Models mask uncertainty with variational Bayesian learning, a graph-based self-tuning network and bilevel optimization.",
+        "Abstract"
+      ],
+      [
+        "Distinguishes same-mask, one-to-many and many-to-many evaluation; one-to-many testing uses unseen masks and 100 trials.",
+        "Section 4.1; Table 2; supplementary scenario discussion"
+      ]
+    ],
+    "relevance": "Direct novelty constraint on uncertainty/miscalibration claims; distinguish hardware uncertainty from cross-task trust.",
+    "next": "Finish uncertainty derivation and inspect which mask/operator information is supplied during evaluation."
+  },
+  {
+    "id": "RDLUF2023",
+    "title": "Residual Degradation Learning Unfolding Framework with Mixing Priors across Spectral and Spatial for Compressive Spectral Imaging",
+    "authors": "Dong, Yubo and Gao, Dahua and Qiu, Tian and Li, Yuyan and Yang, Minxi and Shi, Guangming",
+    "year": 2023,
+    "venue": "CVPR (verified via author arXiv record)",
+    "arxiv": "2211.06891",
+    "url": "https://arxiv.org/abs/2211.06891v3",
+    "group": "Measurement mismatch",
+    "review": "Author abstract reviewed; full-text inspection pending",
+    "facts": [
+      [
+        "Learns residual degradation to reduce sensing-model mismatch and uses a spatial/spectral prior transformer.",
+        "Abstract"
+      ]
+    ],
+    "relevance": "Operator correction is established; ours must explain a distinct contribution in joint-task cooperation.",
+    "next": "Check learned operator inputs and real-data protocol; separate correction from confidence conditioning."
+  },
+  {
+    "id": "DAUHST2022",
+    "title": "Degradation-Aware Unfolding Half-Shuffle Transformer for Spectral Compressive Imaging",
+    "authors": "Cai, Yuanhao and Lin, Jing and Wang, Haoqian and Yuan, Xin and Ding, Henghui and Zhang, Yulun and Timofte, Radu and Van Gool, Luc",
+    "year": 2022,
+    "venue": "NeurIPS (verified via author arXiv record)",
+    "arxiv": "2205.10102",
+    "url": "https://arxiv.org/abs/2205.10102v3",
+    "group": "Degradation-aware unfolding",
+    "review": "Author abstract reviewed",
+    "facts": [
+      [
+        "Estimates unfolding-control parameters from compressed measurements and masks; uses a half-shuffle transformer.",
+        "Abstract"
+      ]
+    ],
+    "relevance": "Adaptive unfolding parameters already exist and cannot alone constitute the proposed contribution.",
+    "next": "Read parameter estimator equations and compare directly with CRSDUN Eq. 23."
+  },
+  {
+    "id": "FVgNET2022",
+    "title": "Real-Time Hyperspectral Imaging in Hardware via Trained Metasurface Encoders",
+    "authors": "Makarenko, Maksim and Burguete-Lopez, Arturo and Wang, Qizhou and Getman, Fedor and Giancola, Silvio and Ghanem, Bernard and Fratalocchi, Andrea",
+    "year": 2022,
+    "venue": "CVPR",
+    "pages": "12692--12702",
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Makarenko_Real-Time_Hyperspectral_Imaging_in_Hardware_via_Trained_Metasurface_Encoders_CVPR_2022_paper.pdf",
+    "group": "Dataset provenance",
+    "review": "Targeted full-text Section 4 and Fig. 5 caption reviewed; dataset paragraph visually checked on PDF page 5",
+    "facts": [
+      [
+        "Introduces a metasurface-based imaging system and a labeled hyperspectral segmentation dataset.",
+        "Abstract"
+      ]
+    ],
+    "relevance": "Original dataset provenance. Its hardware is not the same acquisition model as simulated CASSI.",
+    "next": "Reconcile source dataset description with public mirrors and author-preprocessed CRSDUN data; verify original license."
+  },
+  {
+    "id": "GRADNORM2018",
+    "title": "GradNorm: Gradient Normalization for Adaptive Loss Balancing in Deep Multitask Networks",
+    "authors": "Chen, Zhao and Badrinarayanan, Vijay and Lee, Chen-Yu and Rabinovich, Andrew",
+    "year": 2018,
+    "venue": "Proceedings of the 35th International Conference on Machine Learning",
+    "pages": "794--803",
+    "url": "https://proceedings.mlr.press/v80/chen18a.html",
+    "group": "Task balancing",
+    "review": "Publisher metadata and full-text Sections 3.1–3.2 reviewed; experiment tables not audited",
+    "facts": [
+      [
+        "Adapts task weights through gradient-magnitude balancing.",
+        "Publisher abstract"
+      ],
+      [
+        "Targets gradient norms using relative training rates, treats targets as constants when updating weights, and renormalizes task weights.",
+        "Sections 3.1–3.2; Eqs. 1–2"
+      ]
+    ],
+    "relevance": "Essential control if we propose adaptive loss weighting. Record extra backward-pass and memory costs.",
+    "next": "Map shared parameters in CRSDUN; measure actual overhead rather than transferring the paper's timing."
+  },
+  {
+    "id": "PCGRAD2020",
+    "title": "Gradient Surgery for Multi-Task Learning",
+    "authors": "Yu, Tianhe and Kumar, Saurabh and Gupta, Abhishek and Levine, Sergey and Hausman, Karol and Finn, Chelsea",
+    "year": 2020,
+    "venue": "NeurIPS (verified via author arXiv record)",
+    "arxiv": "2001.06782",
+    "url": "https://arxiv.org/abs/2001.06782v4",
+    "group": "Gradient conflict",
+    "review": "Author abstract reviewed",
+    "facts": [
+      [
+        "Projects a task gradient against another conflicting task gradient to reduce interference.",
+        "Abstract"
+      ]
+    ],
+    "relevance": "Separates gradient-direction conflict from unequal loss magnitudes; a candidate control, not our invention.",
+    "next": "Read projection/order details and distinguish shared from task-exclusive parameter handling."
+  },
+  {
+    "id": "UNCERTAINTY2018",
+    "title": "Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics",
+    "authors": "Kendall, Alex and Gal, Yarin and Cipolla, Roberto",
+    "year": 2018,
+    "venue": "CVPR; verify proceedings metadata before submission",
+    "arxiv": "1705.07115",
+    "url": "https://arxiv.org/abs/1705.07115v3",
+    "group": "Task weighting",
+    "review": "Author abstract screened; detailed formulation pending",
+    "facts": [
+      [
+        "Studies relative weighting of regression and classification objectives using task uncertainty.",
+        "Abstract"
+      ]
+    ],
+    "relevance": "Compare against uncertainty weighting; do not conflate a global task weight with spatially calibrated prediction reliability.",
+    "next": "Verify exact likelihood assumptions, regularization terms and published metadata."
+  },
+  {
+    "id": "CALIBRATION2017",
+    "title": "On Calibration of Modern Neural Networks",
+    "authors": "Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q.",
+    "year": 2017,
+    "venue": "Proceedings of the 34th International Conference on Machine Learning",
+    "pages": "1321--1330",
+    "url": "https://proceedings.mlr.press/v70/guo17a.html",
+    "group": "Confidence calibration",
+    "review": "Publisher abstract and bibliography reviewed",
+    "facts": [
+      [
+        "Finds miscalibration in modern classifiers and evaluates temperature scaling.",
+        "Publisher abstract"
+      ]
+    ],
+    "relevance": "Confidence must be evaluated, not assumed trustworthy. Classification evidence does not establish dense CASSI calibration.",
+    "next": "Specify validation-only fitting, foreground/class-conditioned metrics and shifted-distribution tests."
+  },
+  {
+    "id": "SEGNETMRI2018",
+    "title": "Joint CS-MRI Reconstruction and Segmentation with a Unified Deep Network",
+    "authors": "Sun, Liyan and Fan, Zhiwen and Huang, Yue and Ding, Xinghao and Paisley, John",
+    "year": 2018,
+    "venue": "arXiv record; archival venue not checked",
+    "arxiv": "1805.02165",
+    "url": "https://arxiv.org/abs/1805.02165",
+    "group": "Adjacent joint inverse imaging",
+    "review": "Author abstract reviewed",
+    "facts": [
+      [
+        "Combines MRI reconstruction and segmentation with shared reconstruction encoders and fine-tuning.",
+        "Abstract"
+      ]
+    ],
+    "relevance": "Broad joint reconstruction–segmentation is not new. Any first-of-kind claim must be precisely scoped.",
+    "next": "Read optimization and evaluation details before drawing architectural comparisons."
+  },
+  {
+    "id": "VLDUN2026",
+    "title": "Vision-Language Controlled Deep Unfolding for Joint Medical Image Restoration and Segmentation",
+    "authors": "Chen, Ping and Huang, Zicheng and Wang, Xiangming and Liu, Yungeng and Liang, Bingyu and Zeng, Haijin and Chen, Yongyong",
+    "year": 2026,
+    "venue": "arXiv preprint; peer-reviewed status not established",
+    "arxiv": "2601.23103",
+    "url": "https://arxiv.org/abs/2601.23103",
+    "group": "Recent adjacent joint unfolding",
+    "review": "Author abstract reviewed",
+    "facts": [
+      [
+        "Proposes coupled medical restoration–segmentation unfolding with a frequency-aware Mamba mechanism.",
+        "Abstract"
+      ]
+    ],
+    "relevance": "Recent adjacent precedent; avoid presenting joint unfolding or a backbone change as sufficient novelty.",
+    "next": "Inspect equations, language control, training supervision and actual publication status."
+  },
+  {
+    "id": "STVIT2022",
+    "title": "Vision Transformer with Super Token Sampling",
+    "authors": "Huang, Huaibo and Zhou, Xiaoqiang and Cao, Jie and He, Ran and Tan, Tieniu",
+    "year": 2022,
+    "venue": "arXiv v2 revised 2024; archival venue not verified",
+    "arxiv": "2211.11167",
+    "url": "https://arxiv.org/abs/2211.11167v2",
+    "group": "Attention lineage",
+    "review": "Author abstract and version metadata reviewed",
+    "facts": [
+      [
+        "STA samples super tokens, attends among them, then maps them back to visual tokens.",
+        "Abstract"
+      ]
+    ],
+    "relevance": "Direct conceptual lineage for CASTA. Super-token aggregation itself is not a new contribution.",
+    "next": "Read sparse association learning and isolate CRSDUN's cross-task modification."
+  }
+]

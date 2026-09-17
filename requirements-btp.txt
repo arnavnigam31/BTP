@@ -1,0 +1,9 @@
+# Tested non-CUDA dependencies; install PyTorch separately (see SERVER_SETUP.md).
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.13.1
+scikit-image==0.24.0
+einops==0.8.0
+torchmetrics==1.6.1
+pillow==12.3.0
+tqdm==4.70.1

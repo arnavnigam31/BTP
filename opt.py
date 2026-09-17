@@ -9,6 +9,8 @@ parser.add_argument("--gpu_id", type=str, default='0')
 parser.add_argument('--data_root', type=str, default='fvgnet/', help='dataset directory')
 parser.add_argument('--mask_path', type=str, default='mask/mask512x512.mat')
 
+parser.add_argument('--transpose_image', action='store_true', help='Swap image spatial axes in memory to align public FVgNET candidate cubes with labels')
+
 # Saving specifications
 parser.add_argument('--outf', type=str, default='./exp/CRSDUN/', help='saving_path')
 parser.add_argument('--name', type=str, default='xxx_xxx', help='project name')
@@ -27,7 +29,13 @@ parser.add_argument("--max_epoch", type=int, default=500, help='total epoch')
 
 parser.add_argument("--learning_rate", type=float, default=0.0004)
 
+parser.add_argument('--resume', default=None, help='Full epoch-boundary last.pt checkpoint')
+parser.add_argument('--workers', type=int, default=4)
+parser.add_argument('--seed', type=int, default=3407)
+parser.add_argument('--eval_split', choices=['val', 'test'], default='val')
 opt = parser.parse_args()
+if opt.resume and opt.pretrained_model_path:
+    parser.error('Choose resume or pretrained initialization, not both')
 
 for arg in vars(opt):
     if vars(opt)[arg] == 'True':

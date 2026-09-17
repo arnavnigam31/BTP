@@ -1,0 +1,51 @@
+verify_evaluation.py
+Evaluated 1/2
+Evaluated 2/2
+PASS: production CPU evaluation, MSE/PSNR, confusion matrix, scene IDs, no default cubes, nonfinite rejection and three checkpoint formats
+
+verify_portability.py --root /home/arnav/btp-cassi/data/crsdun_public252_dev
+PASS: exact CPU optimizer/RNG/scheduler/scaler continuation, incompatible resume rejection, val/test isolation, metadata preflight
+
+verify_public252_pipeline.py --root /home/arnav/btp-cassi/data/crsdun_public252_dev
+Dataset size (num. batches) 202 25
+Dataset size (num. batches) 202 25
+PASS: alignment opt-in, unchanged labels, single/DDP loaders, crop/flip registration, batch progress
+
+run_public252.py --root /home/arnav/btp-cassi/data/crsdun_public252_dev
+{
+  "protocol": "public252-v1",
+  "protocol_sha256": "77e00da7d2ee3dc6509e840e1dd4139fd07d338fbecfab083ec28c48e36d7318",
+  "preflight": "passed",
+  "splits": {
+    "train": 202,
+    "val": 25,
+    "test": 25
+  },
+  "metrics": {
+    "reference_amplitude": 1.0,
+    "label": "PSNR_ref1 / SSIM_ref1",
+    "meaning": "Fixed reference scale, not an assertion that all target values lie in [0,1]. No per-image inferred range."
+  },
+  "training_command": [
+    "/home/arnav/miniforge3/envs/cassi/bin/python",
+    "train.py",
+    "--data_root",
+    "/home/arnav/btp-cassi/data/crsdun_public252_dev/",
+    "--transpose_image",
+    "--batch_size",
+    "1",
+    "--max_epoch",
+    "500",
+    "--name",
+    "public252_v1_baseline",
+    "--workers",
+    "0",
+    "--outf",
+    "/home/arnav/btp-cassi/src/CRSDUN/exp/CRSDUN/"
+  ],
+  "note": "Header/membership checks plus one training-scene loader check; full pixel audit is recorded separately."
+}
+
+Resume handoff regression, 17 September:
+PASS: exact CPU optimizer/RNG/scheduler/scaler continuation, incompatible resume rejection, val/test isolation, metadata preflight
+PASS: best-weight handoff and overwrite protection

@@ -1,0 +1,120 @@
+{
+  "protocol_id": "public252-v1",
+  "date": "2026-09-16",
+  "scope": "Controlled public-subset experiments, not an exact CRSDUN paper reproduction",
+  "dataset_files_sha256": {
+    "train_data.csv": "fc2a3c666d3344c7bcaedebe44c5af1a32b2f353c1f3a66c0b097d65d8839eff",
+    "val_data.csv": "c1b81f6b272bffed303e3bfca099735c02cc3f536d4ef9a6b2335bbd73f5556e",
+    "test_data.csv": "38ea2fcea42a7cf767c3dce4029fa9055c0006633bdc497bd118365bdc9f8c16",
+    "all_data.csv": "96092c78659c3b83bbcde26f7f4597a51ba5959d18df6b8f85fc65ebdcb08c9c",
+    "split_manifest.json": "8fdffa621343cced4cd32a9da6553763cf6c2de0c04b0eb87c4e6945b4a43899",
+    "labels_crsdun_like_manifest.json": "68922836b85f84e2c27f625c0ce2515abd9d4a0f3f96033483b4526eeab7fb04",
+    "visible_28_candidate_bk7_manifest.json": "4de811f2f6e6742ed00ecb53b102ca68b3ffbdbfdc17e40bc4efe9d1e6f46df6"
+  },
+  "split_sizes": {
+    "train": 202,
+    "val": 25,
+    "test": 25
+  },
+  "transpose_image": true,
+  "normalization": "identity; retain distributed intensities",
+  "clipping": "none",
+  "tensor_dtype": "float32",
+  "labels_dtype": "int64",
+  "reconstruction_metrics": {
+    "reference_amplitude": 1.0,
+    "label": "PSNR_ref1 / SSIM_ref1",
+    "meaning": "Fixed reference scale, not an assertion that all target values lie in [0,1]. No per-image inferred range."
+  },
+  "target_wavelengths_nm": [
+    400.0,
+    405.26771217007314,
+    410.76554496731114,
+    416.5098328510006,
+    422.51851664943507,
+    428.81134334937263,
+    435.410095387312,
+    442.3388543250952,
+    449.6243046310128,
+    457.2960842506011,
+    465.3871897405087,
+    473.9344449415441,
+    482.97904344647924,
+    492.56717639500704,
+    502.75075825205676,
+    513.5882639304882,
+    525.1456904518687,
+    537.4976545526498,
+    550.7286330309245,
+    564.934343290246,
+    580.2232445419355,
+    596.7181110977776,
+    614.5575818318009,
+    633.8975157246186,
+    654.9118721117962,
+    677.7926758445392,
+    702.7484182706323,
+    730.0
+  ],
+  "wavelength_rule": "linear interpolation from the original 10 nm FVgNET grid onto 28 wavelengths equally spaced in N-BK7 refractive-index dispersion coordinate",
+  "raw_fruit_id_mapping": {
+    "1": {
+      "real": 1,
+      "fake": 2
+    },
+    "2": {
+      "real": 19,
+      "fake": 20
+    },
+    "3": {
+      "real": 7,
+      "fake": 8
+    },
+    "4": {
+      "real": 15,
+      "fake": 16
+    },
+    "5": {
+      "real": 9,
+      "fake": 10
+    },
+    "6": {
+      "real": 5,
+      "fake": 6
+    },
+    "7": {
+      "real": 3,
+      "fake": 4
+    },
+    "8": {
+      "real": 13,
+      "fake": 14
+    },
+    "9": {
+      "real": 17,
+      "fake": 18
+    },
+    "10": {
+      "real": 21,
+      "fake": 22
+    },
+    "11": {
+      "real": 11,
+      "fake": 12
+    },
+    "12": {
+      "real": 21,
+      "fake": 22
+    }
+  },
+  "starfruit_policy": "Map raw ID 12 to other/unknown: real=21, fake=22; preserve real/fake distinction.",
+  "provenance": {
+    "hyplex_commit": "187cd9394dae08beb883dbc6bab50a6d3f317c66"
+  },
+  "limitations": [
+    "CRSDUN processed release could not be inspected; browser site-safety policy blocks Baidu share.",
+    "Exact author wavelength grid and raw-to-23-class conversion are not published in inspected source.",
+    "Distributed intensity radiometric calibration is not established; identity is a project convention supported by the active Hyplex loader.",
+    "Published paper scores are not directly comparable to public252-v1 scores."
+  ]
+}

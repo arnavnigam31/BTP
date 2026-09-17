@@ -11,7 +11,7 @@ from torchvision.transforms import Resize
 class RandomHorizontalFlip():
     def __init__(self, prob=0.5):
         self.prob = prob
-    
+
     def __call__(self, sample):
         x = sample['image']
         y = sample['label']
@@ -21,8 +21,8 @@ class RandomHorizontalFlip():
             if 'rgb' in sample:
                 sample['rgb'] = torch.flip(sample['rgb'],dims=(-1,))
         return sample
-    
-    
+
+
 class SegIdentityTransform(object):
     # Hint: Note that our transforms work on dicts. This is an example of a transform that works
     # on a dict whose elements can be converted to np.arrays, and are then converted to torch.tensors
@@ -35,8 +35,8 @@ class SegIdentityTransform(object):
         if 'rgb' in sample:
             output['rgb'] = torch.tensor(np.array(sample['rgb'])).permute(2,0,1)
         return output
-    
-    
+
+
 class RandomCrop():
     def __init__(self, target_size=(256,256), edge=10):
         self.target_size = target_size
@@ -59,8 +59,8 @@ class RandomCrop():
         sample['image'] = sample['image'][crop_x_0:crop_x_1,crop_y_0:crop_y_1].astype(float)
         sample['label'] = sample['label'][crop_x_0:crop_x_1,crop_y_0:crop_y_1].astype(int)
         return sample
-    
-    
+
+
 class RandomCropHoriz():
     def __init__(self, target_size=(256,256), edge=10, shift=170):
         self.target_size = target_size
@@ -111,7 +111,7 @@ def get_class_names():
         "real onion",
         "fake onion",
         "real unknown",
-        "fake unknown"]  
+        "fake unknown"]
 
 def get_labels():
     """Load the mapping that associates pascal classes with label colors
@@ -141,7 +141,7 @@ def get_labels():
             [0, 64, 128],
             [128, 64, 128], # unknown
             [0, 192, 128]])
-    
+
 def encode_segmap(mask):
     """Encode segmentation label images as pascal classes
     Args:
@@ -174,7 +174,7 @@ def decode_segmap(mask, unk_label=255):
     return colored
 
 class HySpecSegmentation(Dataset):
-    def __init__(self, root_dir, datafile, transform=None, selected=None):
+    def __init__(self, root_dir, datafile, transform=None, selected=None, transpose_image=False):
         data = pd.read_csv(os.path.join(root_dir, datafile), index_col=0)
         self.data = data[data.masks == True]
         if selected is not None:
@@ -182,39 +182,45 @@ class HySpecSegmentation(Dataset):
             self.data = self.data[mask]
         self.names = self.data.names.values
         self.names.sort()
-        self.transform = transform 
+        self.transform = transform
+        self.transpose_image = transpose_image
         self.root_dir = root_dir
         self.class_names = get_class_names()
 
         self.num_classes = len(self.class_names)
-    
-        
+
+
     def __len__(self):
         return len(self.data)
-    
+
     def read_image_label(self, idx):
-        imagefile = self.root_dir + 'visible_28/' + self.names[idx] + '.npy'
+        imagefile = os.path.join(self.root_dir, 'visible_28', self.names[idx] + '.npy')
         image = np.load(imagefile) # 28 ch
-        labelfile = self.root_dir +  'labels/' + self.names[idx] + '.png'
+        if self.transpose_image:
+            # Public FVgNET candidate cubes use the opposite spatial-axis order to labels.
+            image = image.transpose(1, 0, 2)
+        labelfile = os.path.join(self.root_dir, 'labels', self.names[idx] + '.png')
         label = io.imread(labelfile)
         return image, label
 
     def __getitem__(self, idx):
         image, label_rgb = self.read_image_label(idx)
         label = encode_segmap(label_rgb)
-        sample = {'image': image, 'label': label}    
+        sample = {'image': image, 'label': label}
         return self.transform(sample) if self.transform else sample
-    
-    
-def prep_loaders(root_dir, batch_size=1, workers=1):
+
+
+def prep_loaders(root_dir, batch_size=1, workers=1, transpose_image=False):
     # Load dataset
     train_dataset = HySpecSegmentation(
-        root_dir=root_dir, 
-        datafile='train_data.csv', 
+        transpose_image=transpose_image,
+        root_dir=root_dir,
+        datafile='train_data.csv',
         transform=transforms.Compose([RandomCropHoriz(),SegIdentityTransform(), RandomHorizontalFlip()])
     )
     valid_dataset = HySpecSegmentation(
-        root_dir=root_dir, 
+        transpose_image=transpose_image,
+        root_dir=root_dir,
         datafile='val_data.csv',
         transform=transforms.Compose([SegIdentityTransform()])
     )
@@ -225,14 +231,16 @@ def prep_loaders(root_dir, batch_size=1, workers=1):
     print('Dataset size (num. batches)', len(train_loader), len(valid_loader))
     return train_loader, valid_loader
 
-def prep_loaders_ddp(root_dir, batch_size=1, workers=1, rank=0, world_size=1):
+def prep_loaders_ddp(root_dir, batch_size=1, workers=1, rank=0, world_size=1, transpose_image=False):
     # Load dataset
     train_dataset = HySpecSegmentation(
-        root_dir=root_dir, 
-        datafile='train_data.csv', 
+        transpose_image=transpose_image,
+        root_dir=root_dir,
+        datafile='train_data.csv',
         transform=transforms.Compose([RandomCropHoriz(),SegIdentityTransform(), RandomHorizontalFlip()])
     )
     valid_dataset = HySpecSegmentation(
+        transpose_image=transpose_image,
         root_dir=root_dir,
         datafile='val_data.csv',
         transform=transforms.Compose([SegIdentityTransform()])
@@ -244,3 +252,11 @@ def prep_loaders_ddp(root_dir, batch_size=1, workers=1, rank=0, world_size=1):
     valid_loader = DataLoader(valid_dataset, batch_size=1, shuffle=False, num_workers=workers)
     print('Dataset size (num. batches)', len(train_loader), len(valid_loader))
     return train_loader, valid_loader
+
+def evaluation_loader(root_dir, split, workers=0, transpose_image=False):
+    if split not in ('val', 'test'):
+        raise ValueError('Evaluation split must be val or test')
+    dataset = HySpecSegmentation(root_dir, split+'_data.csv',
+                                transform=SegIdentityTransform(), transpose_image=transpose_image)
+    if not len(dataset): raise ValueError('Empty evaluation split')
+    return DataLoader(dataset, batch_size=1, shuffle=False, num_workers=workers)

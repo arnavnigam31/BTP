@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scene": "2021-11-03_007",
+  "loss": 1.6648333072662354,
+  "optimizer_updates": 1,
+  "checkpoint_reload": true,
+  "peak_cuda_allocated_gib": 7.197559833526611,
+  "scope": "One crop; not a passed overfit test or full-resolution validation memory benchmark"
+}

@@ -1,0 +1,1196 @@
+Audit train: 25/202
+Audit train: 50/202
+Audit train: 75/202
+Audit train: 100/202
+Audit train: 125/202
+Audit train: 150/202
+Audit train: 175/202
+Audit train: 200/202
+Audit val: 25/25
+{
+  "split_sizes": {
+    "train": 202,
+    "val": 25,
+    "test": 25
+  },
+  "scene_id_overlap": false,
+  "test_pixels_read": false,
+  "note": "Scene IDs checked; related-scene/group leakage not established by this audit.",
+  "splits": {
+    "train": {
+      "pixel_counts": [
+        50219622,
+        64424,
+        71443,
+        225719,
+        237011,
+        111273,
+        95076,
+        197231,
+        281508,
+        97451,
+        85906,
+        59143,
+        54898,
+        299937,
+        185704,
+        259014,
+        30990,
+        94627,
+        86883,
+        92059,
+        57394,
+        5749,
+        40026
+      ],
+      "missing_classes": [],
+      "foreground_fraction": 0.051620521167717356,
+      "image_min": 0.0,
+      "image_max": 8.81400919018774,
+      "sampled_crop_foreground_quantiles": [
+        0.00177001953125,
+        0.08343887329101562,
+        0.117828369140625,
+        0.16794967651367188,
+        0.55035400390625
+      ],
+      "empty_crop_fraction": 0.0
+    },
+    "val": {
+      "pixel_counts": [
+        6239038,
+        7842,
+        4774,
+        22610,
+        24744,
+        8636,
+        18762,
+        13683,
+        24243,
+        7702,
+        13865,
+        6090,
+        7842,
+        23972,
+        15621,
+        65552,
+        5216,
+        14726,
+        12056,
+        5921,
+        4135,
+        1048,
+        5522
+      ],
+      "missing_classes": [],
+      "foreground_fraction": 0.04799835205078125,
+      "image_min": 0.0,
+      "image_max": 3.135750612517142
+    }
+  }
+}
+/usr/local/lib/python3.12/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{"step": 0, "elapsed_seconds": 5.797361135482788, "ce": 3.153074860572815, "mse": 0.6100774705410004, "foreground_miou_present": 0.010282459926370188, "foreground_recall": 0.04205192751448258, "predicted_foreground_fraction": 0.9991226196289062, "prediction_counts": [115, 7, 6134, 1996, 15481, 47393, 17, 0, 79, 1591, 42866, 1, 2, 8, 15165, 10, 10, 179, 4, 0, 13, 0, 1], "iou_by_class": [0.0015917575897895985, 0.0, 0.0, 0.0, 0.0, 0.02148049554622709, 0.0, 0.0, 0.0, 0.0, 0.029893299926562703, 0.0, 0.0, 0.0, 0.010320964085431332, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 1/1000; elapsed 14.6s
+Completed step 2/1000; elapsed 15.7s
+Completed step 3/1000; elapsed 16.8s
+Completed step 4/1000; elapsed 17.9s
+Completed step 5/1000; elapsed 18.9s
+Completed step 6/1000; elapsed 20.0s
+Completed step 7/1000; elapsed 21.1s
+Completed step 8/1000; elapsed 22.1s
+Completed step 9/1000; elapsed 23.2s
+Completed step 10/1000; elapsed 24.3s
+{"step": 10, "elapsed_seconds": 24.91648244857788, "ce": 2.1827991008758545, "mse": 0.10126624628901482, "foreground_miou_present": 0.0003991472762734159, "foreground_recall": 0.0014200190411644156, "predicted_foreground_fraction": 0.00598907470703125, "prediction_counts": [130287, 0, 2, 4, 0, 0, 0, 0, 0, 1, 0, 0, 0, 13, 0, 765, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.5248860472941969, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0023948836576404954, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 11/1000; elapsed 26.0s
+Completed step 12/1000; elapsed 27.1s
+Completed step 13/1000; elapsed 28.1s
+Completed step 14/1000; elapsed 29.2s
+Completed step 15/1000; elapsed 30.3s
+Completed step 16/1000; elapsed 31.4s
+Completed step 17/1000; elapsed 32.4s
+Completed step 18/1000; elapsed 33.5s
+Completed step 19/1000; elapsed 34.6s
+Completed step 20/1000; elapsed 35.7s
+{"step": 20, "elapsed_seconds": 36.321481466293335, "ce": 1.277252972126007, "mse": 0.041571300476789474, "foreground_miou_present": 4.429914325456945e-06, "foreground_recall": 1.6136580013231996e-05, "predicted_foreground_fraction": 0.011871337890625, "prediction_counts": [129516, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1556, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.5330235645536011, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.6579485952741674e-05, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 21/1000; elapsed 37.4s
+Completed step 22/1000; elapsed 38.5s
+Completed step 23/1000; elapsed 39.6s
+Completed step 24/1000; elapsed 40.6s
+Completed step 25/1000; elapsed 41.7s
+Completed step 26/1000; elapsed 42.8s
+Completed step 27/1000; elapsed 43.9s
+Completed step 28/1000; elapsed 45.0s
+Completed step 29/1000; elapsed 46.0s
+Completed step 30/1000; elapsed 47.1s
+{"step": 30, "elapsed_seconds": 47.79501795768738, "ce": 0.9695926308631897, "mse": 0.028228082694113255, "foreground_miou_present": 0.08406963422471847, "foreground_recall": 0.4854851462780978, "predicted_foreground_fraction": 0.40941619873046875, "prediction_counts": [77409, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 53663, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8026675197480129, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5044178053483108, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 31/1000; elapsed 48.9s
+Completed step 32/1000; elapsed 50.0s
+Completed step 33/1000; elapsed 51.1s
+Completed step 34/1000; elapsed 52.2s
+Completed step 35/1000; elapsed 53.3s
+Completed step 36/1000; elapsed 54.3s
+Completed step 37/1000; elapsed 55.4s
+Completed step 38/1000; elapsed 56.5s
+Completed step 39/1000; elapsed 57.6s
+Completed step 40/1000; elapsed 58.7s
+{"step": 40, "elapsed_seconds": 59.38575768470764, "ce": 0.8346254825592041, "mse": 0.0222342386841774, "foreground_miou_present": 0.09783543621461939, "foreground_recall": 0.4563747559342273, "predicted_foreground_fraction": 0.35947418212890625, "prediction_counts": [83955, 0, 0, 0, 0, 0, 0, 0, 1042, 0, 0, 0, 0, 0, 0, 46075, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.790317109403329, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.08892755746863266, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.49808505981908374, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 41/1000; elapsed 60.5s
+Completed step 42/1000; elapsed 61.6s
+Completed step 43/1000; elapsed 62.7s
+Completed step 44/1000; elapsed 63.8s
+Completed step 45/1000; elapsed 64.9s
+Completed step 46/1000; elapsed 66.0s
+Completed step 47/1000; elapsed 67.1s
+Completed step 48/1000; elapsed 68.2s
+Completed step 49/1000; elapsed 69.3s
+Completed step 50/1000; elapsed 70.4s
+{"step": 50, "elapsed_seconds": 71.11777257919312, "ce": 0.7440751194953918, "mse": 0.01851551653817296, "foreground_miou_present": 0.15780349815283615, "foreground_recall": 0.555889044875829, "predicted_foreground_fraction": 0.4035797119140625, "prediction_counts": [78174, 0, 0, 0, 0, 0, 0, 0, 4951, 0, 0, 0, 0, 0, 0, 47947, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8135528519357699, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3912469179288482, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5555740709881687, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 51/1000; elapsed 72.2s
+Completed step 52/1000; elapsed 73.3s
+Completed step 53/1000; elapsed 74.5s
+Completed step 54/1000; elapsed 75.6s
+Completed step 55/1000; elapsed 76.7s
+Completed step 56/1000; elapsed 77.8s
+Completed step 57/1000; elapsed 78.9s
+Completed step 58/1000; elapsed 80.0s
+Completed step 59/1000; elapsed 81.2s
+Completed step 60/1000; elapsed 82.3s
+{"step": 60, "elapsed_seconds": 82.97604823112488, "ce": 0.72633296251297, "mse": 0.01331819174811244, "foreground_miou_present": 0.15832093948051676, "foreground_recall": 0.5530812799535266, "predicted_foreground_fraction": 0.43076324462890625, "prediction_counts": [74611, 0, 0, 0, 0, 0, 0, 0, 13738, 0, 0, 0, 0, 0, 0, 42723, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8215603016667723, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.43316817254444767, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5167574643386529, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 61/1000; elapsed 84.1s
+Completed step 62/1000; elapsed 85.2s
+Completed step 63/1000; elapsed 86.4s
+Completed step 64/1000; elapsed 87.5s
+Completed step 65/1000; elapsed 88.6s
+Completed step 66/1000; elapsed 89.8s
+Completed step 67/1000; elapsed 90.9s
+Completed step 68/1000; elapsed 92.0s
+Completed step 69/1000; elapsed 93.2s
+Completed step 70/1000; elapsed 94.3s
+{"step": 70, "elapsed_seconds": 94.99726605415344, "ce": 0.6964063346385956, "mse": 0.010682057123631239, "foreground_miou_present": 0.17301120601074618, "foreground_recall": 0.5915186135450453, "predicted_foreground_fraction": 0.43558502197265625, "prediction_counts": [73979, 0, 0, 0, 0, 0, 0, 0, 9315, 0, 0, 0, 0, 0, 0, 47778, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8152522804836274, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.47660197729769316, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.561465258766784, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 71/1000; elapsed 96.1s
+Completed step 72/1000; elapsed 97.3s
+Completed step 73/1000; elapsed 98.4s
+Completed step 74/1000; elapsed 99.6s
+Completed step 75/1000; elapsed 100.7s
+Completed step 76/1000; elapsed 101.8s
+Completed step 77/1000; elapsed 103.0s
+Completed step 78/1000; elapsed 104.1s
+Completed step 79/1000; elapsed 105.3s
+Completed step 80/1000; elapsed 106.4s
+{"step": 80, "elapsed_seconds": 107.14173364639282, "ce": 0.6622825860977173, "mse": 0.00798161281272769, "foreground_miou_present": 0.16992793741582135, "foreground_recall": 0.5727679075696697, "predicted_foreground_fraction": 0.42547607421875, "prediction_counts": [75304, 0, 0, 0, 0, 0, 0, 0, 13095, 0, 0, 0, 0, 0, 0, 42673, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8167121667694088, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.47395961585816304, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5456080086367652, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 81/1000; elapsed 108.3s
+Completed step 82/1000; elapsed 109.5s
+Completed step 83/1000; elapsed 110.6s
+Completed step 84/1000; elapsed 111.8s
+Completed step 85/1000; elapsed 112.9s
+Completed step 86/1000; elapsed 114.1s
+Completed step 87/1000; elapsed 115.3s
+Completed step 88/1000; elapsed 116.4s
+Completed step 89/1000; elapsed 117.6s
+Completed step 90/1000; elapsed 118.7s
+{"step": 90, "elapsed_seconds": 119.45781803131104, "ce": 0.6418154984712601, "mse": 0.006580359768122435, "foreground_miou_present": 0.18115303704380778, "foreground_recall": 0.6007810104726404, "predicted_foreground_fraction": 0.43698883056640625, "prediction_counts": [73795, 0, 0, 0, 0, 0, 0, 0, 10671, 0, 0, 0, 0, 0, 0, 46606, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8148519755642202, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5217452796831907, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5651729425796558, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 91/1000; elapsed 120.6s
+Completed step 92/1000; elapsed 121.8s
+Completed step 93/1000; elapsed 123.0s
+Completed step 94/1000; elapsed 124.1s
+Completed step 95/1000; elapsed 125.3s
+Completed step 96/1000; elapsed 126.5s
+Completed step 97/1000; elapsed 127.6s
+Completed step 98/1000; elapsed 128.8s
+Completed step 99/1000; elapsed 130.0s
+Completed step 100/1000; elapsed 131.1s
+{"step": 100, "elapsed_seconds": 131.83622431755066, "ce": 0.6204117089509964, "mse": 0.005608452251181006, "foreground_miou_present": 0.1778758079368543, "foreground_recall": 0.5918090719852834, "predicted_foreground_fraction": 0.43386077880859375, "prediction_counts": [74205, 0, 0, 0, 0, 0, 0, 0, 13678, 0, 0, 0, 0, 0, 0, 43189, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8090994016209256, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5086424309528204, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5586124166683054, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 101/1000; elapsed 133.0s
+Completed step 102/1000; elapsed 134.2s
+Completed step 103/1000; elapsed 135.3s
+Completed step 104/1000; elapsed 136.5s
+Completed step 105/1000; elapsed 137.6s
+Completed step 106/1000; elapsed 138.8s
+Completed step 107/1000; elapsed 139.9s
+Completed step 108/1000; elapsed 141.1s
+Completed step 109/1000; elapsed 142.2s
+Completed step 110/1000; elapsed 143.4s
+{"step": 110, "elapsed_seconds": 144.07976293563843, "ce": 0.6221656501293182, "mse": 0.004863169975578785, "foreground_miou_present": 0.1689585030981584, "foreground_recall": 0.5741879266108341, "predicted_foreground_fraction": 0.42901611328125, "prediction_counts": [74840, 0, 0, 0, 0, 0, 0, 0, 17084, 0, 0, 0, 0, 0, 0, 39148, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.803252195482505, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4613372397195773, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5524137788693732, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 111/1000; elapsed 145.2s
+Completed step 112/1000; elapsed 146.4s
+Completed step 113/1000; elapsed 147.5s
+Completed step 114/1000; elapsed 148.7s
+Completed step 115/1000; elapsed 149.8s
+Completed step 116/1000; elapsed 150.9s
+Completed step 117/1000; elapsed 152.1s
+Completed step 118/1000; elapsed 153.2s
+Completed step 119/1000; elapsed 154.4s
+Completed step 120/1000; elapsed 155.5s
+{"step": 120, "elapsed_seconds": 156.20562553405762, "ce": 0.5461005866527557, "mse": 0.004217978334054351, "foreground_miou_present": 0.20444571638054398, "foreground_recall": 0.6228558519307418, "predicted_foreground_fraction": 0.42523956298828125, "prediction_counts": [75335, 0, 0, 0, 0, 0, 0, 752, 11970, 0, 7, 0, 0, 0, 0, 43008, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8052920369467672, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014012354979659485, 0.6032883642495784, 0.0, 0.0008300477277443454, 0.0, 0.0, 0.0, 0.0, 0.6085435313262816, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 121/1000; elapsed 157.4s
+Completed step 122/1000; elapsed 158.5s
+Completed step 123/1000; elapsed 159.6s
+Completed step 124/1000; elapsed 160.8s
+Completed step 125/1000; elapsed 161.9s
+Completed step 126/1000; elapsed 163.0s
+Completed step 127/1000; elapsed 164.2s
+Completed step 128/1000; elapsed 165.3s
+Completed step 129/1000; elapsed 166.5s
+Completed step 130/1000; elapsed 167.6s
+{"step": 130, "elapsed_seconds": 168.29600477218628, "ce": 0.5139719545841217, "mse": 0.004224330186843872, "foreground_miou_present": 0.33630018752677177, "foreground_recall": 0.7142695777057011, "predicted_foreground_fraction": 0.482177734375, "prediction_counts": [67872, 0, 0, 0, 0, 1, 0, 411, 7382, 0, 4529, 0, 0, 0, 1, 50876, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8581428474530286, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.022403584573531764, 0.6266619077362363, 0.0, 0.7539414414414415, 0.0, 0.0, 0.0, 0.0005649717514124294, 0.6142292196580086, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 131/1000; elapsed 169.4s
+Completed step 132/1000; elapsed 170.6s
+Completed step 133/1000; elapsed 171.7s
+Completed step 134/1000; elapsed 172.9s
+Completed step 135/1000; elapsed 174.0s
+Completed step 136/1000; elapsed 175.1s
+Completed step 137/1000; elapsed 176.3s
+Completed step 138/1000; elapsed 177.4s
+Completed step 139/1000; elapsed 178.6s
+Completed step 140/1000; elapsed 179.7s
+{"step": 140, "elapsed_seconds": 180.39702725410461, "ce": 0.609526127576828, "mse": 0.0036316688638180494, "foreground_miou_present": 0.28008061438500303, "foreground_recall": 0.6353294282809702, "predicted_foreground_fraction": 0.4636688232421875, "prediction_counts": [70298, 0, 0, 0, 0, 0, 0, 865, 22374, 0, 6385, 0, 0, 0, 8, 31142, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8575635627098769, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.022258739169405437, 0.43905397210430563, 0.0, 0.6320850939822236, 0.0, 0.0, 0.0, 0.004519774011299435, 0.5825661070427841, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 141/1000; elapsed 181.5s
+Completed step 142/1000; elapsed 182.7s
+Completed step 143/1000; elapsed 183.8s
+Completed step 144/1000; elapsed 185.0s
+Completed step 145/1000; elapsed 186.1s
+Completed step 146/1000; elapsed 187.3s
+Completed step 147/1000; elapsed 188.4s
+Completed step 148/1000; elapsed 189.6s
+Completed step 149/1000; elapsed 190.7s
+Completed step 150/1000; elapsed 191.8s
+{"step": 150, "elapsed_seconds": 192.5480833053589, "ce": 0.4152659922838211, "mse": 0.003176072728820145, "foreground_miou_present": 0.34567231152752664, "foreground_recall": 0.7148020848461377, "predicted_foreground_fraction": 0.462799072265625, "prediction_counts": [70412, 0, 0, 0, 0, 97, 0, 3818, 12525, 0, 7972, 0, 0, 0, 40, 36208, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8737895373044121, 0.0, 0.0, 0.0, 0.0, 0.017695635076681086, 0.0, 0.07177242888402625, 0.7098024871982443, 0.0, 0.5748768472906404, 0.0, 0.0, 0.0, 0.022598870056497175, 0.6772876006590703, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 151/1000; elapsed 193.7s
+Completed step 152/1000; elapsed 194.9s
+Completed step 153/1000; elapsed 196.0s
+Completed step 154/1000; elapsed 197.2s
+Completed step 155/1000; elapsed 198.3s
+Completed step 156/1000; elapsed 199.5s
+Completed step 157/1000; elapsed 200.8s
+Completed step 158/1000; elapsed 201.9s
+Completed step 159/1000; elapsed 203.1s
+Completed step 160/1000; elapsed 204.2s
+{"step": 160, "elapsed_seconds": 204.90945148468018, "ce": 0.4163874238729477, "mse": 0.002830191166140139, "foreground_miou_present": 0.3662771495097045, "foreground_recall": 0.708912233141308, "predicted_foreground_fraction": 0.47263336181640625, "prediction_counts": [69123, 0, 0, 0, 0, 537, 0, 6612, 14574, 0, 7957, 0, 0, 0, 61, 32208, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.883109452058527, 0.0, 0.0, 0.0, 0.0, 0.1223128243143069, 0.0, 0.104870557261957, 0.6861444584466406, 0.0, 0.583953373015873, 0.0, 0.0, 0.0, 0.03446327683615819, 0.6659184071832911, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 161/1000; elapsed 206.1s
+Completed step 162/1000; elapsed 207.2s
+Completed step 163/1000; elapsed 208.4s
+Completed step 164/1000; elapsed 209.5s
+Completed step 165/1000; elapsed 210.7s
+Completed step 166/1000; elapsed 211.8s
+Completed step 167/1000; elapsed 213.0s
+Completed step 168/1000; elapsed 214.1s
+Completed step 169/1000; elapsed 215.3s
+Completed step 170/1000; elapsed 216.4s
+{"step": 170, "elapsed_seconds": 217.11455130577087, "ce": 0.33031201362609863, "mse": 0.002952870330773294, "foreground_miou_present": 0.40933430250508146, "foreground_recall": 0.7716189830727276, "predicted_foreground_fraction": 0.46137237548828125, "prediction_counts": [70599, 0, 0, 0, 0, 332, 0, 4274, 12387, 0, 7264, 0, 0, 0, 62, 36154, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.886563133018231, 0.0, 0.0, 0.0, 0.0, 0.07012888551933283, 0.0, 0.243269463982537, 0.7538496376811594, 0.0, 0.5995762711864406, 0.0, 0.0, 0.0, 0.03502824858757062, 0.7541533080734479, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 171/1000; elapsed 218.3s
+Completed step 172/1000; elapsed 219.4s
+Completed step 173/1000; elapsed 220.6s
+Completed step 174/1000; elapsed 221.7s
+Completed step 175/1000; elapsed 222.9s
+Completed step 176/1000; elapsed 224.0s
+Completed step 177/1000; elapsed 225.2s
+Completed step 178/1000; elapsed 226.3s
+Completed step 179/1000; elapsed 227.4s
+Completed step 180/1000; elapsed 228.6s
+{"step": 180, "elapsed_seconds": 229.29729747772217, "ce": 0.3730037584900856, "mse": 0.0028422626201063395, "foreground_miou_present": 0.36487611472805853, "foreground_recall": 0.7564990076003292, "predicted_foreground_fraction": 0.4737548828125, "prediction_counts": [68976, 0, 0, 0, 0, 49, 0, 3300, 7258, 0, 7553, 0, 0, 0, 79, 43857, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8802102482399881, 0.0, 0.0, 0.0, 0.0, 0.006738010305192232, 0.0, 0.14373767258382644, 0.663237185375712, 0.0, 0.5995085995085995, 0.0, 0.0, 0.0, 0.04463276836158192, 0.7314024522334388, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 181/1000; elapsed 230.4s
+Completed step 182/1000; elapsed 231.6s
+Completed step 183/1000; elapsed 232.7s
+Completed step 184/1000; elapsed 233.9s
+Completed step 185/1000; elapsed 235.0s
+Completed step 186/1000; elapsed 236.2s
+Completed step 187/1000; elapsed 237.3s
+Completed step 188/1000; elapsed 238.5s
+Completed step 189/1000; elapsed 239.6s
+Completed step 190/1000; elapsed 240.8s
+{"step": 190, "elapsed_seconds": 241.47954416275024, "ce": 0.27102358639240265, "mse": 0.002247233293019235, "foreground_miou_present": 0.5944628876058579, "foreground_recall": 0.8665343467105582, "predicted_foreground_fraction": 0.45529937744140625, "prediction_counts": [71395, 0, 0, 0, 0, 1408, 0, 5231, 11294, 0, 5532, 0, 0, 0, 97, 36115, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8840820705377498, 0.0, 0.0, 0.0, 0.0, 0.271689497716895, 0.0, 0.7544216622319612, 0.8413305613305613, 0.0, 0.7896921480456589, 0.0, 0.0, 0.0, 0.05480225988700565, 0.8548411964230651, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 191/1000; elapsed 242.6s
+Completed step 192/1000; elapsed 243.8s
+Completed step 193/1000; elapsed 244.9s
+Completed step 194/1000; elapsed 246.1s
+Completed step 195/1000; elapsed 247.2s
+Completed step 196/1000; elapsed 248.4s
+Completed step 197/1000; elapsed 249.5s
+Completed step 198/1000; elapsed 250.7s
+Completed step 199/1000; elapsed 251.8s
+Completed step 200/1000; elapsed 253.0s
+{"step": 200, "elapsed_seconds": 253.65991377830505, "ce": 0.2600283920764923, "mse": 0.002018675673753023, "foreground_miou_present": 0.5067142861321711, "foreground_recall": 0.8212551031934292, "predicted_foreground_fraction": 0.428009033203125, "prediction_counts": [74972, 0, 0, 0, 0, 19, 0, 4526, 10513, 0, 3995, 0, 0, 0, 49, 36998, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.855295859893117, 0.0, 0.0, 0.0, 0.0, 0.005608974358974359, 0.0, 0.7160594674072864, 0.9051908669282911, 0.0, 0.5550653018002117, 0.0, 0.0, 0.0, 0.02768361581920904, 0.8306774904790539, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 201/1000; elapsed 254.8s
+Completed step 202/1000; elapsed 256.0s
+Completed step 203/1000; elapsed 257.1s
+Completed step 204/1000; elapsed 258.2s
+Completed step 205/1000; elapsed 259.4s
+Completed step 206/1000; elapsed 260.5s
+Completed step 207/1000; elapsed 261.7s
+Completed step 208/1000; elapsed 262.8s
+Completed step 209/1000; elapsed 264.0s
+Completed step 210/1000; elapsed 265.1s
+{"step": 210, "elapsed_seconds": 265.8326094150543, "ce": 0.20233912020921707, "mse": 0.0018905258039012551, "foreground_miou_present": 0.6520491599795574, "foreground_recall": 0.8840102628648884, "predicted_foreground_fraction": 0.453155517578125, "prediction_counts": [71676, 0, 0, 0, 0, 894, 0, 5544, 10839, 0, 5074, 0, 0, 0, 940, 36105, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8915029693924166, 0.0, 0.0, 0.0, 0.0, 0.2880517503805175, 0.0, 0.8734959349593496, 0.9040386303775242, 0.0, 0.8297872340425532, 0.0, 0.0, 0.0, 0.14976665252439542, 0.8671547575930046, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 211/1000; elapsed 267.0s
+Completed step 212/1000; elapsed 268.1s
+Completed step 213/1000; elapsed 269.3s
+Completed step 214/1000; elapsed 270.4s
+Completed step 215/1000; elapsed 271.6s
+Completed step 216/1000; elapsed 272.7s
+Completed step 217/1000; elapsed 273.9s
+Completed step 218/1000; elapsed 275.0s
+Completed step 219/1000; elapsed 276.1s
+Completed step 220/1000; elapsed 277.3s
+{"step": 220, "elapsed_seconds": 277.9953465461731, "ce": 0.2220487743616104, "mse": 0.0017247674986720085, "foreground_miou_present": 0.5920099700824698, "foreground_recall": 0.8518984686385568, "predicted_foreground_fraction": 0.423492431640625, "prediction_counts": [75564, 0, 0, 0, 0, 157, 0, 5692, 11168, 0, 3860, 0, 0, 0, 396, 34235, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8624156753694835, 0.0, 0.0, 0.0, 0.0, 0.0630268968285829, 0.0, 0.9159415531111476, 0.9043335351613182, 0.0, 0.7502521686503933, 0.0, 0.0, 0.0, 0.044358727097396335, 0.87414693964598, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 221/1000; elapsed 279.1s
+Completed step 222/1000; elapsed 280.3s
+Completed step 223/1000; elapsed 281.4s
+Completed step 224/1000; elapsed 282.6s
+Completed step 225/1000; elapsed 283.7s
+Completed step 226/1000; elapsed 284.9s
+Completed step 227/1000; elapsed 286.0s
+Completed step 228/1000; elapsed 287.2s
+Completed step 229/1000; elapsed 288.3s
+Completed step 230/1000; elapsed 289.5s
+{"step": 230, "elapsed_seconds": 290.1740925312042, "ce": 0.16933522373437881, "mse": 0.0018325996934436262, "foreground_miou_present": 0.7128183052913677, "foreground_recall": 0.9169772958319213, "predicted_foreground_fraction": 0.4698944091796875, "prediction_counts": [69482, 0, 0, 0, 0, 1063, 0, 5942, 11033, 0, 4712, 0, 0, 0, 1921, 36919, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9056282056570824, 0.0, 0.0, 0.0, 0.0, 0.3197177868548088, 0.0, 0.920412437570485, 0.9115051978684372, 0.0, 0.9252374217013538, 0.0, 0.0, 0.0, 0.31025914093006746, 0.8897778468230542, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 231/1000; elapsed 291.3s
+Completed step 232/1000; elapsed 292.5s
+Completed step 233/1000; elapsed 293.6s
+Completed step 234/1000; elapsed 294.8s
+Completed step 235/1000; elapsed 295.9s
+Completed step 236/1000; elapsed 297.1s
+Completed step 237/1000; elapsed 298.2s
+Completed step 238/1000; elapsed 299.4s
+Completed step 239/1000; elapsed 300.5s
+Completed step 240/1000; elapsed 301.7s
+{"step": 240, "elapsed_seconds": 302.35833764076233, "ce": 0.18418412655591965, "mse": 0.0019047919195145369, "foreground_miou_present": 0.7171145942001923, "foreground_recall": 0.9255296832389344, "predicted_foreground_fraction": 0.49483489990234375, "prediction_counts": [66213, 0, 0, 0, 0, 2632, 0, 5957, 10146, 0, 4934, 0, 0, 0, 872, 40318, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8995704298509138, 0.0, 0.0, 0.0, 0.0, 0.5361319340329835, 0.0, 0.7802804295942721, 0.8761394101876676, 0.0, 0.9492203118752499, 0.0, 0.0, 0.0, 0.3079207920792079, 0.8529946874317735, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 241/1000; elapsed 303.5s
+Completed step 242/1000; elapsed 304.7s
+Completed step 243/1000; elapsed 305.8s
+Completed step 244/1000; elapsed 307.0s
+Completed step 245/1000; elapsed 308.1s
+Completed step 246/1000; elapsed 309.3s
+Completed step 247/1000; elapsed 310.4s
+Completed step 248/1000; elapsed 311.6s
+Completed step 249/1000; elapsed 312.7s
+Completed step 250/1000; elapsed 313.9s
+{"step": 250, "elapsed_seconds": 314.5662794113159, "ce": 0.44271355867385864, "mse": 0.001565697486512363, "foreground_miou_present": 0.5565695648430856, "foreground_recall": 0.8385373803876006, "predicted_foreground_fraction": 0.5481338500976562, "prediction_counts": [59227, 0, 0, 0, 0, 4079, 0, 3464, 7374, 0, 4957, 0, 0, 0, 492, 51479, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8144388202358397, 0.0, 0.0, 0.0, 0.0, 0.5900290416263311, 0.0, 0.17379413227250123, 0.6797566371681416, 0.0, 0.9573402763869417, 0.0, 0.0, 0.0, 0.25596890616324264, 0.6825283954413546, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 251/1000; elapsed 315.7s
+Completed step 252/1000; elapsed 316.9s
+Completed step 253/1000; elapsed 318.0s
+Completed step 254/1000; elapsed 319.2s
+Completed step 255/1000; elapsed 320.3s
+Completed step 256/1000; elapsed 321.5s
+Completed step 257/1000; elapsed 322.6s
+Completed step 258/1000; elapsed 323.8s
+Completed step 259/1000; elapsed 324.9s
+Completed step 260/1000; elapsed 326.1s
+{"step": 260, "elapsed_seconds": 326.76950216293335, "ce": 0.3786655515432358, "mse": 0.0013483032234944403, "foreground_miou_present": 0.5115560561287961, "foreground_recall": 0.8032628164786755, "predicted_foreground_fraction": 0.5117111206054688, "prediction_counts": [64001, 0, 0, 0, 0, 3174, 0, 7959, 4611, 0, 5653, 0, 0, 0, 346, 45328, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8590963056079335, 0.0, 0.0, 0.0, 0.0, 0.5541838134430727, 0.0, 0.31791962174940896, 0.4250553097345133, 0.0, 0.83441387769406, 0.0, 0.0, 0.0, 0.19548022598870057, 0.7422834881630207, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 261/1000; elapsed 327.9s
+Completed step 262/1000; elapsed 329.1s
+Completed step 263/1000; elapsed 330.2s
+Completed step 264/1000; elapsed 331.4s
+Completed step 265/1000; elapsed 332.5s
+Completed step 266/1000; elapsed 333.7s
+Completed step 267/1000; elapsed 334.8s
+Completed step 268/1000; elapsed 336.0s
+Completed step 269/1000; elapsed 337.1s
+Completed step 270/1000; elapsed 338.3s
+{"step": 270, "elapsed_seconds": 338.9693810939789, "ce": 0.23524504899978638, "mse": 0.0012486445484682918, "foreground_miou_present": 0.6059809726873374, "foreground_recall": 0.8556098820416002, "predicted_foreground_fraction": 0.4467926025390625, "prediction_counts": [72510, 0, 0, 0, 0, 1664, 0, 7466, 10788, 0, 5571, 0, 0, 0, 60, 33013, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8881718422912306, 0.0, 0.0, 0.0, 0.0, 0.28122109158186864, 0.0, 0.741225229892501, 0.9172352680549402, 0.0, 0.8364568599717115, 0.0, 0.0, 0.0, 0.03389830508474576, 0.8258490815382582, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 271/1000; elapsed 340.1s
+Completed step 272/1000; elapsed 341.3s
+Completed step 273/1000; elapsed 342.4s
+Completed step 274/1000; elapsed 343.6s
+Completed step 275/1000; elapsed 344.7s
+Completed step 276/1000; elapsed 345.9s
+Completed step 277/1000; elapsed 347.0s
+Completed step 278/1000; elapsed 348.2s
+Completed step 279/1000; elapsed 349.3s
+Completed step 280/1000; elapsed 350.4s
+{"step": 280, "elapsed_seconds": 351.1506369113922, "ce": 0.1697530597448349, "mse": 0.0011660830350592732, "foreground_miou_present": 0.6958435301630623, "foreground_recall": 0.9162511497313259, "predicted_foreground_fraction": 0.471893310546875, "prediction_counts": [69220, 0, 0, 0, 0, 2657, 0, 5651, 10869, 0, 5190, 0, 0, 0, 236, 37249, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9072444983729524, 0.0, 0.0, 0.0, 0.0, 0.44403927068723703, 0.0, 0.9060809703327324, 0.9193106495802033, 0.0, 0.8925666729714394, 0.0, 0.0, 0.0, 0.13333333333333333, 0.8797302840734283, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 281/1000; elapsed 352.3s
+Completed step 282/1000; elapsed 353.5s
+Completed step 283/1000; elapsed 354.6s
+Completed step 284/1000; elapsed 355.7s
+Completed step 285/1000; elapsed 356.9s
+Completed step 286/1000; elapsed 358.0s
+Completed step 287/1000; elapsed 359.2s
+Completed step 288/1000; elapsed 360.3s
+Completed step 289/1000; elapsed 361.5s
+Completed step 290/1000; elapsed 362.6s
+{"step": 290, "elapsed_seconds": 363.3298933506012, "ce": 0.17705538868904114, "mse": 0.00113247538683936, "foreground_miou_present": 0.6421204617035517, "foreground_recall": 0.8876409933678656, "predicted_foreground_fraction": 0.45575714111328125, "prediction_counts": [71335, 0, 0, 0, 0, 1808, 0, 5118, 10922, 0, 5371, 0, 0, 0, 246, 36272, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9065435786043986, 0.0, 0.0, 0.0, 0.0, 0.2367663981588032, 0.0, 0.8450282673761224, 0.9282550930026572, 0.0, 0.8285765571710645, 0.0, 0.0, 0.0, 0.13898305084745763, 0.8751134036652065, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 291/1000; elapsed 364.5s
+Completed step 292/1000; elapsed 365.6s
+Completed step 293/1000; elapsed 366.8s
+Completed step 294/1000; elapsed 367.9s
+Completed step 295/1000; elapsed 369.1s
+Completed step 296/1000; elapsed 370.2s
+Completed step 297/1000; elapsed 371.4s
+Completed step 298/1000; elapsed 372.5s
+Completed step 299/1000; elapsed 373.7s
+Completed step 300/1000; elapsed 374.8s
+{"step": 300, "elapsed_seconds": 375.54110741615295, "ce": 0.19929849356412888, "mse": 0.0016581473173573613, "foreground_miou_present": 0.5734092782443638, "foreground_recall": 0.8688418776524504, "predicted_foreground_fraction": 0.452789306640625, "prediction_counts": [71724, 0, 0, 0, 0, 1044, 0, 4996, 10971, 0, 6612, 0, 0, 0, 157, 35568, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9110981435240474, 0.0, 0.0, 0.0, 0.0, 0.010577472841623786, 0.0, 0.8296098699566522, 0.930030959752322, 0.0, 0.7066905615292712, 0.0, 0.0, 0.0, 0.08870056497175141, 0.874846240414562, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 301/1000; elapsed 376.7s
+Completed step 302/1000; elapsed 377.9s
+Completed step 303/1000; elapsed 379.0s
+Completed step 304/1000; elapsed 380.1s
+Completed step 305/1000; elapsed 381.3s
+Completed step 306/1000; elapsed 382.4s
+Completed step 307/1000; elapsed 383.6s
+Completed step 308/1000; elapsed 384.7s
+Completed step 309/1000; elapsed 385.9s
+Completed step 310/1000; elapsed 387.0s
+{"step": 310, "elapsed_seconds": 387.73923993110657, "ce": 0.2241399958729744, "mse": 0.0018803509883582592, "foreground_miou_present": 0.5063340597611746, "foreground_recall": 0.8448306465927611, "predicted_foreground_fraction": 0.46918487548828125, "prediction_counts": [69575, 0, 0, 0, 0, 1258, 0, 6517, 8390, 0, 7222, 0, 0, 0, 181, 37929, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9059111337117411, 0.0, 0.0, 0.0, 0.0, 0.0356353591160221, 0.0, 0.6324797491507709, 0.7493861962353369, 0.0, 0.6599558742415885, 0.0, 0.0, 0.0, 0.10225988700564972, 0.8582872928176796, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 311/1000; elapsed 388.9s
+Completed step 312/1000; elapsed 390.0s
+Completed step 313/1000; elapsed 391.2s
+Completed step 314/1000; elapsed 392.3s
+Completed step 315/1000; elapsed 393.5s
+Completed step 316/1000; elapsed 394.6s
+Completed step 317/1000; elapsed 395.8s
+Completed step 318/1000; elapsed 396.9s
+Completed step 319/1000; elapsed 398.1s
+Completed step 320/1000; elapsed 399.2s
+{"step": 320, "elapsed_seconds": 399.90465807914734, "ce": 0.16376498341560364, "mse": 0.0013248334871605039, "foreground_miou_present": 0.7357960725117318, "foreground_recall": 0.9044230365816269, "predicted_foreground_fraction": 0.45648193359375, "prediction_counts": [71240, 0, 0, 0, 0, 1206, 0, 5351, 10979, 0, 5397, 0, 0, 0, 1134, 35765, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9132017340567659, 0.0, 0.0, 0.0, 0.0, 0.3170644816530103, 0.0, 0.8790844252778238, 0.931763872909107, 0.0, 0.7578313253012048, 0.0, 0.0, 0.0, 0.6406779661016949, 0.88835436382755, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 321/1000; elapsed 401.1s
+Completed step 322/1000; elapsed 402.2s
+Completed step 323/1000; elapsed 403.3s
+Completed step 324/1000; elapsed 404.5s
+Completed step 325/1000; elapsed 405.6s
+Completed step 326/1000; elapsed 406.8s
+Completed step 327/1000; elapsed 407.9s
+Completed step 328/1000; elapsed 409.1s
+Completed step 329/1000; elapsed 410.2s
+Completed step 330/1000; elapsed 411.3s
+{"step": 330, "elapsed_seconds": 412.0484118461609, "ce": 0.1557941511273384, "mse": 0.0011110944906249642, "foreground_miou_present": 0.7208808816320937, "foreground_recall": 0.9115069952074357, "predicted_foreground_fraction": 0.45745086669921875, "prediction_counts": [71113, 0, 0, 0, 0, 2955, 0, 5667, 10977, 0, 4698, 0, 0, 0, 308, 35354, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9191886009937174, 0.0, 0.0, 0.0, 0.0, 0.5065006915629322, 0.0, 0.8755033016588822, 0.9307324840764332, 0.0, 0.9412364823505407, 0.0, 0.0, 0.0, 0.17401129943502824, 0.8973010307087451, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 331/1000; elapsed 413.2s
+Completed step 332/1000; elapsed 414.3s
+Completed step 333/1000; elapsed 415.5s
+Completed step 334/1000; elapsed 416.6s
+Completed step 335/1000; elapsed 417.8s
+Completed step 336/1000; elapsed 418.9s
+Completed step 337/1000; elapsed 420.1s
+Completed step 338/1000; elapsed 421.2s
+Completed step 339/1000; elapsed 422.4s
+Completed step 340/1000; elapsed 423.5s
+{"step": 340, "elapsed_seconds": 424.2108254432678, "ce": 0.16394800692796707, "mse": 0.000965102284681052, "foreground_miou_present": 0.6717305298407096, "foreground_recall": 0.8999047941779219, "predicted_foreground_fraction": 0.4571990966796875, "prediction_counts": [71146, 0, 0, 0, 0, 1542, 0, 5599, 10816, 0, 5620, 0, 0, 0, 556, 35793, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9179339204638696, 0.0, 0.0, 0.0, 0.0, 0.20640143583607537, 0.0, 0.8929038587311968, 0.9330775408227001, 0.0, 0.7851522408484434, 0.0, 0.0, 0.0, 0.31412429378531076, 0.8987238090205301, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 341/1000; elapsed 425.4s
+Completed step 342/1000; elapsed 426.5s
+Completed step 343/1000; elapsed 427.7s
+Completed step 344/1000; elapsed 428.8s
+Completed step 345/1000; elapsed 429.9s
+Completed step 346/1000; elapsed 431.1s
+Completed step 347/1000; elapsed 432.2s
+Completed step 348/1000; elapsed 433.4s
+Completed step 349/1000; elapsed 434.5s
+Completed step 350/1000; elapsed 435.7s
+{"step": 350, "elapsed_seconds": 436.38879466056824, "ce": 0.1706959828734398, "mse": 0.0008960576669778675, "foreground_miou_present": 0.7025945416445029, "foreground_recall": 0.916186603411273, "predicted_foreground_fraction": 0.4776611328125, "prediction_counts": [68464, 0, 0, 0, 0, 1048, 0, 5485, 10843, 0, 5592, 0, 0, 0, 1050, 38590, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9132025089356495, 0.0, 0.0, 0.0, 0.0, 0.19763113367174281, 0.0, 0.8414457831325302, 0.9396405257980864, 0.0, 0.7667628585978612, 0.0, 0.0, 0.0, 0.5932203389830508, 0.8768666096837447, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 351/1000; elapsed 437.5s
+Completed step 352/1000; elapsed 438.7s
+Completed step 353/1000; elapsed 439.8s
+Completed step 354/1000; elapsed 441.0s
+Completed step 355/1000; elapsed 442.1s
+Completed step 356/1000; elapsed 443.3s
+Completed step 357/1000; elapsed 444.4s
+Completed step 358/1000; elapsed 445.6s
+Completed step 359/1000; elapsed 446.7s
+Completed step 360/1000; elapsed 447.9s
+{"step": 360, "elapsed_seconds": 448.56349325180054, "ce": 0.15560674667358398, "mse": 0.0008445652201771736, "foreground_miou_present": 0.7690102405232754, "foreground_recall": 0.922721918316632, "predicted_foreground_fraction": 0.47020721435546875, "prediction_counts": [69441, 0, 0, 0, 0, 1514, 0, 6311, 10860, 0, 5028, 0, 0, 0, 1225, 36693, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9236333847072382, 0.0, 0.0, 0.0, 0.0, 0.43342877594846096, 0.0, 0.8222123368920522, 0.9387335893542913, 0.0, 0.8410323545913596, 0.0, 0.0, 0.0, 0.692090395480226, 0.8865639908732628, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 361/1000; elapsed 449.7s
+Completed step 362/1000; elapsed 450.9s
+Completed step 363/1000; elapsed 452.0s
+Completed step 364/1000; elapsed 453.2s
+Completed step 365/1000; elapsed 454.3s
+Completed step 366/1000; elapsed 455.4s
+Completed step 367/1000; elapsed 456.6s
+Completed step 368/1000; elapsed 457.7s
+Completed step 369/1000; elapsed 458.9s
+Completed step 370/1000; elapsed 460.0s
+{"step": 370, "elapsed_seconds": 460.73303604125977, "ce": 0.16307155042886734, "mse": 0.0008224945340771228, "foreground_miou_present": 0.6707884581934289, "foreground_recall": 0.9004534378983718, "predicted_foreground_fraction": 0.46327972412109375, "prediction_counts": [70349, 0, 0, 0, 0, 1377, 0, 6208, 11002, 0, 5727, 0, 0, 0, 733, 35676, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9263178251740524, 0.0, 0.0, 0.0, 0.0, 0.1945645460160593, 0.0, 0.8066716085989621, 0.9375720493038929, 0.0, 0.7809121621621622, 0.0, 0.0, 0.0, 0.41412429378531074, 0.8908860892941859, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 371/1000; elapsed 461.9s
+Completed step 372/1000; elapsed 463.0s
+Completed step 373/1000; elapsed 464.2s
+Completed step 374/1000; elapsed 465.3s
+Completed step 375/1000; elapsed 466.5s
+Completed step 376/1000; elapsed 467.6s
+Completed step 377/1000; elapsed 468.8s
+Completed step 378/1000; elapsed 469.9s
+Completed step 379/1000; elapsed 471.1s
+Completed step 380/1000; elapsed 472.2s
+{"step": 380, "elapsed_seconds": 472.90553307533264, "ce": 0.19899865984916687, "mse": 0.0012696521589532495, "foreground_miou_present": 0.5651983488748159, "foreground_recall": 0.8825741072437108, "predicted_foreground_fraction": 0.47646331787109375, "prediction_counts": [68621, 0, 0, 0, 0, 1097, 0, 4468, 10734, 0, 6796, 0, 0, 0, 343, 39013, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9252393933039771, 0.0, 0.0, 0.0, 0.0, 0.0005577244841048522, 0.0, 0.6913860103626943, 0.9443243243243243, 0.0, 0.695677570093458, 0.0, 0.0, 0.0, 0.19378531073446328, 0.8654591532498509, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 381/1000; elapsed 474.1s
+Completed step 382/1000; elapsed 475.2s
+Completed step 383/1000; elapsed 476.4s
+Completed step 384/1000; elapsed 477.5s
+Completed step 385/1000; elapsed 478.7s
+Completed step 386/1000; elapsed 479.8s
+Completed step 387/1000; elapsed 480.9s
+Completed step 388/1000; elapsed 482.1s
+Completed step 389/1000; elapsed 483.2s
+Completed step 390/1000; elapsed 484.4s
+{"step": 390, "elapsed_seconds": 485.08333015441895, "ce": 0.265298992395401, "mse": 0.0011216039420105517, "foreground_miou_present": 0.5546109817451406, "foreground_recall": 0.8207387326330058, "predicted_foreground_fraction": 0.421173095703125, "prediction_counts": [75868, 0, 0, 0, 0, 1201, 0, 5347, 11233, 0, 6704, 0, 0, 0, 116, 30603, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8887730772738525, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7953392517438174, 0.9330298520528758, 0.0, 0.6991150442477876, 0.0, 0.0, 0.0, 0.0655367231638418, 0.8346450192625207, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 391/1000; elapsed 486.2s
+Completed step 392/1000; elapsed 487.4s
+Completed step 393/1000; elapsed 488.5s
+Completed step 394/1000; elapsed 489.7s
+Completed step 395/1000; elapsed 490.8s
+Completed step 396/1000; elapsed 492.0s
+Completed step 397/1000; elapsed 493.1s
+Completed step 398/1000; elapsed 494.3s
+Completed step 399/1000; elapsed 495.4s
+Completed step 400/1000; elapsed 496.6s
+{"step": 400, "elapsed_seconds": 497.264443397522, "ce": 0.24362976104021072, "mse": 0.0009531812102068216, "foreground_miou_present": 0.5798032045577003, "foreground_recall": 0.8346484646044118, "predicted_foreground_fraction": 0.44301605224609375, "prediction_counts": [73005, 0, 0, 0, 0, 2309, 0, 7455, 10591, 0, 2860, 0, 0, 0, 447, 34405, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8789633743223588, 0.0, 0.0, 0.0, 0.0, 0.34153158188932364, 0.0, 0.7197541928050185, 0.9265815959741194, 0.0, 0.41310751104565535, 0.0, 0.0, 0.0, 0.2518351214003388, 0.8260092242317458, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 401/1000; elapsed 498.4s
+Completed step 402/1000; elapsed 499.6s
+Completed step 403/1000; elapsed 500.7s
+Completed step 404/1000; elapsed 501.9s
+Completed step 405/1000; elapsed 503.0s
+Completed step 406/1000; elapsed 504.2s
+Completed step 407/1000; elapsed 505.3s
+Completed step 408/1000; elapsed 506.4s
+Completed step 409/1000; elapsed 507.6s
+Completed step 410/1000; elapsed 508.7s
+{"step": 410, "elapsed_seconds": 509.44782304763794, "ce": 0.29122456163167953, "mse": 0.0009352210618089885, "foreground_miou_present": 0.5580535698370068, "foreground_recall": 0.7978086524342031, "predicted_foreground_fraction": 0.41736602783203125, "prediction_counts": [76367, 0, 0, 0, 0, 273, 0, 3216, 13381, 0, 6307, 0, 0, 0, 885, 30643, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8743460894214663, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5351477709133411, 0.7927487976322605, 0.0, 0.7005045100137594, 0.0, 0.0, 0.0, 0.5, 0.81992034046268, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 411/1000; elapsed 510.6s
+Completed step 412/1000; elapsed 511.7s
+Completed step 413/1000; elapsed 512.9s
+Completed step 414/1000; elapsed 514.0s
+Completed step 415/1000; elapsed 515.2s
+Completed step 416/1000; elapsed 516.3s
+Completed step 417/1000; elapsed 517.5s
+Completed step 418/1000; elapsed 518.6s
+Completed step 419/1000; elapsed 519.8s
+Completed step 420/1000; elapsed 520.9s
+{"step": 420, "elapsed_seconds": 521.6244261264801, "ce": 0.2311028689146042, "mse": 0.0008504123252350837, "foreground_miou_present": 0.5567747640738115, "foreground_recall": 0.8368753126462377, "predicted_foreground_fraction": 0.439910888671875, "prediction_counts": [73412, 0, 0, 0, 0, 1014, 0, 5804, 11161, 0, 6349, 0, 0, 0, 299, 33033, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9085199271480608, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6989185291997116, 0.9357080035180299, 0.0, 0.7004264392324094, 0.0, 0.0, 0.0, 0.16892655367231638, 0.8366690588204024, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 421/1000; elapsed 522.8s
+Completed step 422/1000; elapsed 523.9s
+Completed step 423/1000; elapsed 525.1s
+Completed step 424/1000; elapsed 526.2s
+Completed step 425/1000; elapsed 527.4s
+Completed step 426/1000; elapsed 528.5s
+Completed step 427/1000; elapsed 529.7s
+Completed step 428/1000; elapsed 530.8s
+Completed step 429/1000; elapsed 532.0s
+Completed step 430/1000; elapsed 533.1s
+{"step": 430, "elapsed_seconds": 533.8242456912994, "ce": 0.19603461027145386, "mse": 0.0007420597830787301, "foreground_miou_present": 0.61578650430528, "foreground_recall": 0.8523825660389537, "predicted_foreground_fraction": 0.45357513427734375, "prediction_counts": [71621, 0, 0, 0, 0, 1997, 0, 6999, 10998, 0, 5613, 0, 0, 0, 451, 33393, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9194423984505006, 0.0, 0.0, 0.0, 0.0, 0.268871925360475, 0.0, 0.60825381088115, 0.9411764705882353, 0.0, 0.8024541997926028, 0.0, 0.0, 0.0, 0.25480225988700567, 0.8191603593222114, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 431/1000; elapsed 535.0s
+Completed step 432/1000; elapsed 536.1s
+Completed step 433/1000; elapsed 537.3s
+Completed step 434/1000; elapsed 538.4s
+Completed step 435/1000; elapsed 539.6s
+Completed step 436/1000; elapsed 540.7s
+Completed step 437/1000; elapsed 541.9s
+Completed step 438/1000; elapsed 543.0s
+Completed step 439/1000; elapsed 544.1s
+Completed step 440/1000; elapsed 545.3s
+{"step": 440, "elapsed_seconds": 545.9928863048553, "ce": 0.21111010760068893, "mse": 0.0008240695751737803, "foreground_miou_present": 0.5929393598797527, "foreground_recall": 0.8436526762517952, "predicted_foreground_fraction": 0.44525909423828125, "prediction_counts": [72711, 0, 0, 0, 0, 1005, 0, 5111, 11042, 0, 6079, 0, 0, 0, 654, 34470, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.913869657341053, 0.0, 0.0, 0.0, 0.0, 0.07075038284839204, 0.0, 0.626668622561244, 0.9431868619618287, 0.0, 0.7200820966214083, 0.0, 0.0, 0.0, 0.3694915254237288, 0.8274566698619136, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 441/1000; elapsed 547.1s
+Completed step 442/1000; elapsed 548.3s
+Completed step 443/1000; elapsed 549.4s
+Completed step 444/1000; elapsed 550.6s
+Completed step 445/1000; elapsed 551.7s
+Completed step 446/1000; elapsed 552.9s
+Completed step 447/1000; elapsed 554.0s
+Completed step 448/1000; elapsed 555.2s
+Completed step 449/1000; elapsed 556.3s
+Completed step 450/1000; elapsed 557.5s
+{"step": 450, "elapsed_seconds": 558.1654582023621, "ce": 0.39634108543395996, "mse": 0.0012691362644545734, "foreground_miou_present": 0.3942835918654429, "foreground_recall": 0.7035871617369415, "predicted_foreground_fraction": 0.4223175048828125, "prediction_counts": [75718, 0, 0, 0, 0, 1068, 0, 5663, 14707, 0, 6632, 0, 0, 0, 148, 27136, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8932568111697955, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.13648345211363858, 0.705372038705372, 0.0, 0.7066189624329159, 0.0, 0.0, 0.0, 0.08361581920903954, 0.7336112787316913, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 451/1000; elapsed 559.3s
+Completed step 452/1000; elapsed 560.5s
+Completed step 453/1000; elapsed 561.6s
+Completed step 454/1000; elapsed 562.8s
+Completed step 455/1000; elapsed 563.9s
+Completed step 456/1000; elapsed 565.1s
+Completed step 457/1000; elapsed 566.2s
+Completed step 458/1000; elapsed 567.4s
+Completed step 459/1000; elapsed 568.5s
+Completed step 460/1000; elapsed 569.7s
+{"step": 460, "elapsed_seconds": 570.3802802562714, "ce": 0.5713039934635162, "mse": 0.0009696848574094474, "foreground_miou_present": 0.4007648406181341, "foreground_recall": 0.5380742605412209, "predicted_foreground_fraction": 0.4172210693359375, "prediction_counts": [76386, 0, 0, 0, 0, 2462, 0, 11392, 18444, 0, 5642, 0, 0, 0, 315, 16431, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8752432878336749, 0.0, 0.0, 0.0, 0.0, 0.3599670510708402, 0.0, 0.0038141470180305132, 0.578147729109423, 0.0, 0.8405491024287223, 0.0, 0.0, 0.0, 0.17796610169491525, 0.44414491238687315, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 461/1000; elapsed 571.5s
+Completed step 462/1000; elapsed 572.7s
+Completed step 463/1000; elapsed 573.8s
+Completed step 464/1000; elapsed 575.0s
+Completed step 465/1000; elapsed 576.1s
+Completed step 466/1000; elapsed 577.3s
+Completed step 467/1000; elapsed 578.4s
+Completed step 468/1000; elapsed 579.6s
+Completed step 469/1000; elapsed 580.7s
+Completed step 470/1000; elapsed 581.9s
+{"step": 470, "elapsed_seconds": 582.5729339122772, "ce": 0.22088050097227097, "mse": 0.0008649708179291338, "foreground_miou_present": 0.7404784076317182, "foreground_recall": 0.8166239047296316, "predicted_foreground_fraction": 0.41375732421875, "prediction_counts": [76840, 0, 0, 0, 0, 2442, 0, 2260, 12031, 0, 4582, 0, 0, 0, 1213, 31704, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8858593820667554, 0.0, 0.0, 0.0, 0.0, 0.7873188405797101, 0.0, 0.37805286048845765, 0.8593254774481918, 0.0, 0.9473684210526315, 0.0, 0.0, 0.0, 0.6853107344632768, 0.785494111758042, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 471/1000; elapsed 583.7s
+Completed step 472/1000; elapsed 584.9s
+Completed step 473/1000; elapsed 586.0s
+Completed step 474/1000; elapsed 587.2s
+Completed step 475/1000; elapsed 588.3s
+Completed step 476/1000; elapsed 589.5s
+Completed step 477/1000; elapsed 590.6s
+Completed step 478/1000; elapsed 591.8s
+Completed step 479/1000; elapsed 592.9s
+Completed step 480/1000; elapsed 594.0s
+{"step": 480, "elapsed_seconds": 594.7547070980072, "ce": 0.28628405928611755, "mse": 0.0006931047537364066, "foreground_miou_present": 0.45236304449692916, "foreground_recall": 0.7674880185893401, "predicted_foreground_fraction": 0.42299652099609375, "prediction_counts": [75629, 0, 0, 0, 0, 1305, 0, 2036, 10366, 0, 6940, 0, 0, 0, 48, 34748, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8989949353137219, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3187428007240415, 0.9271438953488372, 0.0, 0.6796685240748679, 0.0, 0.0, 0.0, 0.02711864406779661, 0.7615044027660316, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 481/1000; elapsed 595.9s
+Completed step 482/1000; elapsed 597.1s
+Completed step 483/1000; elapsed 598.2s
+Completed step 484/1000; elapsed 599.4s
+Completed step 485/1000; elapsed 600.5s
+Completed step 486/1000; elapsed 601.7s
+Completed step 487/1000; elapsed 602.8s
+Completed step 488/1000; elapsed 604.0s
+Completed step 489/1000; elapsed 605.1s
+Completed step 490/1000; elapsed 606.3s
+{"step": 490, "elapsed_seconds": 606.9741661548615, "ce": 0.26610255241394043, "mse": 0.0006399182602763176, "foreground_miou_present": 0.5481350003822051, "foreground_recall": 0.7643736586467864, "predicted_foreground_fraction": 0.4145050048828125, "prediction_counts": [76742, 0, 0, 0, 0, 1633, 0, 2971, 10589, 0, 6206, 0, 0, 0, 486, 32445, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8860065434701082, 0.0, 0.0, 0.0, 0.0, 0.22555720653789005, 0.0, 0.3592041312272175, 0.9498817536838275, 0.0, 0.7657801986542775, 0.0, 0.0, 0.0, 0.2745762711864407, 0.713810441003577, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 491/1000; elapsed 608.1s
+Completed step 492/1000; elapsed 609.3s
+Completed step 493/1000; elapsed 610.4s
+Completed step 494/1000; elapsed 611.6s
+Completed step 495/1000; elapsed 612.7s
+Completed step 496/1000; elapsed 613.9s
+Completed step 497/1000; elapsed 615.0s
+Completed step 498/1000; elapsed 616.2s
+Completed step 499/1000; elapsed 617.3s
+Completed step 500/1000; elapsed 618.4s
+{"step": 500, "elapsed_seconds": 619.1555478572845, "ce": 0.2699016332626343, "mse": 0.0005997864645905793, "foreground_miou_present": 0.510153205459046, "foreground_recall": 0.7694082716109147, "predicted_foreground_fraction": 0.42679595947265625, "prediction_counts": [75131, 0, 0, 0, 0, 1087, 0, 3032, 10798, 0, 6453, 0, 0, 0, 576, 33995, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9045053610098769, 0.0, 0.0, 0.0, 0.0, 0.07125748502994012, 0.0, 0.27170077628793227, 0.9394319505420661, 0.0, 0.7146987218502739, 0.0, 0.0, 0.0, 0.3254237288135593, 0.7384065702305039, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 501/1000; elapsed 620.3s
+Completed step 502/1000; elapsed 621.5s
+Completed step 503/1000; elapsed 622.6s
+Completed step 504/1000; elapsed 623.8s
+Completed step 505/1000; elapsed 624.9s
+Completed step 506/1000; elapsed 626.0s
+Completed step 507/1000; elapsed 627.2s
+Completed step 508/1000; elapsed 628.3s
+Completed step 509/1000; elapsed 629.5s
+Completed step 510/1000; elapsed 630.6s
+{"step": 510, "elapsed_seconds": 631.3138332366943, "ce": 0.2550894469022751, "mse": 0.0005976946849841624, "foreground_miou_present": 0.609786012544595, "foreground_recall": 0.790982879088606, "predicted_foreground_fraction": 0.42828369140625, "prediction_counts": [74936, 0, 0, 0, 0, 2337, 0, 3798, 10971, 0, 5137, 0, 0, 0, 585, 33308, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9045207526213489, 0.0, 0.0, 0.0, 0.0, 0.4546550165712564, 0.0, 0.3113346747149564, 0.9451725060176518, 0.0, 0.8846809316417346, 0.0, 0.0, 0.0, 0.3305084745762712, 0.7323644717456989, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 511/1000; elapsed 632.5s
+Completed step 512/1000; elapsed 633.6s
+Completed step 513/1000; elapsed 634.8s
+Completed step 514/1000; elapsed 635.9s
+Completed step 515/1000; elapsed 637.0s
+Completed step 516/1000; elapsed 638.2s
+Completed step 517/1000; elapsed 639.3s
+Completed step 518/1000; elapsed 640.5s
+Completed step 519/1000; elapsed 641.6s
+Completed step 520/1000; elapsed 642.8s
+{"step": 520, "elapsed_seconds": 643.4923050403595, "ce": 0.24782834947109222, "mse": 0.0008995905227493495, "foreground_miou_present": 0.557962967777987, "foreground_recall": 0.8260476674573591, "predicted_foreground_fraction": 0.46187591552734375, "prediction_counts": [70533, 0, 0, 0, 0, 1888, 0, 3301, 10818, 0, 6164, 0, 0, 0, 807, 37561, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9215864365728126, 0.0, 0.0, 0.0, 0.0, 0.26853997682502895, 0.0, 0.3303225806451613, 0.9420939404804589, 0.0, 0.7729694816728564, 0.0, 0.0, 0.0, 0.2595307917888563, 0.7743210352555606, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 521/1000; elapsed 644.6s
+Completed step 522/1000; elapsed 645.8s
+Completed step 523/1000; elapsed 646.9s
+Completed step 524/1000; elapsed 648.1s
+Completed step 525/1000; elapsed 649.2s
+Completed step 526/1000; elapsed 650.4s
+Completed step 527/1000; elapsed 651.5s
+Completed step 528/1000; elapsed 652.7s
+Completed step 529/1000; elapsed 653.8s
+Completed step 530/1000; elapsed 655.0s
+{"step": 530, "elapsed_seconds": 655.6632828712463, "ce": 0.26946214586496353, "mse": 0.0007929840940050781, "foreground_miou_present": 0.716766960045582, "foreground_recall": 0.7755401720159429, "predicted_foreground_fraction": 0.4249267578125, "prediction_counts": [75376, 0, 0, 0, 0, 2702, 0, 6422, 11013, 0, 4971, 0, 0, 0, 1109, 29479, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8966956795715018, 0.0, 0.0, 0.0, 0.0, 0.7778158165011982, 0.0, 0.31999148392591015, 0.9504817987152034, 0.0, 0.9585751450870522, 0.0, 0.0, 0.0, 0.6265536723163841, 0.6671838437277444, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 531/1000; elapsed 656.8s
+Completed step 532/1000; elapsed 658.0s
+Completed step 533/1000; elapsed 659.1s
+Completed step 534/1000; elapsed 660.3s
+Completed step 535/1000; elapsed 661.4s
+Completed step 536/1000; elapsed 662.6s
+Completed step 537/1000; elapsed 663.7s
+Completed step 538/1000; elapsed 664.8s
+Completed step 539/1000; elapsed 666.0s
+Completed step 540/1000; elapsed 667.1s
+{"step": 540, "elapsed_seconds": 667.8430335521698, "ce": 0.22948112338781357, "mse": 0.0006909383228048682, "foreground_miou_present": 0.7193230145910071, "foreground_recall": 0.8248051507963402, "predicted_foreground_fraction": 0.4362945556640625, "prediction_counts": [73886, 0, 0, 0, 0, 2197, 0, 6027, 10659, 0, 5047, 0, 0, 0, 1070, 32186, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.916844292512903, 0.0, 0.0, 0.0, 0.0, 0.6363001745200698, 0.0, 0.4410034809746729, 0.955893052018916, 0.0, 0.9263671875, 0.0, 0.0, 0.0, 0.6045197740112994, 0.7518544185210851, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 541/1000; elapsed 669.0s
+Completed step 542/1000; elapsed 670.2s
+Completed step 543/1000; elapsed 671.3s
+Completed step 544/1000; elapsed 672.4s
+Completed step 545/1000; elapsed 673.6s
+Completed step 546/1000; elapsed 674.7s
+Completed step 547/1000; elapsed 675.9s
+Completed step 548/1000; elapsed 677.0s
+Completed step 549/1000; elapsed 678.2s
+Completed step 550/1000; elapsed 679.3s
+{"step": 550, "elapsed_seconds": 680.0371525287628, "ce": 0.3132360056042671, "mse": 0.0006731355679221451, "foreground_miou_present": 0.5236934862588174, "foreground_recall": 0.7004728017943876, "predicted_foreground_fraction": 0.433807373046875, "prediction_counts": [74212, 0, 0, 0, 0, 1942, 0, 12344, 10891, 0, 6258, 0, 0, 0, 497, 24928, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9082193787198913, 0.0, 0.0, 0.0, 0.0, 0.2782583621683968, 0.0, 0.2814379633515177, 0.9523125280646609, 0.0, 0.7639375597323989, 0.0, 0.0, 0.0, 0.2807909604519774, 0.5854235437839523, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 551/1000; elapsed 681.2s
+Completed step 552/1000; elapsed 682.3s
+Completed step 553/1000; elapsed 683.5s
+Completed step 554/1000; elapsed 684.6s
+Completed step 555/1000; elapsed 685.8s
+Completed step 556/1000; elapsed 686.9s
+Completed step 557/1000; elapsed 688.1s
+Completed step 558/1000; elapsed 689.2s
+Completed step 559/1000; elapsed 690.3s
+Completed step 560/1000; elapsed 691.5s
+{"step": 560, "elapsed_seconds": 692.1894307136536, "ce": 0.3020966127514839, "mse": 0.0006200979987625033, "foreground_miou_present": 0.5179252292919718, "foreground_recall": 0.7197076051701602, "predicted_foreground_fraction": 0.43096160888671875, "prediction_counts": [74585, 0, 0, 0, 0, 865, 0, 10316, 10876, 0, 6955, 0, 0, 0, 793, 26682, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9052455712315689, 0.0, 0.0, 0.0, 0.0, 0.06776964683423481, 0.0, 0.32267229482912574, 0.9571171171171171, 0.0, 0.6834954233409611, 0.0, 0.0, 0.0, 0.4480225988700565, 0.6284742947603353, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 561/1000; elapsed 693.3s
+Completed step 562/1000; elapsed 694.5s
+Completed step 563/1000; elapsed 695.6s
+Completed step 564/1000; elapsed 696.8s
+Completed step 565/1000; elapsed 697.9s
+Completed step 566/1000; elapsed 699.1s
+Completed step 567/1000; elapsed 700.2s
+Completed step 568/1000; elapsed 701.3s
+Completed step 569/1000; elapsed 702.5s
+Completed step 570/1000; elapsed 703.6s
+{"step": 570, "elapsed_seconds": 704.3400430679321, "ce": 0.31990112364292145, "mse": 0.0005461354448925704, "foreground_miou_present": 0.5655908502625056, "foreground_recall": 0.704732858917881, "predicted_foreground_fraction": 0.43605804443359375, "prediction_counts": [73917, 0, 0, 0, 0, 1965, 0, 12663, 10953, 0, 5973, 0, 0, 0, 742, 24859, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9126190221461431, 0.0, 0.0, 0.0, 0.0, 0.3757332510033961, 0.0, 0.2647398059569849, 0.9571774845138702, 0.0, 0.796669442131557, 0.0, 0.0, 0.0, 0.4192090395480226, 0.5800160784212027, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 571/1000; elapsed 705.5s
+Completed step 572/1000; elapsed 706.6s
+Completed step 573/1000; elapsed 707.8s
+Completed step 574/1000; elapsed 708.9s
+Completed step 575/1000; elapsed 710.1s
+Completed step 576/1000; elapsed 711.2s
+Completed step 577/1000; elapsed 712.4s
+Completed step 578/1000; elapsed 713.5s
+Completed step 579/1000; elapsed 714.7s
+Completed step 580/1000; elapsed 715.8s
+{"step": 580, "elapsed_seconds": 716.5170242786407, "ce": 0.31261421740055084, "mse": 0.0005214526609051973, "foreground_miou_present": 0.5912060187057847, "foreground_recall": 0.7247583547143018, "predicted_foreground_fraction": 0.430908203125, "prediction_counts": [74592, 0, 0, 0, 0, 2073, 0, 11245, 10980, 0, 5779, 0, 0, 0, 766, 25637, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9069313763221106, 0.0, 0.0, 0.0, 0.0, 0.4226932668329177, 0.0, 0.3029959146618248, 0.9606575047157101, 0.0, 0.8207595806839664, 0.0, 0.0, 0.0, 0.4327683615819209, 0.6073614837583683, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 581/1000; elapsed 717.7s
+Completed step 582/1000; elapsed 718.8s
+Completed step 583/1000; elapsed 720.0s
+Completed step 584/1000; elapsed 721.1s
+Completed step 585/1000; elapsed 722.3s
+Completed step 586/1000; elapsed 723.4s
+Completed step 587/1000; elapsed 724.6s
+Completed step 588/1000; elapsed 725.7s
+Completed step 589/1000; elapsed 726.9s
+Completed step 590/1000; elapsed 728.0s
+{"step": 590, "elapsed_seconds": 728.7015933990479, "ce": 0.335073746740818, "mse": 0.0005645869241561741, "foreground_miou_present": 0.6415611802793991, "foreground_recall": 0.7031998838166239, "predicted_foreground_fraction": 0.43377685546875, "prediction_counts": [74216, 0, 0, 0, 0, 2533, 0, 13921, 10980, 0, 5225, 0, 0, 0, 911, 23286, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.91005291005291, 0.0, 0.0, 0.0, 0.0, 0.6488349195930423, 0.0, 0.2635890271780544, 0.9606575047157101, 0.0, 0.9118431073876618, 0.0, 0.0, 0.0, 0.5146892655367231, 0.5497532572652027, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 591/1000; elapsed 729.9s
+Completed step 592/1000; elapsed 731.0s
+Completed step 593/1000; elapsed 732.1s
+Completed step 594/1000; elapsed 733.3s
+Completed step 595/1000; elapsed 734.4s
+Completed step 596/1000; elapsed 735.6s
+Completed step 597/1000; elapsed 736.7s
+Completed step 598/1000; elapsed 737.9s
+Completed step 599/1000; elapsed 739.0s
+Completed step 600/1000; elapsed 740.2s
+{"step": 600, "elapsed_seconds": 740.8727757930756, "ce": 0.31855715811252594, "mse": 0.0005544115701923147, "foreground_miou_present": 0.6130528503693173, "foreground_recall": 0.7286472704974908, "predicted_foreground_fraction": 0.4295501708984375, "prediction_counts": [74770, 0, 0, 0, 0, 2842, 0, 11459, 11047, 0, 5346, 0, 0, 0, 610, 24998, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9041890013897161, 0.0, 0.0, 0.0, 0.0, 0.5648474178403756, 0.0, 0.31273055785590603, 0.9617417794104471, 0.0, 0.8927174520394859, 0.0, 0.0, 0.0, 0.3446327683615819, 0.6016471267081072, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 601/1000; elapsed 742.0s
+Completed step 602/1000; elapsed 743.2s
+Completed step 603/1000; elapsed 744.3s
+Completed step 604/1000; elapsed 745.5s
+Completed step 605/1000; elapsed 746.6s
+Completed step 606/1000; elapsed 747.7s
+Completed step 607/1000; elapsed 748.9s
+Completed step 608/1000; elapsed 750.0s
+Completed step 609/1000; elapsed 751.2s
+Completed step 610/1000; elapsed 752.3s
+{"step": 610, "elapsed_seconds": 753.002845287323, "ce": 0.26075685024261475, "mse": 0.0005605176265817136, "foreground_miou_present": 0.6920964466589218, "foreground_recall": 0.7810104726404286, "predicted_foreground_fraction": 0.4444122314453125, "prediction_counts": [72822, 0, 0, 0, 0, 2674, 0, 10521, 11010, 0, 5161, 0, 0, 0, 975, 27909, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9226590441096781, 0.0, 0.0, 0.0, 0.0, 0.705183228788379, 0.0, 0.34400456174649724, 0.9635285662953648, 0.0, 0.9242044358727097, 0.0, 0.0, 0.0, 0.5508474576271186, 0.6648104296234615, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 611/1000; elapsed 754.2s
+Completed step 612/1000; elapsed 755.3s
+Completed step 613/1000; elapsed 756.4s
+Completed step 614/1000; elapsed 757.6s
+Completed step 615/1000; elapsed 758.7s
+Completed step 616/1000; elapsed 759.9s
+Completed step 617/1000; elapsed 761.0s
+Completed step 618/1000; elapsed 762.2s
+Completed step 619/1000; elapsed 763.3s
+Completed step 620/1000; elapsed 764.5s
+{"step": 620, "elapsed_seconds": 765.16858959198, "ce": 0.27210480719804764, "mse": 0.0006084077176637948, "foreground_miou_present": 0.6924521317325278, "foreground_recall": 0.7638250149263365, "predicted_foreground_fraction": 0.44168853759765625, "prediction_counts": [73179, 0, 0, 0, 0, 2606, 0, 11631, 10841, 0, 5221, 0, 0, 0, 1030, 26564, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9202116173612611, 0.0, 0.0, 0.0, 0.0, 0.7248730964467005, 0.0, 0.32908144010868745, 0.9656516222584738, 0.0, 0.917287488061127, 0.0, 0.0, 0.0, 0.5819209039548022, 0.6358982395653764, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 621/1000; elapsed 766.3s
+Completed step 622/1000; elapsed 767.5s
+Completed step 623/1000; elapsed 768.6s
+Completed step 624/1000; elapsed 769.7s
+Completed step 625/1000; elapsed 770.9s
+Completed step 626/1000; elapsed 772.0s
+Completed step 627/1000; elapsed 773.2s
+Completed step 628/1000; elapsed 774.3s
+Completed step 629/1000; elapsed 775.5s
+Completed step 630/1000; elapsed 776.6s
+{"step": 630, "elapsed_seconds": 777.3326065540314, "ce": 0.33890343457460403, "mse": 0.0004903317894786596, "foreground_miou_present": 0.6061389274618588, "foreground_recall": 0.6956802375304578, "predicted_foreground_fraction": 0.430755615234375, "prediction_counts": [74612, 0, 0, 0, 0, 2927, 0, 14618, 11004, 0, 4976, 0, 0, 0, 572, 22363, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9112042024070749, 0.0, 0.0, 0.0, 0.0, 0.5888563049853373, 0.0, 0.27822255321789857, 0.965991902834008, 0.0, 0.9370919881305638, 0.0, 0.0, 0.0, 0.3231638418079096, 0.5435069737954353, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 631/1000; elapsed 778.5s
+Completed step 632/1000; elapsed 779.6s
+Completed step 633/1000; elapsed 780.8s
+Completed step 634/1000; elapsed 781.9s
+Completed step 635/1000; elapsed 783.1s
+Completed step 636/1000; elapsed 784.2s
+Completed step 637/1000; elapsed 785.4s
+Completed step 638/1000; elapsed 786.5s
+Completed step 639/1000; elapsed 787.7s
+Completed step 640/1000; elapsed 788.8s
+{"step": 640, "elapsed_seconds": 789.5161271095276, "ce": 0.24220819771289825, "mse": 0.0005974963132757694, "foreground_miou_present": 0.6938945123122197, "foreground_recall": 0.8099272240241403, "predicted_foreground_fraction": 0.4468536376953125, "prediction_counts": [72502, 0, 0, 0, 0, 2785, 0, 8399, 11134, 0, 5067, 0, 0, 0, 1134, 30051, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9215518645171796, 0.0, 0.0, 0.0, 0.0, 0.7074433656957929, 0.0, 0.40126705653021444, 0.9609277430865298, 0.0, 0.9397448478900883, 0.0, 0.0, 0.0, 0.44477611940298506, 0.7092079412677076, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 641/1000; elapsed 790.7s
+Completed step 642/1000; elapsed 791.8s
+Completed step 643/1000; elapsed 793.0s
+Completed step 644/1000; elapsed 794.1s
+Completed step 645/1000; elapsed 795.3s
+Completed step 646/1000; elapsed 796.4s
+Completed step 647/1000; elapsed 797.6s
+Completed step 648/1000; elapsed 798.7s
+Completed step 649/1000; elapsed 799.8s
+Completed step 650/1000; elapsed 801.0s
+{"step": 650, "elapsed_seconds": 801.6937208175659, "ce": 0.2763194143772125, "mse": 0.0007068142003845423, "foreground_miou_present": 0.6211576289723162, "foreground_recall": 0.7688596278904649, "predicted_foreground_fraction": 0.443756103515625, "prediction_counts": [72908, 0, 0, 0, 0, 3146, 0, 10684, 11017, 0, 5172, 0, 0, 0, 741, 27404, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9240847627564155, 0.0, 0.0, 0.0, 0.0, 0.5959796149490374, 0.0, 0.3396044380125422, 0.961866307761328, 0.0, 0.923728813559322, 0.0, 0.0, 0.0, 0.24245423057892132, 0.6633123689727464, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 651/1000; elapsed 802.9s
+Completed step 652/1000; elapsed 804.0s
+Completed step 653/1000; elapsed 805.1s
+Completed step 654/1000; elapsed 806.3s
+Completed step 655/1000; elapsed 807.4s
+Completed step 656/1000; elapsed 808.6s
+Completed step 657/1000; elapsed 809.7s
+Completed step 658/1000; elapsed 810.9s
+Completed step 659/1000; elapsed 812.0s
+Completed step 660/1000; elapsed 813.2s
+{"step": 660, "elapsed_seconds": 813.8644993305206, "ce": 0.24784772843122482, "mse": 0.0006435642426367849, "foreground_miou_present": 0.648479905649604, "foreground_recall": 0.8073130980619967, "predicted_foreground_fraction": 0.447021484375, "prediction_counts": [72480, 0, 0, 0, 0, 3163, 0, 8812, 11127, 0, 5484, 0, 0, 0, 560, 29446, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9188837537102043, 0.0, 0.0, 0.0, 0.0, 0.6205216394382345, 0.0, 0.4299526249637436, 0.9634560400285919, 0.0, 0.8771642063058137, 0.0, 0.0, 0.0, 0.2851627137341423, 0.7146222094270983, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 661/1000; elapsed 815.0s
+Completed step 662/1000; elapsed 816.2s
+Completed step 663/1000; elapsed 817.3s
+Completed step 664/1000; elapsed 818.5s
+Completed step 665/1000; elapsed 819.6s
+Completed step 666/1000; elapsed 820.7s
+Completed step 667/1000; elapsed 821.9s
+Completed step 668/1000; elapsed 823.0s
+Completed step 669/1000; elapsed 824.2s
+Completed step 670/1000; elapsed 825.3s
+{"step": 670, "elapsed_seconds": 826.0246427059174, "ce": 0.2352343574166298, "mse": 0.00048405907000415027, "foreground_miou_present": 0.7442998714593356, "foreground_recall": 0.8198834938923044, "predicted_foreground_fraction": 0.44602203369140625, "prediction_counts": [72611, 0, 0, 0, 0, 2577, 0, 8930, 11046, 0, 5029, 0, 0, 0, 1165, 29714, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9275823607823934, 0.0, 0.0, 0.0, 0.0, 0.8009950248756219, 0.0, 0.41468969443917253, 0.9671159029649595, 0.0, 0.94796201028888, 0.0, 0.0, 0.0, 0.6161894273127754, 0.7188471688746048, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 671/1000; elapsed 827.2s
+Completed step 672/1000; elapsed 828.3s
+Completed step 673/1000; elapsed 829.5s
+Completed step 674/1000; elapsed 830.6s
+Completed step 675/1000; elapsed 831.7s
+Completed step 676/1000; elapsed 832.9s
+Completed step 677/1000; elapsed 834.0s
+Completed step 678/1000; elapsed 835.2s
+Completed step 679/1000; elapsed 836.3s
+Completed step 680/1000; elapsed 837.5s
+{"step": 680, "elapsed_seconds": 838.1678221225739, "ce": 0.27925826609134674, "mse": 0.00046511653636116534, "foreground_miou_present": 0.6521233654421276, "foreground_recall": 0.7657452679479111, "predicted_foreground_fraction": 0.43651580810546875, "prediction_counts": [73857, 0, 0, 0, 0, 2974, 0, 10926, 11039, 0, 5212, 0, 0, 0, 628, 26436, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9158391294442434, 0.0, 0.0, 0.0, 0.0, 0.6605894864782741, 0.0, 0.3593888218737435, 0.9677245347478198, 0.0, 0.920704845814978, 0.0, 0.0, 0.0, 0.35480225988700564, 0.6495302438509448, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 681/1000; elapsed 839.3s
+Completed step 682/1000; elapsed 840.5s
+Completed step 683/1000; elapsed 841.6s
+Completed step 684/1000; elapsed 842.8s
+Completed step 685/1000; elapsed 843.9s
+Completed step 686/1000; elapsed 845.1s
+Completed step 687/1000; elapsed 846.2s
+Completed step 688/1000; elapsed 847.3s
+Completed step 689/1000; elapsed 848.5s
+Completed step 690/1000; elapsed 849.6s
+{"step": 690, "elapsed_seconds": 850.3336668014526, "ce": 0.2859242483973503, "mse": 0.000507075063069351, "foreground_miou_present": 0.6373075493379834, "foreground_recall": 0.7610172500040342, "predicted_foreground_fraction": 0.43277740478515625, "prediction_counts": [74347, 0, 0, 0, 0, 3013, 0, 10553, 10942, 0, 5268, 0, 0, 0, 544, 26405, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9124105107387114, 0.0, 0.0, 0.0, 0.0, 0.6284023668639053, 0.0, 0.3596808685639085, 0.9682052208472586, 0.0, 0.910934242941065, 0.0, 0.0, 0.0, 0.3073446327683616, 0.6492779640434013, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 691/1000; elapsed 851.5s
+Completed step 692/1000; elapsed 852.6s
+Completed step 693/1000; elapsed 853.8s
+Completed step 694/1000; elapsed 854.9s
+Completed step 695/1000; elapsed 856.1s
+Completed step 696/1000; elapsed 857.2s
+Completed step 697/1000; elapsed 858.4s
+Completed step 698/1000; elapsed 859.5s
+Completed step 699/1000; elapsed 860.7s
+Completed step 700/1000; elapsed 861.8s
+{"step": 700, "elapsed_seconds": 862.5066795349121, "ce": 0.23865607380867004, "mse": 0.0004748960927827284, "foreground_miou_present": 0.6553130632612012, "foreground_recall": 0.8123315744461119, "predicted_foreground_fraction": 0.4463348388671875, "prediction_counts": [72570, 0, 0, 0, 0, 3108, 0, 8573, 11006, 0, 5392, 0, 0, 0, 540, 29883, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9254532604854712, 0.0, 0.0, 0.0, 0.0, 0.6177405374169315, 0.0, 0.4240555881777256, 0.9698936361997477, 0.0, 0.8917716827279466, 0.0, 0.0, 0.0, 0.30140845070422534, 0.7270084843406306, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 701/1000; elapsed 863.7s
+Completed step 702/1000; elapsed 864.8s
+Completed step 703/1000; elapsed 866.0s
+Completed step 704/1000; elapsed 867.1s
+Completed step 705/1000; elapsed 868.3s
+Completed step 706/1000; elapsed 869.4s
+Completed step 707/1000; elapsed 870.5s
+Completed step 708/1000; elapsed 871.7s
+Completed step 709/1000; elapsed 872.8s
+Completed step 710/1000; elapsed 874.0s
+{"step": 710, "elapsed_seconds": 874.6736238002777, "ce": 0.2640996500849724, "mse": 0.0005363466043490916, "foreground_miou_present": 0.6646263235277171, "foreground_recall": 0.7914669764890029, "predicted_foreground_fraction": 0.43365478515625, "prediction_counts": [74232, 0, 0, 0, 0, 3129, 0, 9461, 11120, 0, 5120, 0, 0, 0, 530, 27480, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9130962868049438, 0.0, 0.0, 0.0, 0.0, 0.6578171091445427, 0.0, 0.4339184545370112, 0.967224858959434, 0.0, 0.9364646267784058, 0.0, 0.0, 0.0, 0.2994350282485876, 0.6928978634983217, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 711/1000; elapsed 875.8s
+Completed step 712/1000; elapsed 877.0s
+Completed step 713/1000; elapsed 878.1s
+Completed step 714/1000; elapsed 879.3s
+Completed step 715/1000; elapsed 880.4s
+Completed step 716/1000; elapsed 881.5s
+Completed step 717/1000; elapsed 882.7s
+Completed step 718/1000; elapsed 883.8s
+Completed step 719/1000; elapsed 885.0s
+Completed step 720/1000; elapsed 886.1s
+{"step": 720, "elapsed_seconds": 886.8358857631683, "ce": 0.2301260083913803, "mse": 0.0005259268364170566, "foreground_miou_present": 0.6821882639969111, "foreground_recall": 0.8152200222684804, "predicted_foreground_fraction": 0.44634246826171875, "prediction_counts": [72569, 0, 0, 0, 0, 2935, 0, 8993, 10925, 0, 5207, 0, 0, 0, 689, 29754, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9288213590382443, 0.0, 0.0, 0.0, 0.0, 0.6690249154106429, 0.0, 0.41945576941310325, 0.9702289385575966, 0.0, 0.9204828511209043, 0.0, 0.0, 0.0, 0.38691483361534124, 0.7270222758638785, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 721/1000; elapsed 888.0s
+Completed step 722/1000; elapsed 889.1s
+Completed step 723/1000; elapsed 890.3s
+Completed step 724/1000; elapsed 891.4s
+Completed step 725/1000; elapsed 892.6s
+Completed step 726/1000; elapsed 893.7s
+Completed step 727/1000; elapsed 894.9s
+Completed step 728/1000; elapsed 896.0s
+Completed step 729/1000; elapsed 897.1s
+Completed step 730/1000; elapsed 898.4s
+{"step": 730, "elapsed_seconds": 899.1386532783508, "ce": 0.2582441344857216, "mse": 0.000536162726348266, "foreground_miou_present": 0.6434051975503866, "foreground_recall": 0.7885623920866212, "predicted_foreground_fraction": 0.44402313232421875, "prediction_counts": [72873, 0, 0, 0, 0, 3157, 0, 10800, 11213, 0, 5338, 0, 0, 0, 507, 27184, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9223863620976805, 0.0, 0.0, 0.0, 0.0, 0.6361529548088065, 0.0, 0.3970024979184013, 0.9602807890527812, 0.0, 0.9007862223886185, 0.0, 0.0, 0.0, 0.2777777777777778, 0.688430943355934, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 731/1000; elapsed 900.3s
+Completed step 732/1000; elapsed 901.4s
+Completed step 733/1000; elapsed 902.6s
+Completed step 734/1000; elapsed 903.7s
+Completed step 735/1000; elapsed 904.9s
+Completed step 736/1000; elapsed 906.0s
+Completed step 737/1000; elapsed 907.2s
+Completed step 738/1000; elapsed 908.3s
+Completed step 739/1000; elapsed 909.5s
+Completed step 740/1000; elapsed 910.6s
+{"step": 740, "elapsed_seconds": 911.3144183158875, "ce": 0.2805536389350891, "mse": 0.0004542948736343533, "foreground_miou_present": 0.7098341295834563, "foreground_recall": 0.7757660841361282, "predicted_foreground_fraction": 0.4329833984375, "prediction_counts": [74320, 0, 0, 0, 0, 2669, 0, 10327, 11278, 0, 5283, 0, 0, 0, 1035, 26160, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9063069050309032, 0.0, 0.0, 0.0, 0.0, 0.764102564102564, 0.0, 0.39251857545477836, 0.9573602264685067, 0.0, 0.9101569888405523, 0.0, 0.0, 0.0, 0.5820642978003384, 0.6528021248339974, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 741/1000; elapsed 912.5s
+Completed step 742/1000; elapsed 913.6s
+Completed step 743/1000; elapsed 914.8s
+Completed step 744/1000; elapsed 915.9s
+Completed step 745/1000; elapsed 917.1s
+Completed step 746/1000; elapsed 918.2s
+Completed step 747/1000; elapsed 919.4s
+Completed step 748/1000; elapsed 920.5s
+Completed step 749/1000; elapsed 921.7s
+Completed step 750/1000; elapsed 922.8s
+{"step": 750, "elapsed_seconds": 923.5172271728516, "ce": 0.29096831008791924, "mse": 0.00043165542592760175, "foreground_miou_present": 0.7305287047740286, "foreground_recall": 0.775265850155718, "predicted_foreground_fraction": 0.43767547607421875, "prediction_counts": [73705, 0, 0, 0, 0, 2777, 0, 11646, 11152, 0, 5322, 0, 0, 0, 1239, 25231, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9107549037972651, 0.0, 0.0, 0.0, 0.0, 0.8503688092729189, 0.0, 0.38760727501771514, 0.9677996422182469, 0.0, 0.9049229612927471, 0.0, 0.0, 0.0, 0.6335504885993485, 0.6389230522431956, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 751/1000; elapsed 924.7s
+Completed step 752/1000; elapsed 925.8s
+Completed step 753/1000; elapsed 927.0s
+Completed step 754/1000; elapsed 928.1s
+Completed step 755/1000; elapsed 929.3s
+Completed step 756/1000; elapsed 930.4s
+Completed step 757/1000; elapsed 931.5s
+Completed step 758/1000; elapsed 932.7s
+Completed step 759/1000; elapsed 933.8s
+Completed step 760/1000; elapsed 935.0s
+{"step": 760, "elapsed_seconds": 935.691153049469, "ce": 0.31431664526462555, "mse": 0.00044558885565493256, "foreground_miou_present": 0.6235086666788914, "foreground_recall": 0.7514482580561875, "predicted_foreground_fraction": 0.43627166748046875, "prediction_counts": [73889, 0, 0, 0, 0, 3214, 0, 12090, 11314, 0, 5332, 0, 0, 0, 726, 24507, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9091042604040107, 0.0, 0.0, 0.0, 0.0, 0.6332665330661322, 0.0, 0.3743059253061535, 0.9562185541530586, 0.0, 0.9021555763823805, 0.0, 0.0, 0.0, 0.250501002004008, 0.6246044091616156, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 761/1000; elapsed 936.8s
+Completed step 762/1000; elapsed 938.0s
+Completed step 763/1000; elapsed 939.1s
+Completed step 764/1000; elapsed 940.3s
+Completed step 765/1000; elapsed 941.4s
+Completed step 766/1000; elapsed 942.6s
+Completed step 767/1000; elapsed 943.7s
+Completed step 768/1000; elapsed 944.9s
+Completed step 769/1000; elapsed 946.0s
+Completed step 770/1000; elapsed 947.1s
+{"step": 770, "elapsed_seconds": 947.8541901111603, "ce": 0.32349061220884323, "mse": 0.00045412531471811235, "foreground_miou_present": 0.6222691472839211, "foreground_recall": 0.7388455890658534, "predicted_foreground_fraction": 0.42859649658203125, "prediction_counts": [74895, 0, 0, 0, 0, 3292, 0, 12622, 11160, 0, 5234, 0, 0, 0, 547, 23322, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9046838004788297, 0.0, 0.0, 0.0, 0.0, 0.637779665817049, 0.0, 0.3671444321940463, 0.9613225202744854, 0.0, 0.9186712485681557, 0.0, 0.0, 0.0, 0.23903743315508022, 0.6096595836947094, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 771/1000; elapsed 949.0s
+Completed step 772/1000; elapsed 950.2s
+Completed step 773/1000; elapsed 951.3s
+Completed step 774/1000; elapsed 952.5s
+Completed step 775/1000; elapsed 953.6s
+Completed step 776/1000; elapsed 954.7s
+Completed step 777/1000; elapsed 955.9s
+Completed step 778/1000; elapsed 957.0s
+Completed step 779/1000; elapsed 958.2s
+Completed step 780/1000; elapsed 959.3s
+{"step": 780, "elapsed_seconds": 960.0352070331573, "ce": 0.2501305490732193, "mse": 0.00047526646812912077, "foreground_miou_present": 0.6851922471611019, "foreground_recall": 0.8065869519614013, "predicted_foreground_fraction": 0.44341278076171875, "prediction_counts": [72953, 0, 0, 0, 0, 2988, 0, 9297, 11064, 0, 5309, 0, 0, 0, 938, 28523, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9220382096660713, 0.0, 0.0, 0.0, 0.0, 0.7073854783421627, 0.0, 0.4283710491864597, 0.9717448033834248, 0.0, 0.9060617469879518, 0.0, 0.0, 0.0, 0.39014373716632444, 0.7074466679002881, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 781/1000; elapsed 961.2s
+Completed step 782/1000; elapsed 962.3s
+Completed step 783/1000; elapsed 963.5s
+Completed step 784/1000; elapsed 964.6s
+Completed step 785/1000; elapsed 965.8s
+Completed step 786/1000; elapsed 966.9s
+Completed step 787/1000; elapsed 968.1s
+Completed step 788/1000; elapsed 969.2s
+Completed step 789/1000; elapsed 970.4s
+Completed step 790/1000; elapsed 971.5s
+{"step": 790, "elapsed_seconds": 972.2170143127441, "ce": 0.22534608840942383, "mse": 0.00043807672045659274, "foreground_miou_present": 0.6990360699107235, "foreground_recall": 0.8398444433686725, "predicted_foreground_fraction": 0.4444732666015625, "prediction_counts": [72814, 0, 0, 0, 0, 2979, 0, 7022, 11028, 0, 5335, 0, 0, 0, 858, 31036, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9261777759680768, 0.0, 0.0, 0.0, 0.0, 0.6810079901659496, 0.0, 0.5102230483271375, 0.9718766901027582, 0.0, 0.9016485575121769, 0.0, 0.0, 0.0, 0.3616580310880829, 0.7678021022682368, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 791/1000; elapsed 973.4s
+Completed step 792/1000; elapsed 974.5s
+Completed step 793/1000; elapsed 975.7s
+Completed step 794/1000; elapsed 976.8s
+Completed step 795/1000; elapsed 978.0s
+Completed step 796/1000; elapsed 979.1s
+Completed step 797/1000; elapsed 980.3s
+Completed step 798/1000; elapsed 981.4s
+Completed step 799/1000; elapsed 982.5s
+Completed step 800/1000; elapsed 983.7s
+{"step": 800, "elapsed_seconds": 984.3934106826782, "ce": 0.2200460582971573, "mse": 0.0004382124461699277, "foreground_miou_present": 0.7001536362691906, "foreground_recall": 0.8385212438075874, "predicted_foreground_fraction": 0.44675445556640625, "prediction_counts": [72515, 0, 0, 0, 0, 3019, 0, 8017, 10945, 0, 5171, 0, 0, 0, 742, 30663, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9312940663057264, 0.0, 0.0, 0.0, 0.0, 0.6798780487804879, 0.0, 0.4966313763233879, 0.9765100671140939, 0.0, 0.9291095228897045, 0.0, 0.0, 0.0, 0.3571042679632631, 0.7616885345442066, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 801/1000; elapsed 985.5s
+Completed step 802/1000; elapsed 986.7s
+Completed step 803/1000; elapsed 987.8s
+Completed step 804/1000; elapsed 989.0s
+Completed step 805/1000; elapsed 990.1s
+Completed step 806/1000; elapsed 991.3s
+Completed step 807/1000; elapsed 992.4s
+Completed step 808/1000; elapsed 993.6s
+Completed step 809/1000; elapsed 994.7s
+Completed step 810/1000; elapsed 995.9s
+{"step": 810, "elapsed_seconds": 996.5714271068573, "ce": 0.23284734785556793, "mse": 0.000438083428889513, "foreground_miou_present": 0.7169911455275888, "foreground_recall": 0.8385373803876006, "predicted_foreground_fraction": 0.43817138671875, "prediction_counts": [73640, 0, 0, 0, 0, 2829, 0, 6929, 11065, 0, 5250, 0, 0, 0, 779, 30580, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9175824175824175, 0.0, 0.0, 0.0, 0.0, 0.696969696969697, 0.0, 0.5576876659425537, 0.9714799820062978, 0.0, 0.9155090390104662, 0.0, 0.0, 0.0, 0.3982446516730664, 0.7620558375634517, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 811/1000; elapsed 997.7s
+Completed step 812/1000; elapsed 998.9s
+Completed step 813/1000; elapsed 1000.0s
+Completed step 814/1000; elapsed 1001.2s
+Completed step 815/1000; elapsed 1002.3s
+Completed step 816/1000; elapsed 1003.4s
+Completed step 817/1000; elapsed 1004.6s
+Completed step 818/1000; elapsed 1005.7s
+Completed step 819/1000; elapsed 1006.9s
+Completed step 820/1000; elapsed 1008.0s
+{"step": 820, "elapsed_seconds": 1008.7320659160614, "ce": 0.25206319242715836, "mse": 0.0004414114955579862, "foreground_miou_present": 0.7006459398507262, "foreground_recall": 0.8065062690613352, "predicted_foreground_fraction": 0.43563079833984375, "prediction_counts": [73973, 0, 0, 0, 0, 2853, 0, 9525, 11207, 0, 5165, 0, 0, 0, 769, 27580, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9144688424123212, 0.0, 0.0, 0.0, 0.0, 0.7078938958133589, 0.0, 0.47451017690698116, 0.9646356672011402, 0.0, 0.9301875846064591, 0.0, 0.0, 0.0, 0.4184357541899441, 0.7082125603864734, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 821/1000; elapsed 1009.9s
+Completed step 822/1000; elapsed 1011.0s
+Completed step 823/1000; elapsed 1012.2s
+Completed step 824/1000; elapsed 1013.3s
+Completed step 825/1000; elapsed 1014.5s
+Completed step 826/1000; elapsed 1015.6s
+Completed step 827/1000; elapsed 1016.8s
+Completed step 828/1000; elapsed 1017.9s
+Completed step 829/1000; elapsed 1019.1s
+Completed step 830/1000; elapsed 1020.2s
+{"step": 830, "elapsed_seconds": 1020.9104747772217, "ce": 0.18621009588241577, "mse": 0.0005116762331454083, "foreground_miou_present": 0.7555246792928019, "foreground_recall": 0.8848655016055897, "predicted_foreground_fraction": 0.45473480224609375, "prediction_counts": [71469, 0, 0, 0, 0, 2799, 0, 5430, 10931, 0, 5278, 0, 0, 0, 951, 34214, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.936279236342599, 0.0, 0.0, 0.0, 0.0, 0.7298888162197514, 0.0, 0.6243770468460772, 0.9773924096604322, 0.0, 0.9117424242424242, 0.0, 0.0, 0.0, 0.4644779332615716, 0.825269445526555, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 831/1000; elapsed 1022.1s
+Completed step 832/1000; elapsed 1023.2s
+Completed step 833/1000; elapsed 1024.4s
+Completed step 834/1000; elapsed 1025.5s
+Completed step 835/1000; elapsed 1026.7s
+Completed step 836/1000; elapsed 1027.8s
+Completed step 837/1000; elapsed 1029.0s
+Completed step 838/1000; elapsed 1030.1s
+Completed step 839/1000; elapsed 1031.2s
+Completed step 840/1000; elapsed 1032.4s
+{"step": 840, "elapsed_seconds": 1033.0923838615417, "ce": 0.20510360598564148, "mse": 0.00045067770406603813, "foreground_miou_present": 0.740995220556384, "foreground_recall": 0.8515757370382921, "predicted_foreground_fraction": 0.4500274658203125, "prediction_counts": [72086, 0, 0, 0, 0, 2755, 0, 8317, 11031, 0, 5244, 0, 0, 0, 965, 30674, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9319248505083401, 0.0, 0.0, 0.0, 0.0, 0.7705028687141411, 0.0, 0.5248, 0.9739263803680982, 0.0, 0.9172860682294645, 0.0, 0.0, 0.0, 0.4880304678998912, 0.7714255381267086, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 841/1000; elapsed 1034.3s
+Completed step 842/1000; elapsed 1035.4s
+Completed step 843/1000; elapsed 1036.5s
+Completed step 844/1000; elapsed 1037.7s
+Completed step 845/1000; elapsed 1038.8s
+Completed step 846/1000; elapsed 1040.0s
+Completed step 847/1000; elapsed 1041.1s
+Completed step 848/1000; elapsed 1042.3s
+Completed step 849/1000; elapsed 1043.4s
+Completed step 850/1000; elapsed 1044.6s
+{"step": 850, "elapsed_seconds": 1045.2673540115356, "ce": 0.21998625993728638, "mse": 0.00045368282007984817, "foreground_miou_present": 0.7178566520024107, "foreground_recall": 0.8430233496312791, "predicted_foreground_fraction": 0.44654083251953125, "prediction_counts": [72543, 0, 0, 0, 0, 2866, 0, 8139, 11006, 0, 5189, 0, 0, 0, 836, 30493, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.928782493838256, 0.0, 0.0, 0.0, 0.0, 0.7136916186820218, 0.0, 0.5283100573779366, 0.9750564844103028, 0.0, 0.9262610704659222, 0.0, 0.0, 0.0, 0.4018289402904788, 0.7619917407878017, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 851/1000; elapsed 1046.4s
+Completed step 852/1000; elapsed 1047.6s
+Completed step 853/1000; elapsed 1048.7s
+Completed step 854/1000; elapsed 1049.9s
+Completed step 855/1000; elapsed 1051.0s
+Completed step 856/1000; elapsed 1052.2s
+Completed step 857/1000; elapsed 1053.3s
+Completed step 858/1000; elapsed 1054.5s
+Completed step 859/1000; elapsed 1055.6s
+Completed step 860/1000; elapsed 1056.8s
+{"step": 860, "elapsed_seconds": 1057.457410812378, "ce": 0.19506804645061493, "mse": 0.0004655771335819736, "foreground_miou_present": 0.77771059581675, "foreground_recall": 0.8753126462377564, "predicted_foreground_fraction": 0.4594573974609375, "prediction_counts": [70850, 0, 0, 0, 0, 2657, 0, 7379, 11134, 0, 5294, 0, 0, 0, 1158, 32600, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9339330624879086, 0.0, 0.0, 0.0, 0.0, 0.8451612903225807, 0.0, 0.5624049596444028, 0.9651349901662792, 0.0, 0.9097091046467699, 0.0, 0.0, 0.0, 0.5904399782726779, 0.7934132518477892, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 861/1000; elapsed 1058.6s
+Completed step 862/1000; elapsed 1059.8s
+Completed step 863/1000; elapsed 1060.9s
+Completed step 864/1000; elapsed 1062.1s
+Completed step 865/1000; elapsed 1063.2s
+Completed step 866/1000; elapsed 1064.4s
+Completed step 867/1000; elapsed 1065.5s
+Completed step 868/1000; elapsed 1066.6s
+Completed step 869/1000; elapsed 1067.8s
+Completed step 870/1000; elapsed 1068.9s
+{"step": 870, "elapsed_seconds": 1069.644850730896, "ce": 0.2244095876812935, "mse": 0.0004478832124732435, "foreground_miou_present": 0.6296696962976859, "foreground_recall": 0.8587242419841539, "predicted_foreground_fraction": 0.4532318115234375, "prediction_counts": [71666, 0, 0, 0, 0, 3141, 0, 6740, 11600, 0, 5699, 0, 0, 0, 282, 31944, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.92892281129671, 0.0, 0.0, 0.0, 0.0, 0.4797687861271676, 0.0, 0.6234363032933368, 0.9330061138379402, 0.0, 0.8450605369363046, 0.0, 0.0, 0.0, 0.07322175732217573, 0.8235246802691906, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 871/1000; elapsed 1070.8s
+Completed step 872/1000; elapsed 1071.9s
+Completed step 873/1000; elapsed 1073.1s
+Completed step 874/1000; elapsed 1074.2s
+Completed step 875/1000; elapsed 1075.4s
+Completed step 876/1000; elapsed 1076.5s
+Completed step 877/1000; elapsed 1077.7s
+Completed step 878/1000; elapsed 1078.8s
+Completed step 879/1000; elapsed 1080.0s
+Completed step 880/1000; elapsed 1081.1s
+{"step": 880, "elapsed_seconds": 1081.821361541748, "ce": 0.6225355938076973, "mse": 0.0006101851176936179, "foreground_miou_present": 0.6308647843290683, "foreground_recall": 0.5965854996692002, "predicted_foreground_fraction": 0.410186767578125, "prediction_counts": [77308, 0, 0, 0, 0, 2818, 0, 19861, 11549, 0, 5071, 0, 0, 0, 856, 13609, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8737473924005272, 0.0, 0.0, 0.0, 0.0, 0.8156634746922025, 0.0, 0.2538943077594992, 0.9377920055372901, 0.0, 0.9451111548298249, 0.0, 0.0, 0.0, 0.48361581920903957, 0.3491119439465537, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 881/1000; elapsed 1083.0s
+Completed step 882/1000; elapsed 1084.1s
+Completed step 883/1000; elapsed 1085.3s
+Completed step 884/1000; elapsed 1086.4s
+Completed step 885/1000; elapsed 1087.6s
+Completed step 886/1000; elapsed 1088.7s
+Completed step 887/1000; elapsed 1089.9s
+Completed step 888/1000; elapsed 1091.0s
+Completed step 889/1000; elapsed 1092.2s
+Completed step 890/1000; elapsed 1093.3s
+{"step": 890, "elapsed_seconds": 1094.0095279216766, "ce": 0.33637967705726624, "mse": 0.0005139930581208318, "foreground_miou_present": 0.46381652574893306, "foreground_recall": 0.7760081328363266, "predicted_foreground_fraction": 0.4512939453125, "prediction_counts": [71920, 0, 0, 0, 0, 1524, 0, 7846, 10929, 0, 7689, 0, 0, 0, 122, 31042, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9160461956521739, 0.0, 0.0, 0.0, 0.0, 0.0009972575417601596, 0.0, 0.43283582089552236, 0.966853323699422, 0.0, 0.6261378413524057, 0.0, 0.0, 0.0, 0.024918743228602384, 0.7311561677758861, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 891/1000; elapsed 1095.2s
+Completed step 892/1000; elapsed 1096.3s
+Completed step 893/1000; elapsed 1097.5s
+Completed step 894/1000; elapsed 1098.6s
+Completed step 895/1000; elapsed 1099.7s
+Completed step 896/1000; elapsed 1100.9s
+Completed step 897/1000; elapsed 1102.0s
+Completed step 898/1000; elapsed 1103.2s
+Completed step 899/1000; elapsed 1104.3s
+Completed step 900/1000; elapsed 1105.5s
+{"step": 900, "elapsed_seconds": 1106.175850868225, "ce": 0.282030887901783, "mse": 0.0004365254135336727, "foreground_miou_present": 0.686171899656876, "foreground_recall": 0.8012457439770215, "predicted_foreground_fraction": 0.43340301513671875, "prediction_counts": [74265, 0, 0, 0, 0, 3011, 0, 6489, 11616, 0, 5616, 0, 0, 0, 727, 29348, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.8839159001314061, 0.0, 0.0, 0.0, 0.0, 0.7427937915742794, 0.0, 0.4766078408148762, 0.9302285616085239, 0.0, 0.8575498575498576, 0.0, 0.0, 0.0, 0.41073446327683616, 0.6991168831168831, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 901/1000; elapsed 1107.3s
+Completed step 902/1000; elapsed 1108.5s
+Completed step 903/1000; elapsed 1109.6s
+Completed step 904/1000; elapsed 1110.8s
+Completed step 905/1000; elapsed 1111.9s
+Completed step 906/1000; elapsed 1113.0s
+Completed step 907/1000; elapsed 1114.2s
+Completed step 908/1000; elapsed 1115.3s
+Completed step 909/1000; elapsed 1116.5s
+Completed step 910/1000; elapsed 1117.6s
+{"step": 910, "elapsed_seconds": 1118.3322603702545, "ce": 0.2866935431957245, "mse": 0.0004146172432228923, "foreground_miou_present": 0.5024886536341348, "foreground_recall": 0.7620984008649206, "predicted_foreground_fraction": 0.43795013427734375, "prediction_counts": [73669, 0, 0, 0, 0, 1787, 0, 8442, 11304, 0, 7124, 0, 0, 0, 185, 28561, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9021290202243598, 0.0, 0.0, 0.0, 0.0, 0.15247844827586207, 0.0, 0.43382718504524215, 0.9537837361086612, 0.0, 0.6760247052217855, 0.0, 0.0, 0.0, 0.10451977401129943, 0.6942980731419583, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 911/1000; elapsed 1119.5s
+Completed step 912/1000; elapsed 1120.6s
+Completed step 913/1000; elapsed 1121.8s
+Completed step 914/1000; elapsed 1122.9s
+Completed step 915/1000; elapsed 1124.1s
+Completed step 916/1000; elapsed 1125.2s
+Completed step 917/1000; elapsed 1126.4s
+Completed step 918/1000; elapsed 1127.5s
+Completed step 919/1000; elapsed 1128.6s
+Completed step 920/1000; elapsed 1129.8s
+{"step": 920, "elapsed_seconds": 1130.4877450466156, "ce": 0.26389846950769424, "mse": 0.0004253926163073629, "foreground_miou_present": 0.5780591977493937, "foreground_recall": 0.7943876974713979, "predicted_foreground_fraction": 0.4404296875, "prediction_counts": [73344, 0, 0, 0, 0, 2841, 0, 7363, 11045, 0, 5790, 0, 0, 0, 180, 30509, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.914274579368919, 0.0, 0.0, 0.0, 0.0, 0.41808510638297874, 0.0, 0.4295970852978997, 0.9679101123595506, 0.0, 0.8301984469370147, 0.0, 0.0, 0.0, 0.1016949152542373, 0.7208695202646815, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 921/1000; elapsed 1131.7s
+Completed step 922/1000; elapsed 1132.8s
+Completed step 923/1000; elapsed 1134.0s
+Completed step 924/1000; elapsed 1135.1s
+Completed step 925/1000; elapsed 1136.2s
+Completed step 926/1000; elapsed 1137.4s
+Completed step 927/1000; elapsed 1138.5s
+Completed step 928/1000; elapsed 1139.7s
+Completed step 929/1000; elapsed 1140.8s
+Completed step 930/1000; elapsed 1142.0s
+{"step": 930, "elapsed_seconds": 1142.6823909282684, "ce": 0.26230453699827194, "mse": 0.00044461021025199443, "foreground_miou_present": 0.591502445608216, "foreground_recall": 0.8065385422213616, "predicted_foreground_fraction": 0.4427032470703125, "prediction_counts": [73046, 0, 0, 0, 0, 2485, 0, 6560, 10885, 0, 5810, 0, 0, 0, 300, 31986, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9179766032949684, 0.0, 0.0, 0.0, 0.0, 0.40644431882419446, 0.0, 0.4381738930947465, 0.9699963741841915, 0.0, 0.8260869565217391, 0.0, 0.0, 0.0, 0.1694915254237288, 0.738821605600695, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 931/1000; elapsed 1143.8s
+Completed step 932/1000; elapsed 1145.0s
+Completed step 933/1000; elapsed 1146.1s
+Completed step 934/1000; elapsed 1147.3s
+Completed step 935/1000; elapsed 1148.4s
+Completed step 936/1000; elapsed 1149.6s
+Completed step 937/1000; elapsed 1150.7s
+Completed step 938/1000; elapsed 1151.9s
+Completed step 939/1000; elapsed 1153.0s
+Completed step 940/1000; elapsed 1154.2s
+{"step": 940, "elapsed_seconds": 1154.853420495987, "ce": 0.26693788915872574, "mse": 0.0003863844322040677, "foreground_miou_present": 0.5891246353588364, "foreground_recall": 0.7881267044262639, "predicted_foreground_fraction": 0.4403533935546875, "prediction_counts": [73354, 0, 0, 0, 0, 2448, 0, 8538, 10898, 0, 5576, 0, 0, 0, 286, 29972, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9218731028155903, 0.0, 0.0, 0.0, 0.0, 0.4332559489262914, 0.0, 0.4045476536042574, 0.9733212341197822, 0.0, 0.854389721627409, 0.0, 0.0, 0.0, 0.1615819209039548, 0.7076513329713237, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 941/1000; elapsed 1156.0s
+Completed step 942/1000; elapsed 1157.2s
+Completed step 943/1000; elapsed 1158.3s
+Completed step 944/1000; elapsed 1159.5s
+Completed step 945/1000; elapsed 1160.6s
+Completed step 946/1000; elapsed 1161.7s
+Completed step 947/1000; elapsed 1162.9s
+Completed step 948/1000; elapsed 1164.0s
+Completed step 949/1000; elapsed 1165.2s
+Completed step 950/1000; elapsed 1166.3s
+{"step": 950, "elapsed_seconds": 1167.0297009944916, "ce": 0.2711572051048279, "mse": 0.0005216154386289418, "foreground_miou_present": 0.5860716531088251, "foreground_recall": 0.7825434477416856, "predicted_foreground_fraction": 0.441802978515625, "prediction_counts": [73164, 0, 0, 0, 0, 2484, 0, 9251, 10890, 0, 5522, 0, 0, 0, 276, 29485, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9234357254880753, 0.0, 0.0, 0.0, 0.0, 0.4399421128798842, 0.0, 0.38963409070170635, 0.9727742989381977, 0.0, 0.861026102610261, 0.0, 0.0, 0.0, 0.15593220338983052, 0.697121110133071, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 951/1000; elapsed 1168.2s
+Completed step 952/1000; elapsed 1169.3s
+Completed step 953/1000; elapsed 1170.5s
+Completed step 954/1000; elapsed 1171.6s
+Completed step 955/1000; elapsed 1172.8s
+Completed step 956/1000; elapsed 1173.9s
+Completed step 957/1000; elapsed 1175.1s
+Completed step 958/1000; elapsed 1176.2s
+Completed step 959/1000; elapsed 1177.4s
+Completed step 960/1000; elapsed 1178.5s
+{"step": 960, "elapsed_seconds": 1179.226824760437, "ce": 0.27922171354293823, "mse": 0.0008652867400087416, "foreground_miou_present": 0.5035828781070508, "foreground_recall": 0.7978247890142163, "predicted_foreground_fraction": 0.439117431640625, "prediction_counts": [73516, 0, 0, 0, 0, 1246, 0, 6750, 10974, 0, 7082, 0, 0, 0, 135, 31369, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9238769728854714, 0.0, 0.0, 0.0, 0.0, 0.007006197790353005, 0.0, 0.5255903152343282, 0.9710956553156896, 0.0, 0.6720067453625632, 0.0, 0.0, 0.0, 0.07445008460236886, 0.7713482703370019, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 961/1000; elapsed 1180.4s
+Completed step 962/1000; elapsed 1181.5s
+Completed step 963/1000; elapsed 1182.7s
+Completed step 964/1000; elapsed 1183.8s
+Completed step 965/1000; elapsed 1185.0s
+Completed step 966/1000; elapsed 1186.1s
+Completed step 967/1000; elapsed 1187.3s
+Completed step 968/1000; elapsed 1188.4s
+Completed step 969/1000; elapsed 1189.6s
+Completed step 970/1000; elapsed 1190.7s
+{"step": 970, "elapsed_seconds": 1191.4056086540222, "ce": 0.22427814453840256, "mse": 0.0010286648757755756, "foreground_miou_present": 0.6348484536619655, "foreground_recall": 0.8459440706136742, "predicted_foreground_fraction": 0.45803070068359375, "prediction_counts": [71037, 0, 0, 0, 0, 2567, 0, 6646, 10855, 0, 5630, 0, 0, 0, 452, 33885, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.934859446622853, 0.0, 0.0, 0.0, 0.0, 0.4767883211678832, 0.0, 0.4858757062146893, 0.9687046444121916, 0.0, 0.8491768454593733, 0.0, 0.0, 0.0, 0.24412094064949608, 0.7844242640681598, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 971/1000; elapsed 1192.6s
+Completed step 972/1000; elapsed 1193.7s
+Completed step 973/1000; elapsed 1194.9s
+Completed step 974/1000; elapsed 1196.0s
+Completed step 975/1000; elapsed 1197.1s
+Completed step 976/1000; elapsed 1198.3s
+Completed step 977/1000; elapsed 1199.4s
+Completed step 978/1000; elapsed 1200.6s
+Completed step 979/1000; elapsed 1201.7s
+Completed step 980/1000; elapsed 1202.9s
+{"step": 980, "elapsed_seconds": 1203.5715491771698, "ce": 0.2675437480211258, "mse": 0.0004400296456879005, "foreground_miou_present": 0.6413438740638038, "foreground_recall": 0.7756531280760356, "predicted_foreground_fraction": 0.45233154296875, "prediction_counts": [71784, 0, 0, 0, 0, 2719, 0, 11955, 10918, 0, 5105, 0, 0, 0, 531, 28060, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9323138115484845, 0.0, 0.0, 0.0, 0.0, 0.6409448818897637, 0.0, 0.34229041916167663, 0.9745985666334028, 0.0, 0.9346723868954758, 0.0, 0.0, 0.0, 0.3, 0.6555569898025042, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 981/1000; elapsed 1204.7s
+Completed step 982/1000; elapsed 1205.9s
+Completed step 983/1000; elapsed 1207.0s
+Completed step 984/1000; elapsed 1208.2s
+Completed step 985/1000; elapsed 1209.3s
+Completed step 986/1000; elapsed 1210.5s
+Completed step 987/1000; elapsed 1211.6s
+Completed step 988/1000; elapsed 1212.8s
+Completed step 989/1000; elapsed 1213.9s
+Completed step 990/1000; elapsed 1215.1s
+{"step": 990, "elapsed_seconds": 1215.7665975093842, "ce": 0.2760823369026184, "mse": 0.00037794360832776874, "foreground_miou_present": 0.6088520929584141, "foreground_recall": 0.7796388633393039, "predicted_foreground_fraction": 0.4364166259765625, "prediction_counts": [73870, 0, 0, 0, 0, 2890, 0, 9316, 10927, 0, 5092, 0, 0, 0, 256, 28721, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9237476284664756, 0.0, 0.0, 0.0, 0.0, 0.5440459110473458, 0.0, 0.37870729288740645, 0.9730880753896339, 0.0, 0.9238834951456311, 0.0, 0.0, 0.0, 0.14269599548787365, 0.6906917877925941, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Completed step 991/1000; elapsed 1216.9s
+Completed step 992/1000; elapsed 1218.1s
+Completed step 993/1000; elapsed 1219.2s
+Completed step 994/1000; elapsed 1220.4s
+Completed step 995/1000; elapsed 1221.5s
+Completed step 996/1000; elapsed 1222.7s
+Completed step 997/1000; elapsed 1223.8s
+Completed step 998/1000; elapsed 1224.9s
+Completed step 999/1000; elapsed 1226.1s
+Completed step 1000/1000; elapsed 1227.2s
+{"step": 1000, "elapsed_seconds": 1227.938776254654, "ce": 0.2876781225204468, "mse": 0.00034684472484514117, "foreground_miou_present": 0.5775827666973424, "foreground_recall": 0.7766051862968163, "predicted_foreground_fraction": 0.442626953125, "prediction_counts": [73056, 0, 0, 0, 0, 2808, 0, 10282, 10894, 0, 5640, 0, 0, 0, 239, 28153, 0, 0, 0, 0, 0, 0, 0], "iou_by_class": [0.9293838219326819, 0.0, 0.0, 0.0, 0.0, 0.449001914137271, 0.0, 0.38253549868208486, 0.9758269720101781, 0.0, 0.8522586359610275, 0.0, 0.0, 0.0, 0.11549139367018323, 0.6903821857233101, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+Diagnostic finished
+Results: /kaggle/working/fixed_crop_1000_20260917_145850

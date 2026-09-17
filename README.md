@@ -85,3 +85,5 @@ If this code helps you, please consider citing our work:
 See [SERVER_SETUP.md](SERVER_SETUP.md) for environment setup, dataset transfer, verification, resumable training and explicit validation/test evaluation. Our public252-v1 dataset differs from the paper protocol; see [preprocessing decisions](research/preprocessing_resolution/RESOLUTION.md).
 
 For Kaggle, see [KAGGLE_SETUP.md](KAGGLE_SETUP.md).
+
+For the saved-checkpoint learning-rate diagnostic, see [KAGGLE_LR_COMPARISON.md](KAGGLE_LR_COMPARISON.md).

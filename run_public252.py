@@ -45,7 +45,10 @@ def main():
     parser.add_argument('--epochs',type=int,default=500)
     parser.add_argument('--batch-size',type=int,default=1)
     parser.add_argument('--name',default='public252_v1_baseline')
+    parser.add_argument('--stop-after-epoch',type=int,help='Absolute stopping epoch; does not alter the scheduler horizon')
     args=parser.parse_args()
+    if args.stop_after_epoch is not None and not 1 <= args.stop_after_epoch <= args.epochs:
+        parser.error('stop-after-epoch must be between 1 and epochs')
     if args.workers<0: parser.error('workers must be nonnegative')
     if args.resume and not args.train: parser.error('--resume requires --train')
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]*',args.name):
@@ -76,6 +79,7 @@ def main():
     command=[sys.executable,'train.py','--data_root',str(args.root.resolve())+'/',
              '--transpose_image','--batch_size',str(args.batch_size),'--max_epoch',str(args.epochs),
              '--name',args.name,'--workers',str(args.workers),'--outf',str(args.output.resolve())+'/']
+    if args.stop_after_epoch is not None: command += ['--stop_after_epoch',str(args.stop_after_epoch)]
     if args.resume: command += ['--resume',str(args.resume.resolve())]
     print(json.dumps({'protocol':spec['protocol_id'],'protocol_sha256':hashlib.sha256(spec_path.read_bytes()).hexdigest(),
           'preflight':'passed','splits':{k:len(v) for k,v in memberships.items()},

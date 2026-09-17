@@ -1,4 +1,5 @@
 import os
+import json
 from opt import opt
 print(opt)
 os.environ["CUDA_DEVICE_ORDER"] = 'PCI_BUS_ID'
@@ -72,7 +73,17 @@ def main():
         logger.info(f'Resuming after epoch {start_epoch}')
     lam_rec = 1
     lam_seg = 1e-4
-    for epoch in range(start_epoch, opt.max_epoch):
+    end_epoch = opt.stop_after_epoch if opt.stop_after_epoch is not None else opt.max_epoch
+    if end_epoch <= start_epoch:
+        raise ValueError('Stopping epoch must be greater than the resumed epoch')
+    updates = [0]
+    def count_update(*_):
+        updates[0] += 1
+    update_hook = optimizer.register_step_post_hook(count_update)
+    for epoch in range(start_epoch, end_epoch):
+        updates[0] = 0
+        learning_rate = optimizer.param_groups[0]['lr']
+        torch.cuda.reset_peak_memory_stats()
         model.train()
 
         # Progress reporting
@@ -104,6 +115,9 @@ def main():
                     loss_seg = loss_seg + loss_fn_seg(y_pred_list[stage], y) * math.pow(0.7, stage_idx)
 
                 loss = lam_rec * loss_rec + lam_seg * loss_seg
+
+            if not torch.isfinite(loss):
+                raise FloatingPointError(f'Nonfinite loss at epoch {epoch+1}, batch {batch_idx+1}')
 
             # Record loss
             losses_rec.update(loss_rec.data.item(), x.size(0))
@@ -171,7 +185,18 @@ def main():
         save_state(os.path.join(model_path, 'last.pt'), model, optimizer, scheduler, scaler,
                    epoch+1, best, opt, data_id)
 
-    print("Done")
+        stats = {'epoch': epoch+1, 'scheduler_horizon': opt.max_epoch,
+                 'learning_rate': learning_rate, 'attempted_updates': len(train_loader),
+                 'optimizer_updates': updates[0], 'amp_skipped_updates': len(train_loader)-updates[0],
+                 'train_reconstruction_loss': losses_rec.avg, 'train_segmentation_loss': losses_seg.avg,
+                 'val_foreground_miou_all22': float(val_iou), 'val_psnr_ref1': float(val_psnr),
+                 'elapsed_seconds': time.time()-epoch_start,
+                 'peak_cuda_allocated_gib': torch.cuda.max_memory_allocated()/2**30}
+        with open(os.path.join(result_path, f'epoch_{epoch+1:04d}_training.json'), 'w') as f:
+            json.dump(stats, f, indent=2)
+        logger.info(f'Epoch accounting: {stats}')
+    update_hook.remove()
+    print(f"Stopped after epoch {end_epoch}; scheduler horizon remains {opt.max_epoch}")
 
 if __name__ == "__main__":
     "------------------start training-------------------------"

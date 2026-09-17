@@ -33,7 +33,10 @@ parser.add_argument('--resume', default=None, help='Full epoch-boundary last.pt 
 parser.add_argument('--workers', type=int, default=4)
 parser.add_argument('--seed', type=int, default=3407)
 parser.add_argument('--eval_split', choices=['val', 'test'], default='val')
+parser.add_argument('--stop_after_epoch', type=int, default=None, help='Stop after this absolute epoch, preserving max_epoch scheduler horizon')
 opt = parser.parse_args()
+if opt.stop_after_epoch is not None and not 1 <= opt.stop_after_epoch <= opt.max_epoch:
+    parser.error('stop_after_epoch must be between 1 and max_epoch')
 if opt.resume and opt.pretrained_model_path:
     parser.error('Choose resume or pretrained initialization, not both')
 

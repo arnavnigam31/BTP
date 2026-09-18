@@ -1,0 +1,9 @@
+# Exact training crop exposure and validation error audit
+
+Read-only audit enumerates all236 legal horizontal crop starts10..245, with rows170:426. Expected per-epoch exposure assumes one random crop per training scene. These are exact expectations under the sampler, not counts observed in past GPU runs. Horizontal flip preserves label counts. Three scenes were checked against the actual RandomCropHoriz sampler with matched RNG.
+
+Real banana:19 training scenes;97.93% of labeled pixels inside the vertical band;16.82 expected crops containing the class per epoch;60.45% of full-scene class pixels expected per epoch. Real lemon:33 scenes,100% in band,26.08 expected crops,60.15% expected pixels. Fake avocado:15 scenes,11.98 expected crops. Fake unknown:14 scenes,11.39 expected crops. No scene containing any class has that class completely inaccessible to all legal crop positions. Thus wholesale vertical exclusion is not supported as the banana/lemon failure explanation. Unequal exposure and partial-object crops may still matter; do not infer causality or immediately change sampling.
+
+Kaggle notebook evaluates epoch96 best_iou.pth on all25 validation scenes, saving aggregate and per-scene confusion matrices, class-ID PNGs and pseudo-RGB/truth/prediction previews. It does not export reconstructed HSI cubes. Ground-truth and predicted labels use the existing23-color palette; pseudo-RGB display scaling does not alter data/metrics. No model, dataset, training loss or sampler is changed. Inspect confusion destinations and scene-specific failures before choosing a single controlled intervention.
+
+Validation: original evaluator CPU tests pass; additional tests verify exported class IDs, preview dimensions, sum of per-scene confusion matrices and absence of HSI cubes. Notebook cells compile. GPU audit pending.

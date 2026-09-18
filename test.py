@@ -15,7 +15,7 @@ def sha256(path):
         for chunk in iter(lambda:f.read(1024*1024),b''):digest.update(chunk)
     return digest.hexdigest()
 
-def evaluate_batches(model,loader,measurement,mask,device,out,limit=None,save_predictions=False):
+def evaluate_batches(model,loader,measurement,mask,device,out,limit=None,save_predictions=False,save_segmentation=False):
     """One scene per batch; measurement callback allows CPU integration fixtures."""
     rec=Metrics_Rec();seg=Metrics_Seg(loader.dataset.num_classes,loader.dataset.class_names)
     records=[];model.eval()
@@ -35,6 +35,24 @@ def evaluate_batches(model,loader,measurement,mask,device,out,limit=None,save_pr
             one=Metrics_Rec();one.add_batch(target.cpu(),reconstructed)
             rec.add_batch(target.cpu(),reconstructed);seg.add_batch(truth,predicted.numpy())
             records.append({'scene':scene,**one.get_table().iloc[0].to_dict()})
+            if save_segmentation:
+                from PIL import ImageDraw
+                from dataset import get_labels
+                colors=get_labels().astype(np.uint8)
+                ids=predicted.numpy()[0].astype(np.uint8)
+                Image.fromarray(ids).save(out/(scene+'_class_ids.png'))
+                hist=np.bincount((truth[0].astype(np.int64)*loader.dataset.num_classes+ids).ravel(),
+                    minlength=loader.dataset.num_classes**2).reshape(loader.dataset.num_classes,loader.dataset.num_classes)
+                np.save(out/(scene+'_confusion.npy'),hist)
+                rgb=target[0,[24,18,8]].float().cpu().permute(1,2,0).numpy()
+                rgb=(np.clip(rgb/max(float(np.quantile(rgb,.99)),1e-8),0,1)*255).astype(np.uint8)
+                panels=[rgb,colors[truth[0]],colors[ids]]
+                canvas=Image.new('RGB',(3*rgb.shape[1],rgb.shape[0]+30),'white')
+                draw=ImageDraw.Draw(canvas)
+                for j,(panel,label) in enumerate(zip(panels,['Pseudo-RGB','Ground truth','Prediction'])):
+                    canvas.paste(Image.fromarray(panel),(j*rgb.shape[1],30))
+                    draw.text((j*rgb.shape[1]+5,8),label,fill='black')
+                canvas.save(out/(scene+'_preview.png'))
             if save_predictions:
                 np.save(out/(scene+'_hsi.npy'),reconstructed[0].permute(1,2,0).numpy())
                 Image.fromarray(decode_segmap(predicted).astype(np.uint8)).save(out/(scene+'.png'))
@@ -59,6 +77,7 @@ def main():
     parser.add_argument('--mask_path',type=Path,default=Path(__file__).resolve().parent/'mask/mask512x512.mat')
     parser.add_argument('--limit',type=int,help='Validation-only infrastructure smoke check; never a benchmark')
     parser.add_argument('--save_predictions',action='store_true')
+    parser.add_argument('--save_segmentation',action='store_true',help='Save class IDs, per-scene confusion matrices and previews without HSI cubes')
     parser.add_argument('--batch_size',type=int,default=1,help='Evaluation requires one scene per batch')
     args=parser.parse_args()
     if args.batch_size!=1 or args.workers<0:parser.error('Use batch_size=1 and nonnegative workers')
@@ -84,7 +103,7 @@ def main():
             'torch':str(torch.__version__),'gpu':torch.cuda.get_device_name(0),
             'config':{k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()}}
     (out/'evaluation.json').write_text(json.dumps(record,indent=2))
-    scenes=evaluate_batches(model,loader,lambda x:init_meas(x,phi,'Y'),mask,'cuda',out,args.limit,args.save_predictions)
+    scenes=evaluate_batches(model,loader,lambda x:init_meas(x,phi,'Y'),mask,'cuda',out,args.limit,args.save_predictions,args.save_segmentation)
     record.update(status='completed',scene_count=len(scenes),scenes=scenes)
     (out/'evaluation.json').write_text(json.dumps(record,indent=2))
     print(f'Completed {args.eval_split}: {len(scenes)} scenes. Results: {out}')

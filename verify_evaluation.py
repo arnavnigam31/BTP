@@ -30,6 +30,13 @@ with tempfile.TemporaryDirectory() as temporary:
     assert matrix[1,1]==256 and matrix[2,1]==256 and matrix.sum()==512
     assert len(pd.read_csv(out/'per_scene_reconstruction.csv'))==2
     assert not list(out.glob('*_hsi.npy'))
+    export=out/'segmentation_only';export.mkdir()
+    evaluator.evaluate_batches(Model(),DataLoader(Scenes(),batch_size=1),lambda x:x,None,'cpu',export,save_segmentation=True)
+    from PIL import Image
+    assert np.array_equal(np.asarray(Image.open(export/'fixture_a_class_ids.png')),np.ones((16,16),dtype=np.uint8))
+    assert np.array_equal(np.load(export/'fixture_a_confusion.npy')+np.load(export/'fixture_b_confusion.npy'),matrix)
+    assert Image.open(export/'fixture_a_preview.png').size==(48,46)
+    assert not list(export.glob('*_hsi.npy'))
     metric=Metrics_Rec();target=torch.ones(1,28,16,16)
     metric.add_batch(target,target+.1);metric.reset();metric.add_batch(target,target+.2)
     assert abs(metric.get_table().MSE.iloc[0]-.04)<1e-6

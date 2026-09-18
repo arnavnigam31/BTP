@@ -72,7 +72,7 @@ def main():
         carry_best_weights(opt.resume, model_path)
         logger.info(f'Resuming after epoch {start_epoch}')
     lam_rec = 1
-    lam_seg = 1e-4
+    lam_seg = opt.lambda_seg
     end_epoch = opt.stop_after_epoch if opt.stop_after_epoch is not None else opt.max_epoch
     if end_epoch <= start_epoch:
         raise ValueError('Stopping epoch must be greater than the resumed epoch')
@@ -186,6 +186,7 @@ def main():
                    epoch+1, best, opt, data_id)
 
         stats = {'epoch': epoch+1, 'scheduler_horizon': opt.max_epoch,
+                 'lambda_rec': lam_rec, 'lambda_seg': lam_seg,
                  'learning_rate': learning_rate, 'attempted_updates': len(train_loader),
                  'optimizer_updates': updates[0], 'amp_skipped_updates': len(train_loader)-updates[0],
                  'train_reconstruction_loss': losses_rec.avg, 'train_segmentation_loss': losses_seg.avg,

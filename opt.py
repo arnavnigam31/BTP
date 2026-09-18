@@ -1,4 +1,5 @@
 import argparse
+import math
 
 parser = argparse.ArgumentParser(description="CRSDUN")
 
@@ -34,7 +35,10 @@ parser.add_argument('--workers', type=int, default=4)
 parser.add_argument('--seed', type=int, default=3407)
 parser.add_argument('--eval_split', choices=['val', 'test'], default='val')
 parser.add_argument('--stop_after_epoch', type=int, default=None, help='Stop after this absolute epoch, preserving max_epoch scheduler horizon')
+parser.add_argument('--lambda_seg', type=float, default=1e-4, help='Segmentation loss weight; reconstruction weight remains1')
 opt = parser.parse_args()
+if not math.isfinite(opt.lambda_seg) or opt.lambda_seg <= 0:
+    parser.error('lambda_seg must be finite and positive')
 if opt.stop_after_epoch is not None and not 1 <= opt.stop_after_epoch <= opt.max_epoch:
     parser.error('stop_after_epoch must be between 1 and max_epoch')
 if opt.resume and opt.pretrained_model_path:

@@ -1,0 +1,9 @@
+# Paired segmentation-loss continuation
+
+Hypothesis: increased segmentation emphasis may improve classes weak even in selected training examples. This is unproven. Static loss-weight tuning is baseline optimization, not novelty; the source paper already includes such ablations.
+
+Both arms start from the SAME epoch100 full state, with original model, Adam moments/step, scaler, RNG, quarter-rate cosine schedule (horizon500, base_lr1e-4, floor2.5e-7), crop/flip sampling, batch1, workers0, seed3407 and reconstruction weight1. Control lambda_seg1e-4 versus higher lambda_seg1e-3. Train epochs101-110 in each. Only loss-weight config differs in initial states. Original archive is read-only. Record new states as experimental branches; resume guards require matching loss weight. Legacy checkpoints without the new key mean original1e-4. Best-checkpoint selection includes shared epoch100 initial weights and new epochs only; historical epoch96 best is retained separately in the original archive.
+
+Compare complete trajectories, final and last5 mean/stdev foreground mIoU, all per-class IoU/recall tables, reconstruction PSNR/SSIM/MSE and actual updates/AMP skips. Last5 deviation is descriptive, not statistical confidence. Do not select on aggregate best mIoU alone or ignore reconstruction degradation. Inspect previously weak banana/avocado as well as other classes. Both remain single-seed validation experiments, not final test results.
+
+Validation: CPU branch-state preservation and mismatch rejection tests pass; legacy exact-resume/best-weight carry regression tests pass; real epoch100 checkpoint preparation passes frozen protocol/identity checks; notebook cells and modified Python files compile. GPU paired run is pending. Per-arm final checkpoints now record lambda_seg, preventing silent changes on later resume. No dataset, architecture or sampler changes.

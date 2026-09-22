@@ -210,7 +210,7 @@ class HySpecSegmentation(Dataset):
         return self.transform(sample) if self.transform else sample
 
 
-def prep_loaders(root_dir, batch_size=1, workers=1, transpose_image=False):
+def prep_loaders(root_dir, batch_size=1, workers=1, transpose_image=False, sampling_policy="baseline"):
     # Load dataset
     train_dataset = HySpecSegmentation(
         transpose_image=transpose_image,
@@ -224,6 +224,12 @@ def prep_loaders(root_dir, batch_size=1, workers=1, transpose_image=False):
         datafile='val_data.csv',
         transform=transforms.Compose([SegIdentityTransform()])
     )
+
+    if sampling_policy == 'balanced50_v1':
+        from balanced_sampling import BalancedTraining
+        train_dataset = BalancedTraining(train_dataset)
+    elif sampling_policy != 'baseline':
+        raise ValueError('Unknown sampling policy')
 
     # Prepare data loaders
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=workers)

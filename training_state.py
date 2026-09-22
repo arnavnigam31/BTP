@@ -38,6 +38,8 @@ def load_state(path,model,optimizer,scheduler,scaler,opt,data_id):
     if state['data_identity']!=data_id:raise ValueError('Dataset metadata or measurement mask changed')
     for key in ['method','batch_size','max_epoch','learning_rate','transpose_image','input_setting','input_mask','seed','workers']:
         if state['config'].get(key)!=getattr(opt,key):raise ValueError(f'Resume setting differs: {key}')
+    if state['config'].get('sampling_policy','baseline') != getattr(opt,'sampling_policy','baseline'):
+        raise ValueError('Resume setting differs: sampling_policy')
     if state['config'].get('lambda_seg',1e-4) != getattr(opt,'lambda_seg',1e-4):
         raise ValueError('Resume setting differs: lambda_seg')
     model.load_state_dict(state['model']);optimizer.load_state_dict(state['optimizer'])

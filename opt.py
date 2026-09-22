@@ -36,6 +36,7 @@ parser.add_argument('--seed', type=int, default=3407)
 parser.add_argument('--eval_split', choices=['val', 'test'], default='val')
 parser.add_argument('--stop_after_epoch', type=int, default=None, help='Stop after this absolute epoch, preserving max_epoch scheduler horizon')
 parser.add_argument('--lambda_seg', type=float, default=1e-4, help='Segmentation loss weight; reconstruction weight remains1')
+parser.add_argument('--sampling_policy', choices=['baseline','balanced50_v1'], default='baseline')
 opt = parser.parse_args()
 if not math.isfinite(opt.lambda_seg) or opt.lambda_seg <= 0:
     parser.error('lambda_seg must be finite and positive')

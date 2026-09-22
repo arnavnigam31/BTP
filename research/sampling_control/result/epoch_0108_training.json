@@ -1,0 +1,16 @@
+{
+  "epoch": 108,
+  "scheduler_horizon": 500,
+  "lambda_rec": 1,
+  "lambda_seg": 0.0001,
+  "learning_rate": 8.914674167750728e-05,
+  "attempted_updates": 202,
+  "optimizer_updates": 202,
+  "amp_skipped_updates": 0,
+  "train_reconstruction_loss": 0.0011923367118389153,
+  "train_segmentation_loss": 0.45244942417386735,
+  "val_foreground_miou_all22": 0.5757148693655083,
+  "val_psnr_ref1": 36.06760314941406,
+  "elapsed_seconds": 342.51969289779663,
+  "peak_cuda_allocated_gib": 7.514225006103516
+}

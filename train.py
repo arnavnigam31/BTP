@@ -25,7 +25,8 @@ train_loader, valid_loader = prep_loaders(
     root_dir=opt.data_root,
     transpose_image=opt.transpose_image,
     batch_size=opt.batch_size,
-    workers=opt.workers
+    workers=opt.workers,
+    sampling_policy=opt.sampling_policy
 )
 
 # mask
@@ -90,9 +91,23 @@ def main():
         losses_rec = AverageMeter()
         losses_seg = AverageMeter()
 
+        exposure_pixels = np.zeros(23, dtype=np.int64)
+        exposure_crops = np.zeros(23, dtype=np.int64)
+        targeted = np.zeros(23, dtype=np.int64)
+        sampled_scenes = np.zeros(len(train_loader.dataset), dtype=np.int64)
         epoch_start = time.time()
 
         for batch_idx, sample in enumerate(train_loader):
+
+            labels_cpu = sample['label'].numpy()
+            for labels in labels_cpu:
+                counts = np.bincount(labels.ravel(), minlength=23)
+                exposure_pixels += counts
+                exposure_crops += counts > 0
+            if 'sampling_target' in sample:
+                for target in sample['sampling_target'].tolist():
+                    if target > 0: targeted[target] += 1
+                for scene in sample['sampling_scene_index'].tolist(): sampled_scenes[scene] += 1
 
             # Load a batch and send it to GPU
             x = sample['image'].float().cuda()
@@ -187,6 +202,10 @@ def main():
 
         stats = {'epoch': epoch+1, 'scheduler_horizon': opt.max_epoch,
                  'lambda_rec': lam_rec, 'lambda_seg': lam_seg,
+                 'sampling_policy': opt.sampling_policy,
+                 'class_pixels_seen': exposure_pixels.tolist(), 'crops_with_class': exposure_crops.tolist(),
+                 'targeted_crops_by_class': targeted.tolist(),
+                 'sampled_scene_counts': sampled_scenes.tolist() if opt.sampling_policy != 'baseline' else None,
                  'learning_rate': learning_rate, 'attempted_updates': len(train_loader),
                  'optimizer_updates': updates[0], 'amp_skipped_updates': len(train_loader)-updates[0],
                  'train_reconstruction_loss': losses_rec.avg, 'train_segmentation_loss': losses_seg.avg,
